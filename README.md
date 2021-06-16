@@ -1,9 +1,13 @@
+# Introduction
+
+This is the remote repository for the version 2.0 of my personal website, to be hosted at martysmith.tech.  If you are reading this text, the website coded here is under development and has not yet been deployed.  You can view the current iteration of my website at [martysmith.tech](https://martysmith.tech/) now and see the [code in its repository](https://github.com/mhsmith321/Marty-Smith-Personal-Homepage) here.
+
 # Version Notes
 
 #### v 2.0.1.0  |  14 June 2021  |  commit 7bea184aa7df2f80c4160b560a8e7de3441b6c7e  |  Initial Commit
 * Initial commit of this project.
 
-#### v 2.0.1.1  |  15 June 2021  |  commit --  |  Current Version
+#### v 2.0.1.1  |  16 June 2021  |  commit 7bea184aa7df2f80c4160b560a8e7de3441b6c7e
 * Moved contents of `README.md` which came with the starter code to `GATSBY-README.md`.  Re-initialized this as my own `README.md` file.
   * Added *Version Notes* with information on the current and previous commit(s).
   * Added *Future Plans* with goals for both MVP and long-term icebox.
@@ -14,13 +18,27 @@
 * Created new directories for `/src/components`, `/src/images`, and `/src/styles`.
 * Created `.js` files for index pages in all directories.  Created a `/src/pages/projects` directory for project sub-directories.
 
+#### v 2.0.1.2  |  16 June 2021  |  commit --  |  Current Version
+* Installed the following dependencies all via `npm install`:
+  * `gatsby-image` ^3.7.1
+  * `gatsby-plugin-sharp` ^3.7.1
+  * `gatsby-source-filesystem` ^3.7.0
+  * `gatsby-transformer-remark` ^4.4.1
+  * `gatsby-transformer-sharp` ^3.7.1
+* Added a site metadata JSON to the `gatsby-config.js` exports with site & developer information.
+* Added plugins which do not require options configuration to `gatsby-config.js` exports:
+  * `gatsby-plugin-sharp`
+  * `gatsby-transformer-sharp`
+  * `gatsby-transformer-remark`
+* Added an *Introduction* section to this `README.md` file.  It basically exists to tell employers this code is for a site still being built and not yet deployed.  It'll be heavily reworked once this site is deployed and live.
+* Added a `404.js` file, currently empty.
+
 # Future Plans
 
 ### Goals for MVP
 * Set up a `<Layout>` component.
 * Render dummy data in all directory index pages.
 * Continue building out more sections of this `README.md` file.
-  * *Introduction* (above *Table of Contents*)
   * *Table of Contents* with links
   * *Instructions for Use*, minimal since this page is informational only
   * *Developer Notes* with information about file structure, interesting bits of code, etc
@@ -34,7 +52,7 @@
 
 ### Ice Box
 * Add mobile-responsiveness to the design.  This will be a goal for shortly after I reach MVP.
-* Add a `manifest.json` file.
+* Add a `manifest.json` file.  Probably in `/static` directory so it's accessible to the browser.
 * Add Google Analytics to the website.  This should be relatively easy since I already have it set up for my site's previous version.
 
 # Special Thanks
