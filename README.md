@@ -1,105 +1,80 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+# Version Notes
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+#### v 2.0.1.0  |  14 June 2021  |  commit 7bea184aa7df2f80c4160b560a8e7de3441b6c7e  |  Initial Commit
+* Initial commit of this project.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+#### v 2.0.1.1  |  15 June 2021  |  commit --  |  Current Version
+* Moved contents of `README.md` which came with the starter code to `GATSBY-README.md`.  Re-initialized this as my own `README.md` file.
+  * Added *Version Notes* with information on the current and previous commit(s).
+  * Added *Future Plans* with goals for both MVP and long-term icebox.
+  * Added *Special Thanks* with information about and links to resources I used developing this project.
+  * Added *Planning & Development Notes* to start outlining my thoughts on how to construct this site.
+  * The file will be built out more later.
+* Added `https://github.com/mhsmith321/Marty-personal-website-2.0.git` as a remote origin repository for this project.
+* Created new directories for `/src/components`, `/src/images`, and `/src/styles`.
+* Created `.js` files for index pages in all directories.  Created a `/src/pages/projects` directory for project sub-directories.
 
-## 🚀 Quick start
+# Future Plans
 
-1.  **Create a Gatsby site.**
+### Goals for MVP
+* Set up a `<Layout>` component.
+* Render dummy data in all directory index pages.
+* Continue building out more sections of this `README.md` file.
+  * *Introduction* (above *Table of Contents*)
+  * *Table of Contents* with links
+  * *Instructions for Use*, minimal since this page is informational only
+  * *Developer Notes* with information about file structure, interesting bits of code, etc
+  * *Tech Framework* with information on various technologies used to develop this site
+  * *Contribute* with license info, permission to reuse, and my own contact information
+  * *Screenshots* page (instructional video too?)
+  * *Back to Top* links after all sections of this document
+* Make a favicon.
+* Consider a `/src/notes` directory with `.txt` files to hold larger bodies of text that don't warrant full markdown-syntax pages.  This will greatly simplify updating content text on the website.
+* Host the site on Netlify.
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+### Ice Box
+* Add mobile-responsiveness to the design.  This will be a goal for shortly after I reach MVP.
+* Add a `manifest.json` file.
+* Add Google Analytics to the website.  This should be relatively easy since I already have it set up for my site's previous version.
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+# Special Thanks
+* I built this website with Gatsby.js, a free single-site generator resource.  I used the [Hello World](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world) starter page which is intended as a truly "blank slate" layout.
+* This is my first independent Gatsby.js project.  To learn Gatsby I've followed [the extensive documentation](https://www.gatsbyjs.com/docs/) from [the creators](https://www.gatsbyjs.com/about/) as well as the free [Net Ninja Gatsby Tutorial](https://www.youtube.com/watch?v=Qms4k6y7OgI&list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB) series on YouTube created by the [Net Ninja Shaun](https://github.com/iamshaunjp).
+* This is also my first new project after graduating from [General Assembly's Software Engineering Immersive](https://generalassemb.ly/) program.  I'd like to thank my instructors Ben Manley, David Stinson, and Shahzad Khan for their outstanding leadership as well as other graduates from the SEIR-EC-2-22 cohort.
+* Developing a color pallate involved the extensive use of [Coolors](https://coolors.co/), a free resource created by [Fabrizio Bianchi](http://fabrizio.io/) and checked with [ColorSafe](http://colorsafe.co/) for WCAG-compliant contrast ratios to ensure accessibility.
+* * Formatting this `README.md` file was easy with the help of the [Markdown Live Preview](https://markdownlivepreview.com/) tool and GitHub Guide's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) page.
 
-1.  **Start developing.**
+# Planning & Development Notes
 
-    Navigate into your new site’s directory and start it up.
+* I want this to be a React app in the style of a single-page app.  I'm using Gatsby both to learn the technology and for the inherent benefits of a static-site generator as well as the relative ease of building out a site, chiefly search-engine optimization and speed for the user.  An SSG is optimal for a site that benefits from back-end processessing but has no use for CRUD functionality.
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+* I'm planning to use a dark theme that uses bold rather than light colors.  I've decided to use a pride color theme.  [I developed my color palette and saved it to Repl.it here.](https://replit.com/@mhsmith321/personal-website-color-scheme)
 
-1.  **Open the source code and start editing!**
+* I'm currently planning five pages/pathways:
+  1. Splash page => `/` (index page at martysmith.tech)
+       * This will be the main splash page users land on.
+       * It will have little functionality aside from a brief introduction and nav to other pages.
+  2. About => `/about`
+       * This page will have my picture and personal/professional information about me.
+  4. Projects => `/projects`
+       * There will be an index page for this directory and sub-directories.
+       * The index page will have links to my major portfolio pieces.
+       * Each major portfolio piece will have its own page in the sub-directory.
+       * Should I have an entry for this website?
+       * There will also be an *Other Projects* sub-directory with minor projects I want people to see, but don't consider central works.
+  5. Contact => `/contact`
+       * All my essential contact information I'm ok publishing to the internet.
+       * Google maps showing Columbia, SC?
+       * This will be redundant with the same information elsewhere, but I'm ok with that.
+  6. Resources => `/resources`
+       * I want to have a page linking to my favorite web dev/engineering resources around the internet.
+       * I'll need to see if this is a single page or if it needs sub-directories based on how much stuff I want to list.
+       * Include a note to contact me if my resource listings are out of date.
 
-    Your site is now running at `http://localhost:8000`!
+* Optimally I'd like every page to fully render on a user's monitor with no scrolling.  This may be ambitious but this is the goal.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+* I plan to have a single `<Layout>` wrapper around every page.
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+* I don't think I'll need any conditional formatting here except for screen sizes and link clicks.
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+* Since this site is primarily meant for professional recruiters and HR professionals who are presumably using desktop workstations, I'm not planning to use mobile-first design.  That said, I do intend to add mobile-responsiveness once I reach MVP.  This should be relatively easy using CSS Grid.
