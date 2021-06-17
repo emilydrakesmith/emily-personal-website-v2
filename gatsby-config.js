@@ -8,6 +8,8 @@
  *		take effect.  Exit the server and run `gatsby develop` to do this.
  */
 
+// TODO: consider building URL pathways into siteMetadata
+
 module.exports = {
   /* Your site config here */
 	plugins: [

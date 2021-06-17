@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat";
+    color: white;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    background-color: #181818;
+}
+
+p {
+    margin: 16px auto;
+    line-height: 1.5em;
+}
+
+/* layout & nav */
+.layout {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* page <header> container */
+header {
+    display: flex;                      /* arrange #header-nav contents with flexbox */
+    flex-direction: row;                /* display #header-nav contents in a row */
+    justify-content: space-between;     /* two items in container, marry one to each end left & right */
+}
+
+/* <nav> container in <header> */
+#header-nav {
+    display: flex;                      /* arrange #header-nav contents with flexbox */
+    flex-direction: row;                /* display #header-nav contents in a row */
+    justify-content: flex-end;          /* marry #header-nav contents to right-end of container */
+}
+
+/* class for <Link /> items in #header-nav */
+.navlink {
+    display: flex;                      /* this and following lines center text vertically */
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 400;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    border-color: white;
+}
+
+footer p {
+    text-align: center;
+    color: #bbb;
+    margin: 40px auto;
+}

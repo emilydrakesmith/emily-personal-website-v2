@@ -1,27 +1,17 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import {Link} from 'gatsby';
 
 export default function Header() {
-    const data = useStaticQuery(graphql`
-        query siteInfo {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `);
-
-    const {title} = data.site.siteMetadata;
-
     return (
-        <nav>
-            <h1>{title}</h1>
-            <div className='links'>
-                <Link to='/'>Home</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/projects'>Projects</Link>
-            </div>
-        </nav>
+        <header>
+            <h1>Marty Smith</h1>
+            <nav id='header-nav'>
+                <Link to='/' className='navlink'>Home</Link>
+                <Link to='/about' className='navlink'>About</Link>
+                <Link to='/projects' className='navlink'>Projects</Link>
+                <Link to='/resources' className='navlink'>Resources</Link>
+                <Link to='/contact' className='navlink'>Contact</Link>
+            </nav>
+        </header>
     );
 }

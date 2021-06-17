@@ -7,7 +7,7 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### v 2.0.1.0  |  14 June 2021  |  commit 7bea184aa7df2f80c4160b560a8e7de3441b6c7e  |  Initial Commit
 * Initial commit of this project.
 
-#### v 2.0.1.1  |  16 June 2021  |  commit 7bea184aa7df2f80c4160b560a8e7de3441b6c7e
+#### v 2.0.1.1  |  16 June 2021  |  commit 346bc468077ff93680699343d3730202c6a32196
 * Moved contents of `README.md` which came with the starter code to `GATSBY-README.md`.  Re-initialized this as my own `README.md` file.
   * Added *Version Notes* with information on the current and previous commit(s).
   * Added *Future Plans* with goals for both MVP and long-term icebox.
@@ -19,7 +19,7 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Created `.js` files for index pages in all directories.  Created a `/src/pages/projects` directory for project sub-directories.
 
 #### v 2.0.1.2  |  16 June 2021  |  commit 972d9aa0eec3cfa833167328114c74609298dc10
-* Installed the following dependencies all via `npm install`:
+* Installed the following dependencies all via `npm install`/`npm i`:
   * `gatsby-image` ^3.7.1
   * `gatsby-plugin-sharp` ^3.7.1
   * `gatsby-source-filesystem` ^3.7.0
@@ -33,15 +33,26 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Added an *Introduction* section to this `README.md` file.  It basically exists to tell employers this code is for a site still being built and not yet deployed.  It'll be heavily reworked once this site is deployed and live.
 * Added a `404.js` file, currently empty.
 
-#### v 2.0.1.3  |  16 June 2021  |  commit --  |  Current Version
+#### v 2.0.1.3  |  16 June 2021  |  commit 0f34314537a1bf943a247f84e2ec2cc5a961f723
 * Stub up starter code and placeholder content for all pages (index pages and 404).
 * Create a `global.css` file.
 * Create a `<Layout>` component to code HTML containers that surround the `<main>` (header, footer, nav, etc) and incorporate into index pages.
 * Installed *React Helmet* to customize metadata in `<head>` of rendered webpage.
   * Added title: `<title>Marty Smith | Software Engineer</title>`
   * Specified a canonical link: `<link rel="canonical" href="https://martysmith.tech" />`
+* Created a *Tech Framework* section of `README.md`.
+
+#### v 2.0.1.3  |  16 June 2021  |  commit --  |  Current Version
+* Importing site metadata from `gatsby-config.js` into `Layout.js` to render data from metadata instead of hardcoding.
+* Created a dedicated component for the `<header>` and imported/incorporated into the `<Layout>` component.
+* Minor reformat of the *Tech Framework* section of `README.md`.
+* Added basic styling in `global.css` for the `<Layout>` component (which wraps all other JSX).
+* Added styling to `<header>` for item spacing.
+* Changed commit for v 2.0.1.1 to correct commit number.
 
 # Tech Framework
+
+### Tech Stack
 
 #### This app uses:
 * HTML5 & CSS3
@@ -52,8 +63,9 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 
 #### This app is hosted at:
 
-#### Plugins, Dongles, etc:
-* [React Helmet](https://www.gatsbyjs.com/docs/add-page-metadata/)
+### Plugins & Dongles
+
+#### [React Helmet](https://www.gatsbyjs.com/docs/add-page-metadata/)
   * Allows metadata to be customized in `<head>` section of rendered website.
   * Install via `npm install gatsby-plugin-react-helmet react-helmet`
   * Import to relevant react pages/components via `import { Helmet } from 'react-helmet'`
@@ -72,7 +84,7 @@ This is the remote repository for the version 2.0 of my personal website, to be 
   * *Table of Contents* with links
   * *Instructions for Use*, minimal since this page is informational only
   * *Developer Notes* with information about file structure, interesting bits of code, etc
-  * *Tech Framework* with information on various technologies used to develop this site
+    * incorporate into *Tech Framework*?
   * *Contribute* with license info, permission to reuse, and my own contact information
   * *Screenshots* page (instructional video too?)
   * *Back to Top* links after all sections of this document
