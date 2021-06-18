@@ -13,10 +13,46 @@
 module.exports = {
   /* Your site config here */
 	plugins: [
-		`gatsby-plugin-react-helmet`,
+		'gatsby-plugin-react-helmet',				// customize metadata in website's <head> component
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
-		'gatsby-transformer-remark'            // creates a graphQL interface for markdown files
+		'gatsby-transformer-remark',            	// creates a graphQL interface for markdown files
+		{
+			resolve: 'gatsby-plugin-manifest',
+			options: {
+				"name": "Marty Smith Personal Website",
+				"background_color": "#181818",
+				"categories": ["business"],
+				"description": "Professional website of software engineer Marty Smith.",
+				"icons": "src/images/favicons.favicon.ico",
+				"lang": "en-US",
+				"orientation": "any",
+				"short_name": "Marty Smith",
+				"shortcuts": [
+					{
+						"name": "About",
+						"url": "/about",
+						"description": "Information about the developer Marty Smith."
+					},
+					{
+						"name": "Projects",
+						"url": "/projects",
+						"description": "Links to items in Marty's portfolio."
+					},
+					{
+						"name": "Resources",
+						"url": "/resources",
+						"description": "Professional resources Marty uses and would like to share."
+					},
+					{
+						"name": "Contact",
+						"url": "/contact",
+						"description": "Get in contact with Marty now!"
+					}
+				],
+				"start_url": "https://martysmith.tech"
+			}
+		}
 	],
 	siteMetadata: {
 		title: 'Marty Smith | Software Engineer',

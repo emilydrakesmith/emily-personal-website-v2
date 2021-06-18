@@ -1,3 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before,  /* All ::before pseudo-elements */
+*::after {  /* All ::after pseudo-elements */
+            /* height & width will now include border & padding by default but can be over-ridden as needed */
+    box-sizing: inherit;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
 * {
@@ -5,15 +17,20 @@
     padding: 0;
     text-decoration: none;
     font-family: "Montserrat";
-    color: white;
-}
-
-html, body {
-    min-height: 100%;
 }
 
 body {
     background-color: #181818;
+    height: 100vh;
+    color: white;
+}
+
+#___gatsby {                    /* gatbsy wrapper around content */
+    height: 100%;               /* make wrapper full-size of parent container */
+}
+
+#gatsby-focus-wrapper {         /* gatbsy wrapper around content */
+    height: 100%;               /* make wrapper full-size of parent container */
 }
 
 p {
@@ -21,14 +38,23 @@ p {
     line-height: 1.5em;
 }
 
-/* layout & nav */
-.layout {
+/* this is the top-level content container */
+#layout {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-areas: 
+        'header header'
+        'sidenav main'
+        'footer footer';
+    height: 100%;
     margin: 0 auto;
     padding: 10px;
 }
 
 /* page <header> container */
 header {
+    grid-area: header;                  /* make the container span the two grid areas named 'header' */
     display: flex;                      /* arrange #header-nav contents with flexbox */
     flex-direction: row;                /* display #header-nav contents in a row */
     justify-content: space-between;     /* two items in container, marry one to each end left & right */
@@ -59,8 +85,19 @@ nav a:hover {
     border-color: white;
 }
 
+#main {
+    grid-area: main;                    /* place content in the grid area named 'main' */
+}
+
+#footer {
+    grid-area: footer;                  /* make the container span the two grid areas named 'footer' */
+    display: flex;                      /* this and the next two lines vertically center content in the footer */
+    flex-direction: column;
+    justify-content: center;
+}
+
 footer p {
     text-align: center;
     color: #bbb;
-    margin: 40px auto;
+    margin: 0 auto;
 }

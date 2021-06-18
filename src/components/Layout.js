@@ -27,16 +27,18 @@ export default function Layout({children}) {
     const {copyright} = data.site.siteMetadata;
 
     return (
-        <div className='layout'>
+        <div id='layout'>
             <Helmet>
-                <title>{title}</title>
                 <link rel="canonical" href="https://martysmith.tech" />
+                {/* I temporarily commented out the manifest because it's throwing errors in the browser console */}
+                {/* <link rel="manifest" href="manifest.json" /> */}
+                <title>{title}</title>
             </Helmet>
             <Header />
-            <main className='content'>
+            <main id='main'>
                 {children}
             </main>
-            <footer>
+            <footer id='footer'>
                 <p>{copyright}</p>
             </footer>
         </div>
