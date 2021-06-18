@@ -56,10 +56,18 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Arranged all page content to fit in a CSS Grid layout.
 * Created empty CSS modules for all stubbed-up pages.
 
-#### v 2.0.1.1  |  18 June 2021  |  commit --  |  Current Version
+#### v 2.0.1.1  |  18 June 2021  |  commit c90b3e8f24a80989e60ad63a7b58f6a1ed32cfe7
 * Added significant content and styling for the main index page.
 * Added color styling to the header.
 * Fixed some issues with the web manifest's construction and linking.
+
+#### v 2.0.2.0  |  18 June 2021  |  commit --  |  Current Version
+* Completed all parts of `<Layout>` component (content and styling).
+* Completed main index page (content and styling).
+* Added underline/overline effect to `<header>` nav links on hover.
+* Fixed issue that CSS Grid layout for main index page was global.
+* Added left and right navbars.
+
 
 # Tech Framework
 
@@ -111,7 +119,6 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 # Future Plans
 
 ### Goals for MVP
-* Render dummy data in all directory index pages.
 * Continue building out more sections of this `README.md` file.
   * *Table of Contents* with links
   * *Instructions for Use*, minimal since this page is informational only

@@ -16,6 +16,7 @@ import contact_icon from '../images/icons/contact-icon.svg';
 export default function Home() {
 	return (
 		<Layout>
+			<div className={styles.home_main}>
 			<section className={styles.grid_intro}>
 				<h4>Hi, my name is</h4>
 				<h2>Marty Smith</h2>
@@ -52,6 +53,7 @@ export default function Home() {
 					</div>
 				</Link>
 			</section>
+			</div>
 		</Layout>
 	);
 }

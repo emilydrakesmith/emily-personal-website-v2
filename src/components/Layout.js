@@ -7,6 +7,8 @@ import {Helmet} from "react-helmet";
 
 /******* START: IMPORT LOCAL FILES *******/
 import Header from './Header';
+import LeftSidenav from './LeftSidenav';
+import RightSidenav from './RightSidenav';
 import '../styles/global.css';
 /******* END: IMPORT LOCAL FILES *******/
 
@@ -34,9 +36,11 @@ export default function Layout({children}) {
                 <title>{title}</title>
             </Helmet>
             <Header />
+            <LeftSidenav />
             <main id='main'>
                 {children}
             </main>
+            <RightSidenav />
             <footer id='footer'>
                 <p>{copyright}</p>
             </footer>
