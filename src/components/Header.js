@@ -8,6 +8,7 @@ export default function Header() {
                 <h1>M</h1>
             </Link>
             <nav id='header-nav'>
+                <Link to='/' id='navlink-home' className='navlink'>Home</Link>
                 <Link to='/about' id='navlink-about' className='navlink'>About</Link>
                 <Link to='/projects' id='navlink-projects' className='navlink'>Projects</Link>
                 <Link to='/resources' id='navlink-resources' className='navlink'>Resources</Link>

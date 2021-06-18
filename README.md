@@ -61,13 +61,17 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Added color styling to the header.
 * Fixed some issues with the web manifest's construction and linking.
 
-#### v 2.0.2.0  |  18 June 2021  |  commit --  |  Current Version
+#### v 2.0.2.0  |  18 June 2021  |  commit f962e2240c0db1b18619cc7ff9c02439dd704361
 * Completed all parts of `<Layout>` component (content and styling).
 * Completed main index page (content and styling).
 * Added underline/overline effect to `<header>` nav links on hover.
 * Fixed issue that CSS Grid layout for main index page was global.
 * Added left and right navbars.
 
+#### v 2.0.2.1  |  18 June 2021  |  commit --  |  Current Version
+* Created CSS grid template for `/about` page.
+* Completed content for *About Marty* section on `/about` page.
+* Stubbed-up grid areas for *Skills* content on `/about` page.
 
 # Tech Framework
 
@@ -131,6 +135,7 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Host the site on Netlify.
 
 ### Ice Box
+* Use relative postiioning on side navs so they're always visible on the screen.
 * Add mobile-responsiveness to the design.  This will be a goal for shortly after I reach MVP.
 * Add Google Analytics to the website.  This should be relatively easy since I already have it set up for my site's previous version.
 * Render the `<Layout>` compoonent using Gatsby Server Rendering APIs. [More info here.](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/)

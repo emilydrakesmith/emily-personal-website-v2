@@ -60,7 +60,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid red;
+    border: 3px solid #E40203;
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -83,6 +83,10 @@ header h1:hover {
     display: flex;                      /* this and following lines center text vertically */
     flex-direction: row;
     align-items: center;
+}
+
+#navlink-home {
+    color: #E40203;
 }
 
 #navlink-about {
@@ -175,6 +179,6 @@ header h1:hover {
 
 footer p {
     text-align: center;
-    color: #bbb;
+    color: #BBB;
     margin: 0 auto;
 }
