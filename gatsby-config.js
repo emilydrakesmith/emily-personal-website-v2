@@ -24,7 +24,18 @@ module.exports = {
 				"background_color": "#181818",
 				"categories": ["business"],
 				"description": "Professional website of software engineer Marty Smith.",
-				"icons": "src/images/favicons.favicon.ico",
+				"icons": [
+					{
+						"src": "src/images/favicons/favicon-16x16.png",
+						"size": "16x16",
+						"type": "image/png"
+					},
+					{
+						"src": "src/images/favicons/favicon-32x32.png",
+						"size": "32x32",
+						"type": "image/png"
+					}
+				],
 				"lang": "en-US",
 				"orientation": "any",
 				"short_name": "Marty Smith",

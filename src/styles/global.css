@@ -33,16 +33,11 @@ body {
     height: 100%;               /* make wrapper full-size of parent container */
 }
 
-p {
-    margin: 16px auto;
-    line-height: 1.5em;
-}
-
 /* this is the top-level content container */
 #layout {
     display: grid;
     grid-template-columns: 50px 1fr;
-    grid-template-rows: 50px 1fr 30px;
+    grid-template-rows: 60px 1fr 30px;
     grid-template-areas: 
         'header header'
         'sidenav main'
@@ -60,6 +55,22 @@ header {
     justify-content: space-between;     /* two items in container, marry one to each end left & right */
 }
 
+header h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #E40203;
+}
+
+header h1:hover {
+    background-color: #3b0a0a;
+}
+
 /* <nav> container in <header> */
 #header-nav {
     display: flex;                      /* arrange #header-nav contents with flexbox */
@@ -72,6 +83,22 @@ header {
     display: flex;                      /* this and following lines center text vertically */
     flex-direction: row;
     align-items: center;
+}
+
+#navlink-about {
+    color: #FF8B00;
+}
+
+#navlink-projects {
+    color: #FEED00;
+}
+
+#navlink-resources {
+    color: #38A000;
+}
+
+#navlink-contact {
+    color: #004DFF;
 }
 
 nav a {

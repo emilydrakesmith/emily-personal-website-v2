@@ -50,12 +50,16 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Added styling to `<header>` for item spacing.
 * Changed commit for v 2.0.1.1 to correct commit number.
 
-#### v 2.0.1.0  |  17 June 2021  |  commit --  |  Current Version
+#### v 2.0.1.0  |  17 June 2021  |  commit 037dc08a26c720dfd261e5ec067c5b770899509f
 * Installed `gatsby-plugin-manifest` to build a web manifest plugin in `gatsby-config.js`.
 * Added a favicon.
 * Arranged all page content to fit in a CSS Grid layout.
 * Created empty CSS modules for all stubbed-up pages.
 
+#### v 2.0.1.1  |  18 June 2021  |  commit --  |  Current Version
+* Added significant content and styling for the main index page.
+* Added color styling to the header.
+* Fixed some issues with the web manifest's construction and linking.
 
 # Tech Framework
 
@@ -95,7 +99,7 @@ This is the remote repository for the version 2.0 of my personal website, to be 
   * `background-color` background color of the app, should correspond to CSS
   * `categories` see [here](https://developer.mozilla.org/en-US/docs/Web/Manifest/categories) for a list of current categories
   * `description` description of the app's purpose and core function
-  * `icon` links the site favicon
+  * `icon` links the site favicons and provides basic metadata about each
   * `lang` [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) for the app's language (`en-US` === American English)
   * `orientation` preferred screen orientation for viewing the app
   * `short_name` short version of the app name < 12 characters
@@ -132,6 +136,7 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * I created my favicon for free with the help of [favicon.io](https://favicon.io/), a free utility built by [John Sorrentino](https://twitter.com/johnsorrentino).
 * Formatting this `README.md` file was easy with the help of the [Markdown Live Preview](https://markdownlivepreview.com/) tool and GitHub Guide's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) page.
 * I inserted metadata into my page's `<head>` using [React Helmet](https://www.gatsbyjs.com/docs/add-page-metadata/), a free utility created and maintained by [the NFL](https://github.com/nfl/react-helmet).
+* The icons used on this site were acquired free from [flaticon.com](https://www.flaticon.com/) with permission to use so long as proper attribution is provided in documentation.
 
 # Planning & Development Notes
 

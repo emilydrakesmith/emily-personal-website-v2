@@ -1,0 +1,139 @@
+/******* START: <main> CONTAINER *******/
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 1fr;
+    grid-template-areas: 
+        'top-buffer top-buffer top-buffer'
+        'left-buffer intro right-buffer'
+        'left-buffer nav right-buffer'
+        'bottom-buffer bottom-buffer bottom-buffer';
+}
+/******* END: <main> CONTAINER *******/
+
+
+/******* START: INTRO GRID SECTION *******/
+.grid_intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.grid_intro > * {
+    color: #BBB;
+}
+
+.grid_intro h4 {
+    color: #E40203;
+}
+
+.grid_intro h2 {
+    font-size: 7vh;
+}
+
+.grid_intro h3 {
+    font-size: 3.5vh;
+}
+
+.grid_intro p {
+    margin-top: 10px;
+    max-width: 620px;
+    color: #BBB;
+}
+
+.contact_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    min-width: 180px;
+    min-height: 60px;
+    border: 2px solid #E40203;
+    border-radius: 8px;
+    color: #E40203;
+    font-weight: bold;
+}
+
+.contact_button:hover {
+    background-color: #3b0a0a;
+}
+/******* END: INTRO GRID SECTION *******/
+
+
+/******* START: NAV GRID SECTION *******/
+.nav_links {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 620px;
+}
+
+.nav_links img {
+    max-width: 70px;
+    margin-bottom: 10px;
+}
+
+.nav_links div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 130px;
+    min-height: 130px;
+    border-radius: 15px;
+}
+
+.about_div {
+    border: 3px solid #FF8B00;
+}
+
+.about_div:hover {
+    background-color: #3b2101;
+}
+
+.about_div h4 {
+    color: #FF8B00;
+}
+
+.projects_div {
+    border: 3px solid #FEED00;
+}
+
+.projects_div:hover {
+    background-color: #454000;
+}
+
+.projects_div h4 {
+    color: #FEED00;
+}
+
+.resources_div {
+    border: 3px solid #38A000;
+}
+
+.resources_div:hover {
+    background-color: #113000;
+}
+
+.resources_div h4 {
+    color: #38A000;
+}
+
+.contact_div {
+    border: 3px solid #004DFF;
+}
+
+.contact_div:hover {
+    background-color: #001b57;
+}
+
+.contact_div h4 {
+    color: #004DFF;
+}

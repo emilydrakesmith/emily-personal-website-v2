@@ -1,6 +1,6 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from 'react';
-import {Link, graphql, useStaticQuery} from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 import {Helmet} from "react-helmet";
 /******* END: IMPORT REACT AND DONGLES *******/
 
@@ -30,8 +30,7 @@ export default function Layout({children}) {
         <div id='layout'>
             <Helmet>
                 <link rel="canonical" href="https://martysmith.tech" />
-                {/* I temporarily commented out the manifest because it's throwing errors in the browser console */}
-                {/* <link rel="manifest" href="manifest.json" /> */}
+                <link rel="manifest" href="manifest.json" />
                 <title>{title}</title>
             </Helmet>
             <Header />
