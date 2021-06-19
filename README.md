@@ -78,10 +78,13 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Finished building out all content.  Made some styling adjustments for spacing.
 * Self-portrait has an orange overlay that disappears on mouse hover.
 
-#### v 2.0.3.1  |  18 June 2021  |  commit --  |  Current Version
+#### v 2.0.3.1  |  18 June 2021  |  commit 6d4020ac8d1a031b49a18f1758ee6637c70a0d12
 * Added some items to *Key Skills* section of the `/about` page.
 * Added notes to better section off code in `home.module.css` file.
 * Built and configured contact links and form in the `/contact` directory with styling.
+
+#### v 2.0.4.0  |  19 June 2021  |  commit 6d4020ac8d1a031b49a18f1758ee6637c70a0d12  |  Current Version
+* Bug fix to `/contact` page that the entire contact link `<div>` elements are not clickable links.
 
 # Tech Framework
 

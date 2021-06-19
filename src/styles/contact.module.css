@@ -33,7 +33,7 @@
 
 }
 
-.direct_messaging > div {
+.direct_messaging > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,7 @@
     color: #004DFF;
 }
 
-.direct_messaging > div:hover {
+.direct_messaging > a:hover {
     background-color: #001b57;
 }
 

@@ -23,24 +23,18 @@ export default function Contact() {
                     <hr />
                 </section>
                 <section className={styles.direct_messaging}>
-                    <div>
-                        <a href='mailto:marty.smith01@yahoo.com' target="_blank">
-                            <img src={envelope_icon} alt='icon for email'/>
-                            <h4>E-mail</h4>
-                        </a>
-                    </div>
-                    <div>
-                        <a href='https://www.linkedin.com/in/the-marty-smith/' target="_blank">
-                            <img src={linkedin_solid_icon} alt='icon for email'/>
-                            <h4>LinkedIn</h4>
-                        </a>
-                    </div>
-                    <div>
-                        <a href='https://twitter.com/doctrfed' target="_blank">
-                            <img src={twitter_solid_icon} alt='icon for email'/>
-                            <h4>Twitter</h4>
-                        </a>
-                    </div>
+                    <a href='mailto:marty.smith01@yahoo.com' target="_blank">
+                        <img src={envelope_icon} alt='icon for email'/>
+                        <h4>E-mail</h4>
+                    </a>
+                    <a href='https://www.linkedin.com/in/the-marty-smith/' target="_blank">
+                        <img src={linkedin_solid_icon} alt='icon for email'/>
+                        <h4>LinkedIn</h4>
+                    </a>
+                    <a href='https://twitter.com/doctrfed' target="_blank">
+                        <img src={twitter_solid_icon} alt='icon for email'/>
+                        <h4>Twitter</h4>
+                    </a>
                 </section>
                 <section className={styles.contact_header}>
                     <h1>Form</h1>
