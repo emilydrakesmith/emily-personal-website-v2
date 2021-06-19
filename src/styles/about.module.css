@@ -1,26 +1,20 @@
 /******* START: PARENT CONTAINER *******/
 .about_main {
-    display: grid;
-    grid-template-columns: 1.5fr 9fr 2fr;
-    grid-template-rows: 1fr 1fr 5fr 1fr 3fr 1fr;
-    grid-template-areas: 
-        'top-buffer top-buffer top-buffer'
-        'left-buffer about-header right-buffer'
-        'left-buffer about-marty right-buffer'
-        'left-buffer skills-header right-buffer'
-        'left-buffer skills right-buffer'
-        'bottom-buffer bottom-buffer bottom-buffer';
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    max-height: 800px;
+    padding: 20px 40px 0 40px;
 }
 /******* END: PARENT CONTAINER *******/
+
+.about_main > * {
+    width: 100%;
+}
 
 .about_main hr {
     border: 1px solid #FF8B00;
     background-color: #FF8B00;
-}
-
-.about_header {
-    grid-area: about-header;
 }
 
 .about_header, .skills_header {
@@ -31,25 +25,56 @@
 }
 
 .about_content {
-    grid-area: about-marty;
     text-align: justify;
     text-justify: auto;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 0.8em;
     color: #8c959c;
 }
 
-.about_content img {
-    max-width: 290px;
-    min-width: 200px;
-    width: 40%;
-    margin-left: 8px;
-    margin-bottom: 8px;
+.self_portrait {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+        rgba(255, 140, 0, 0.4), 
+        rgba(255, 140, 0, 0.4)
+    ),
+    /* bottom, image */
+    url(../images/pictures/self-portrait-narrow.jpeg);
+    width: 291px;
+    height: 314px;
+    margin-left: 12px;
     border-radius: 4px;
     float: right;
 }
 
-.skills_header {
-    grid-area: skills-header;
+.self_portrait:hover {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+        rgba(255, 140, 0, 0), 
+        rgba(255, 140, 0, 0)
+    ),
+    /* bottom, image */
+    url(../images/pictures/self-portrait-narrow.jpeg);
+}
+
+.about_content img {
+    width: 100%;
+}
+
+.skills_content {
+    text-align: center;
+    letter-spacing: 2.5px;
+    color: #8c959c;
+}
+
+.skills_content p {
+    margin: 6px 0;
+}
+
+.orange_bar {
+    font-size: 22px;
+    color: #FF8B00;
 }

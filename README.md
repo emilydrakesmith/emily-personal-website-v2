@@ -68,10 +68,15 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Fixed issue that CSS Grid layout for main index page was global.
 * Added left and right navbars.
 
-#### v 2.0.2.1  |  18 June 2021  |  commit --  |  Current Version
+#### v 2.0.2.1  |  18 June 2021  |  commit c3b5cefa16ad599e2f3621425677161729519380
 * Created CSS grid template for `/about` page.
 * Completed content for *About Marty* section on `/about` page.
 * Stubbed-up grid areas for *Skills* content on `/about` page.
+
+#### v 2.0.2.2  |  18 June 2021  |  commit --  |  Current Version
+* Changed CSS `display` setting from grid to flexbox.  Grid was a mistake.
+* Finished building out all content.  Made some styling adjustments for spacing.
+* Self-portrait has an orange overlay that disappears on mouse hover.
 
 # Tech Framework
 

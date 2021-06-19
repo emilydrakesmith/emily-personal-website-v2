@@ -11,7 +11,9 @@ import self_portrait from '../images/pictures/self-portrait-narrow.jpeg';
 
 
 export default function About() {
-	return (
+	const bar = <span className={styles.orange_bar}>|</span>;
+    
+    return (
         <Layout>
             <div className={styles.about_main}>
                 <section className={styles.about_header}>
@@ -19,7 +21,9 @@ export default function About() {
                     <hr />
                 </section>
                 <section className={styles.about_content}>
-                    <img src={self_portrait} alt='a picture of Marty'/>
+                    <div className={styles.self_portrait}>
+                        {/* <img src={self_portrait} alt='a picture of Marty'/> */}
+                    </div>
                     <p>Hi there!  I'm Marty and I've been building things for the internet since the days of BBCode and Geocities in the early 00s.  It's been a long time since then and now I'm a full-stack software engineer.<br/><br/>
                     My work is something in which I take great pride.  While no detail is unimportant, I particularly care about designs being clean and intuitive, code that's efficient and modular, and extensive documentation.<br/><br/>
                     Outside of work I love spending time with my wife.  We greatly enjoy playing board games, camping in our trailer, cooking, the New York Rangers, fishing, and wine tasting.<br/><br/>
@@ -29,6 +33,12 @@ export default function About() {
                     <h1>Key Skills</h1>
                     <hr />
                 </section>
+                <section className={styles.skills_content}>
+                    <p>JavaScript ES6+  {bar}  HTML5  {bar}  CSS3  {bar}  Python3</p>
+                    <p>React  {bar}  Gatsby  {bar}  Next.js  {bar}  Django</p>
+                    <p>MERN Stack  {bar}  MEN Stack</p>
+                </section>
+                <div className={styles.pic_div}></div>
             </div>
         </Layout>
 	);
