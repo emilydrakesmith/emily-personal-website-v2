@@ -83,8 +83,14 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Added notes to better section off code in `home.module.css` file.
 * Built and configured contact links and form in the `/contact` directory with styling.
 
-#### v 2.0.4.0  |  19 June 2021  |  commit 6d4020ac8d1a031b49a18f1758ee6637c70a0d12  |  Current Version
+#### v 2.0.4.0  |  19 June 2021  |  commit 5b2e9c7bc2bb0c77bee148ec20b51a13ed89831f
 * Bug fix to `/contact` page that the entire contact link `<div>` elements are not clickable links.
+
+#### v 2.0.4.1  |  19 June 2021  |  commit --  |  Current Version
+* Bug fix on HTML ported from old website on contact form.
+  * Changed `for` attributes on `<input>` items to React-friendly `htmlFor`.
+  * Changed `maxlength` attribute on message `<textarea>` to React-friendly `maxLength`.
+* Added `rel='noreferrer'` to `target='_blank'` hyperlinks to get rid of warnings in back end.
 
 # Tech Framework
 

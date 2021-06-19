@@ -23,15 +23,15 @@ export default function Contact() {
                     <hr />
                 </section>
                 <section className={styles.direct_messaging}>
-                    <a href='mailto:marty.smith01@yahoo.com' target="_blank">
+                    <a href='mailto:marty.smith01@yahoo.com'>
                         <img src={envelope_icon} alt='icon for email'/>
                         <h4>E-mail</h4>
                     </a>
-                    <a href='https://www.linkedin.com/in/the-marty-smith/' target="_blank">
+                    <a href='https://www.linkedin.com/in/the-marty-smith/' target="_blank" rel="noreferrer">
                         <img src={linkedin_solid_icon} alt='icon for email'/>
                         <h4>LinkedIn</h4>
                     </a>
-                    <a href='https://twitter.com/doctrfed' target="_blank">
+                    <a href='https://twitter.com/doctrfed' target="_blank" rel="noreferrer">
                         <img src={twitter_solid_icon} alt='icon for email'/>
                         <h4>Twitter</h4>
                     </a>
@@ -45,19 +45,19 @@ export default function Contact() {
                     
                     <div className={styles.contact_meta}>
                         <div className={styles.contact_data}>
-                        <label for="contact-name">Your Name</label>
+                        <label htmlFor="contact-name">Your Name</label>
                         <input id="contact-name" type="text" name="contact-name" required />
                         </div>
 
                         <div className={styles.contact_data}>
-                        <label for="contact-email">Your Email</label>
+                        <label htmlFor="contact-email">Your Email</label>
                         <input id="contact-email" type="text" name="contact-email" required />
                         </div>
                     </div>
 
                     <div className={styles.contact_data}>
-                    <label for="form-message">Your Message</label>
-                    <textarea id="form-message" name="form-message" placeholder={formPreviewText} required maxlength="1000"></textarea>
+                    <label htmlFor="form-message">Your Message</label>
+                    <textarea id="form-message" name="form-message" placeholder={formPreviewText} required maxLength="1000"></textarea>
                     </div>
 
                     <div className={styles.form_buttons}>
