@@ -64,6 +64,7 @@
 /******* END: INTRO GRID SECTION *******/
 
 
+
 /******* START: NAV GRID SECTION *******/
 .nav_links {
     grid-area: nav;
@@ -89,7 +90,11 @@
     min-height: 130px;
     border-radius: 15px;
 }
+/******* END: NAV GRID SECTION *******/
 
+
+
+/******* START: STYLING FOR '/about' LINK *******/
 .about_div {
     border: 3px solid #FF8B00;
 }
@@ -101,7 +106,11 @@
 .about_div h4 {
     color: #FF8B00;
 }
+/******* END: STYLING FOR '/about' LINK *******/
 
+
+
+/******* START: STYLING FOR '/projects' LINK *******/
 .projects_div {
     border: 3px solid #FEED00;
 }
@@ -113,7 +122,11 @@
 .projects_div h4 {
     color: #FEED00;
 }
+/******* END: STYLING FOR '/projects' LINK *******/
 
+
+
+/******* START: STYLING FOR '/resources' LINK *******/
 .resources_div {
     border: 3px solid #38A000;
 }
@@ -125,7 +138,11 @@
 .resources_div h4 {
     color: #38A000;
 }
+/******* END: STYLING FOR '/resources' LINK *******/
 
+
+
+/******* START: STYLING FOR '/contact' LINK *******/
 .contact_div {
     border: 3px solid #004DFF;
 }
@@ -137,3 +154,4 @@
 .contact_div h4 {
     color: #004DFF;
 }
+/******* END: STYLING FOR '/contact' LINK *******/

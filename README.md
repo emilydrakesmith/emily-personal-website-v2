@@ -73,10 +73,15 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Completed content for *About Marty* section on `/about` page.
 * Stubbed-up grid areas for *Skills* content on `/about` page.
 
-#### v 2.0.2.2  |  18 June 2021  |  commit --  |  Current Version
+#### v 2.0.3.0  |  18 June 2021  |  commit 8862fb66804ad58751d784ffd855e10f7cd7dc87
 * Changed CSS `display` setting from grid to flexbox.  Grid was a mistake.
 * Finished building out all content.  Made some styling adjustments for spacing.
 * Self-portrait has an orange overlay that disappears on mouse hover.
+
+#### v 2.0.3.1  |  18 June 2021  |  commit --  |  Current Version
+* Added some items to *Key Skills* section of the `/about` page.
+* Added notes to better section off code in `home.module.css` file.
+* Built and configured contact links and form in the `/contact` directory with styling.
 
 # Tech Framework
 
@@ -137,11 +142,12 @@ This is the remote repository for the version 2.0 of my personal website, to be 
   * *Screenshots* page (instructional video too?)
   * *Back to Top* links after all sections of this document
 * Consider a `/src/notes` directory with `.txt` files to hold larger bodies of text that don't warrant full markdown-syntax pages.  This will greatly simplify updating content text on the website.
-* Host the site on Netlify.
+* Host the site on Netlify or research alternatives.
 
 ### Ice Box
 * Use relative postiioning on side navs so they're always visible on the screen.
 * Add mobile-responsiveness to the design.  This will be a goal for shortly after I reach MVP.
+* Add Google Maps to `/contact` page.  Before doing this I need to decide where to deploy my site and see how they configure hidden data (in this case an API key).  [See here for more information.](https://www.gatsbyjs.com/plugins/gatsby-source-googlemaps-static/)
 * Add Google Analytics to the website.  This should be relatively easy since I already have it set up for my site's previous version.
 * Render the `<Layout>` compoonent using Gatsby Server Rendering APIs. [More info here.](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/)
 

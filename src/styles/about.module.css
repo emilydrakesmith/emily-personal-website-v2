@@ -17,7 +17,7 @@
     background-color: #FF8B00;
 }
 
-.about_header, .skills_header {
+.about_header {
     align-self: end;
     margin-bottom: 5px;
     color: #BBB;
