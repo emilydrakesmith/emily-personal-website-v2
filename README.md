@@ -109,10 +109,15 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Altered query on `/projects` index page to only return main projects.
 * Added information about Gatsby Source Filesystem to `README.md` file.
 
-#### v 2.0.4.5  |  20 June 2021  |  commit --  |  Current Version
+#### v 2.0.4.5  |  20 June 2021  |  commit 058966592b7da0117e6433b6d0201300841c5233
 * Added pictures of apps that I was missing previously (Human Verifier, Dog Pictures, and my old website).
 * Registered an instance of *Gatsby Source Filesystem* for the `/src/images` directory.
-* Configured GraphQL query in `/projects` directory to get project screenshots.
+* Configured GraphQL query in `/projects` index page to get project screenshots.
+
+#### v 2.0.4.6  |  20 June 2021  |  commit --  |  Current Version
+* Changed GraphQL query to get fluid pictures sizes in `/projects` index page to allow CSS resizing.
+* Finished formatting links (text and images) on `/projects` index page.
+* Adjusted `:hover` styling to links of `/projects` index page.
 
 # Tech Framework
 

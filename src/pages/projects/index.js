@@ -25,9 +25,11 @@ export default function Projects({data}) {
                 <section className={styles.project_previews}>
                     {projects.map(project => (
                         <Link to={'/projects/' + project.frontmatter.slug} key={project.id}>
-                                <Img fixed={project.frontmatter.fullImg.childImageSharp.fixed}/>
-                                <h3>{project.frontmatter.title}</h3>
-                                <h3>{project.frontmatter.stack}</h3>
+                            <div className={styles.picture_frame}>
+                                <Img fluid={project.frontmatter.fullImg.childImageSharp.fluid}/>
+                            </div>
+                            <h3>{project.frontmatter.title}</h3>
+                            <h4>{project.frontmatter.stack}</h4>
                         </Link>
                     ))}
                     <Link to='/projects/other-projects'>
@@ -51,8 +53,8 @@ export const query = graphql`
                     title
                     fullImg {
                         childImageSharp {
-                            fixed {
-                                ...GatsbyImageSharpFixed
+                            fluid {
+                                ...GatsbyImageSharpFluid
                             }
                         }
                     }
