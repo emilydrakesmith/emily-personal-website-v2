@@ -92,10 +92,17 @@ This is the remote repository for the version 2.0 of my personal website, to be 
   * Changed `maxlength` attribute on message `<textarea>` to React-friendly `maxLength`.
 * Added `rel='noreferrer'` to `target='_blank'` hyperlinks to get rid of warnings in back end.
 
-#### v 2.0.4.1  |  19 June 2021  |  commit --  |  Current Version
+#### v 2.0.4.2  |  19 June 2021  |  commit 58719c8d970224746da317e55c7450ece25a1b77
 * Removed `start_url` from manifest; unnecessary if it's the root directory of the domain.
 * Stubbed up code for main index page in `/projects` directory.
 * Initialized `.md` files for project information to be used in individual project pages.
+
+#### v 2.0.4.3  |  19 June 2021  |  commit --  |  Current Version
+* Installed gatsby source filesystem to load `.md` data into the website.
+* Moved `.md` project files to a new directory `/src/data/projects` for GraphQL.
+* Added initial content to `.md` project data files.
+* Created a GraphQL query to get project data for the `/projects` index page.
+* Render `<Link>` containers (actually `<a>` elements) for projects in `/projects` index page with minimal styling.
 
 # Tech Framework
 

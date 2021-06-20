@@ -25,8 +25,20 @@
     font-size: 30px;
 }
 
-.projects_main a {
-    width: 300px;
-    height: 300px;
+.project_previews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.project_previews > a {
+    margin: 6px;
+    color: #FEED00;
     border: 3px solid #FEED00;
+}
+
+.project_previews h3 {
+    font-size: 14px;
 }
