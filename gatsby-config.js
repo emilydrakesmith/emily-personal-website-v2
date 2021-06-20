@@ -60,8 +60,7 @@ module.exports = {
 						"url": "/contact",
 						"description": "Get in contact with Marty now!"
 					}
-				],
-				"start_url": "https://martysmith.tech"
+				]
 			}
 		}
 	],

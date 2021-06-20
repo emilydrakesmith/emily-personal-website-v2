@@ -86,11 +86,16 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### v 2.0.4.0  |  19 June 2021  |  commit 5b2e9c7bc2bb0c77bee148ec20b51a13ed89831f
 * Bug fix to `/contact` page that the entire contact link `<div>` elements are not clickable links.
 
-#### v 2.0.4.1  |  19 June 2021  |  commit --  |  Current Version
+#### v 2.0.4.1  |  19 June 2021  |  commit 57c03a513d91874e4c71c62f961a5ab2f57edb49
 * Bug fix on HTML ported from old website on contact form.
   * Changed `for` attributes on `<input>` items to React-friendly `htmlFor`.
   * Changed `maxlength` attribute on message `<textarea>` to React-friendly `maxLength`.
 * Added `rel='noreferrer'` to `target='_blank'` hyperlinks to get rid of warnings in back end.
+
+#### v 2.0.4.1  |  19 June 2021  |  commit --  |  Current Version
+* Removed `start_url` from manifest; unnecessary if it's the root directory of the domain.
+* Stubbed up code for main index page in `/projects` directory.
+* Initialized `.md` files for project information to be used in individual project pages.
 
 # Tech Framework
 
@@ -135,7 +140,6 @@ This is the remote repository for the version 2.0 of my personal website, to be 
   * `orientation` preferred screen orientation for viewing the app
   * `short_name` short version of the app name < 12 characters
   * `shortcuts` main directories in the website's architecture
-  * `start_url` URL pathway that should be loaded when the website is launched
   * For some reason keys and values which are strings must be written with double-quotes (single-quotes will throw errors).
 * [Full documentation is available here.](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest)
 

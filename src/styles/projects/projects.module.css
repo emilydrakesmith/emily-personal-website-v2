@@ -1,0 +1,32 @@
+/******* START: PARENT CONTAINER *******/
+.projects_main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 800px;
+    padding: 20px 40px 0 80px;
+}
+/******* END: PARENT CONTAINER *******/
+
+.projects_main > * {
+    width: 100%;
+}
+
+.projects_main hr {
+    border: 1px solid #FEED00;
+    background-color: #FEED00;
+}
+
+.projects_main {
+    align-self: end;
+    margin-bottom: 5px;
+    color: #BBB;
+    font-size: 30px;
+}
+
+.projects_main a {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #FEED00;
+}
