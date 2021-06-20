@@ -40,16 +40,16 @@ export default function Projects({data}) {
 
 // export page query
 export const query = graphql`
-    query ProjectsPage {
-        allMarkdownRemark {
+    query MyQuery {
+        allMarkdownRemark(filter: {frontmatter: {main: {eq: true}}}) {
             nodes {
                 frontmatter {
+                    main
                     slug
                     stack
                     title
-                    type
                 }
-                id
+            id
             }
         }
     }

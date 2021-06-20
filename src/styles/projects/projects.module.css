@@ -39,6 +39,10 @@
     border: 3px solid #FEED00;
 }
 
+.project_previews > a:hover {
+    background-color: #454000;
+}
+
 .project_previews h3 {
     font-size: 14px;
 }

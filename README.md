@@ -97,12 +97,17 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Stubbed up code for main index page in `/projects` directory.
 * Initialized `.md` files for project information to be used in individual project pages.
 
-#### v 2.0.4.3  |  19 June 2021  |  commit --  |  Current Version
+#### v 2.0.4.3  |  19 June 2021  |  commit f4290915af76c3666fbcec97a7243272421ace61
 * Installed gatsby source filesystem to load `.md` data into the website.
 * Moved `.md` project files to a new directory `/src/data/projects` for GraphQL.
 * Added initial content to `.md` project data files.
 * Created a GraphQL query to get project data for the `/projects` index page.
 * Render `<Link>` containers (actually `<a>` elements) for projects in `/projects` index page with minimal styling.
+
+#### v 2.0.4.4  |  19 June 2021  |  commit --  |  Current Version
+* Added background color hover effect to project links on `/projects` index page.
+* Altered query on `/projects` index page to only return main projects.
+* Added information about Gatsby Source Filesystem to `README.md` file.
 
 # Tech Framework
 
@@ -127,6 +132,15 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Dependency as listed in `package.json`: `"gatsby-plugin-react-helmet": "^4.7.1"`
 * Plugin as registered in `gatsby-config.js`: `'gatsby-plugin-react-helmet'` (no configuration)
 * [Full documentation is available here.](https://github.com/nfl/react-helmet)
+
+#### [Gatsby Source Filesystem](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/)
+* Allows Gatsby to use GraphQL to query information out of the React file structure (images, `.txt` and `.md` files, etc).
+* Install via `npm install gatsby-source-filesystem`
+* Needs to be once for each directory which will be queried.
+* Register: `resolve: gatsby-source-filesystem`
+* Configure: `options: {}` which takes multiple key/values:
+  * `` name: `projects` `` (any string for `sameple`, can be referenced with GraphQL)
+  * `` path: `${__dirname}/src/data/projects/` ``  (any path in the `/src` directory)
 
 #### [Gatsby Plugin Manifest](https://www.gatsbyjs.com/docs/how-to/performance/add-a-manifest-file/)
 * Allows the creation of a web manifest plugin in `gatsby-config.js`
