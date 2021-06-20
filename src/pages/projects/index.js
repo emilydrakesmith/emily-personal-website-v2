@@ -7,12 +7,11 @@ import Img from 'gatsby-image';
 
 /******* START: IMPORT LOCAL FILES *******/
 import Layout from '../../components/Layout';
-import * as styles from '../../styles/projects/projects.module.css';
+import * as styles from '../../styles/projects.module.css';
 /******* END: IMPORT LOCAL FILES *******/
 
 
 export default function Projects({data}) {
-    console.log(data)
     const projects = data.allMarkdownRemark.nodes;
 
 	return (

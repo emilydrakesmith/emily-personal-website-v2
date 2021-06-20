@@ -114,10 +114,17 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Registered an instance of *Gatsby Source Filesystem* for the `/src/images` directory.
 * Configured GraphQL query in `/projects` index page to get project screenshots.
 
-#### v 2.0.4.6  |  20 June 2021  |  commit --  |  Current Version
+#### v 2.0.4.6  |  20 June 2021  |  commit 43c617c7150823393833ef3b11ad301aea237eba
 * Changed GraphQL query to get fluid pictures sizes in `/projects` index page to allow CSS resizing.
 * Finished formatting links (text and images) on `/projects` index page.
 * Adjusted `:hover` styling to links of `/projects` index page.
+
+#### v 2.0.4.7  |  20 June 2021  |  commit --  |  Current Version
+* Removed an unnecessary `console.log()` statement from the `/projects` index page function.
+* Moved `projects.module.css` from `/src/styles/projects` to `/src/styles`
+* Created a `/src/templates` directory which will hold template files.
+* Stubbed up a template form `project-details.js` to layout individual project pages.
+* Initialized a `gatsby-node.js` file to generate pages using template `project-details.js` and markdown data from `/src/data/projects`.
 
 # Tech Framework
 
