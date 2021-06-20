@@ -1,6 +1,7 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from "react";
 import {graphql, Link} from "gatsby";
+import Img from 'gatsby-image';
 /******* END: IMPORT REACT AND DONGLES *******/
 
 
@@ -11,6 +12,7 @@ import * as styles from '../../styles/projects/projects.module.css';
 
 
 export default function Projects({data}) {
+    console.log(data)
     const projects = data.allMarkdownRemark.nodes;
 
 	return (
@@ -23,10 +25,9 @@ export default function Projects({data}) {
                 <section className={styles.project_previews}>
                     {projects.map(project => (
                         <Link to={'/projects/' + project.frontmatter.slug} key={project.id}>
-                            <div>
+                                <Img fixed={project.frontmatter.fullImg.childImageSharp.fixed}/>
                                 <h3>{project.frontmatter.title}</h3>
                                 <h3>{project.frontmatter.stack}</h3>
-                            </div>
                         </Link>
                     ))}
                     <Link to='/projects/other-projects'>
@@ -40,7 +41,7 @@ export default function Projects({data}) {
 
 // export page query
 export const query = graphql`
-    query MyQuery {
+    query MainProjects {
         allMarkdownRemark(filter: {frontmatter: {main: {eq: true}}}) {
             nodes {
                 frontmatter {
@@ -48,8 +49,15 @@ export const query = graphql`
                     slug
                     stack
                     title
+                    fullImg {
+                        childImageSharp {
+                            fixed {
+                                ...GatsbyImageSharpFixed
+                            }
+                        }
+                    }
                 }
-            id
+                id
             }
         }
     }

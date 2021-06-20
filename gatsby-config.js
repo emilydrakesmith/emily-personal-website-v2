@@ -25,6 +25,13 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `gatsby-source-filesystem`,			// loads data from .txt and .md files to website
+			options: {
+				name: `images`,							// name of this instance of the plugin
+				path: `${__dirname}/src/images/`,	// directory this plugin will access
+			},
+		},
+		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
 				"name": "Marty Smith Personal Website",

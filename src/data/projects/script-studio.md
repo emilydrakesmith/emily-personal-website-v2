@@ -3,6 +3,8 @@ title: ScriptStud.io
 stack: React Node Express MongoDB
 slug: script-studio
 main: true
+fullImg: ../../images/projects/full/script-studio.png
+thumbImg: ../../images/projects/thumb/script-studio.png
 ---
 
 Bacon ipsum dolor amet turkey ribeye burgdoggen rump landjaeger t-bone shank tongue ham strip steak corned beef. Chicken drumstick strip steak turducken biltong shoulder. Drumstick buffalo prosciutto burgdoggen shank ball tip bacon biltong turkey picanha ground round beef ribs pancetta filet mignon. Bacon tail biltong ground round picanha frankfurter burgdoggen ham hock turkey beef ribs. Flank brisket short loin turducken beef ribs boudin capicola pork meatball. Salami shankle drumstick corned beef capicola, porchetta pastrami.

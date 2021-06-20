@@ -97,17 +97,22 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Stubbed up code for main index page in `/projects` directory.
 * Initialized `.md` files for project information to be used in individual project pages.
 
-#### v 2.0.4.3  |  19 June 2021  |  commit f4290915af76c3666fbcec97a7243272421ace61
+#### v 2.0.4.3  |  20 June 2021  |  commit f4290915af76c3666fbcec97a7243272421ace61
 * Installed gatsby source filesystem to load `.md` data into the website.
 * Moved `.md` project files to a new directory `/src/data/projects` for GraphQL.
 * Added initial content to `.md` project data files.
 * Created a GraphQL query to get project data for the `/projects` index page.
 * Render `<Link>` containers (actually `<a>` elements) for projects in `/projects` index page with minimal styling.
 
-#### v 2.0.4.4  |  19 June 2021  |  commit --  |  Current Version
+#### v 2.0.4.4  |  20 June 2021  |  commit 8cb978205b1d95101bb58a93ea9755221aaee782
 * Added background color hover effect to project links on `/projects` index page.
 * Altered query on `/projects` index page to only return main projects.
 * Added information about Gatsby Source Filesystem to `README.md` file.
+
+#### v 2.0.4.5  |  20 June 2021  |  commit --  |  Current Version
+* Added pictures of apps that I was missing previously (Human Verifier, Dog Pictures, and my old website).
+* Registered an instance of *Gatsby Source Filesystem* for the `/src/images` directory.
+* Configured GraphQL query in `/projects` directory to get project screenshots.
 
 # Tech Framework
 
@@ -121,6 +126,7 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### I built this app using:
 
 #### This app is hosted at:
+* [Link to GitHub Repo](https://github.com/mhsmith321/Marty-personal-website-2.0)
 
 ### Plugins & Dongles
 
