@@ -119,21 +119,25 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Finished formatting links (text and images) on `/projects` index page.
 * Adjusted `:hover` styling to links of `/projects` index page.
 
-#### v 2.0.4.7  |  20 June 2021  |  commit --  |  Current Version
+#### v 2.0.4.7  |  20 June 2021  |  commit caea351d6a8cad83709ac39b8e4ba4c3e628ba8d
 * Removed an unnecessary `console.log()` statement from the `/projects` index page function.
 * Moved `projects.module.css` from `/src/styles/projects` to `/src/styles`
 * Created a `/src/templates` directory which will hold template files.
 * Stubbed up a template form `project-details.js` to layout individual project pages.
 * Initialized a `gatsby-node.js` file to generate pages using template `project-details.js` and markdown data from `/src/data/projects`.
 
+#### v 2.0.4.8  |  20 June 2021  |  commit --  |  Current Version
+* Created a GraphQL query in the `project-details.js` template to retrieve markdown data for each page generated.
+* Pages generated from `project-details.js` template render with data from the correct `.md` file in the `/data/projects` directory.
+
 # Tech Framework
 
 ### Tech Stack
 
 #### This app uses:
-* HTML5 & CSS3
-* JavaScript ES6+
 * React & Gatsby.js SSG
+* JavaScript ES6+
+* HTML5 & CSS3
 
 #### I built this app using:
 
