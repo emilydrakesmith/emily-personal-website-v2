@@ -1,0 +1,26 @@
+/******* START: PARENT CONTAINER *******/
+.notfound_main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    height: 100%;
+    padding: 20px 40px 0 80px;
+}
+/******* END: PARENT CONTAINER *******/
+
+.notfound_main {
+    font-size: 30px;
+    color: #BBB;
+}
+
+.notfound_main hr {
+    margin-bottom: 12px;
+    border: 1px solid #E40203;
+    background-color: #E40203;
+}
+
+.notfound_content > p {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 20px;
+}

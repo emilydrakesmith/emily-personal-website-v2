@@ -155,8 +155,12 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### v 2.1.0.1  |  21 June 2021  |  commit 2a0057e12748be65d87ad7054b775a977f765ff7
 * Favicon isn't loading on deployed site.  Added a favicon to `<Helmet />` to see if that helps.  This is hard to troubleshoot because I'm getting a favicon on my local machine.
 
-#### v 2.1.0.2  |  21 June 2021  |  commit --  |  Current Version
+#### v 2.1.0.2  |  21 June 2021  |  commit 0f0a54cce13123dabb31ca38443872dda28f6065
 * Favicon still isn't loading.  I found information on how to configure `gatsby-plugin-sharp` to load a favicon, let's see if that works.
+
+#### v 2.1.0.2  |  21 June 2021  |  commit --  |  Current Version
+* Deleted the full web manifest since I can't tell which three lines are throwing errors.  I can reinstate it later.
+* Created a custom 404 page.
 
 [Back to Top](#top)
 
