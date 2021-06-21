@@ -158,9 +158,12 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### v 2.1.0.2  |  21 June 2021  |  commit 0f0a54cce13123dabb31ca38443872dda28f6065
 * Favicon still isn't loading.  I found information on how to configure `gatsby-plugin-sharp` to load a favicon, let's see if that works.
 
-#### v 2.1.0.2  |  21 June 2021  |  commit --  |  Current Version
+#### v 2.1.0.2  |  21 June 2021  |  commit 4bf66b580a4b9402e9ebb7f250c99c8ef1635e72
 * Deleted the full web manifest since I can't tell which three lines are throwing errors.  I can reinstate it later.
 * Created a custom 404 page.
+
+#### v 2.1.0.2  |  21 June 2021  |  commit 4bf66b580a4b9402e9ebb7f250c99c8ef1635e72
+* Deleted link to the web manifest from `<Helmet />` component.
 
 [Back to Top](#top)
 
