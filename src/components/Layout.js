@@ -31,6 +31,7 @@ export default function Layout({children}) {
         <div id='layout'>
             <Helmet>
                 <link rel="canonical" href="https://martysmith.tech" />
+                <link rel="icon" href="../images/favicons/favicon-16x16.png" type="image/png" />
                 <link rel="manifest" href="manifest.json" />
                 <title>{title}</title>
             </Helmet>

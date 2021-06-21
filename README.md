@@ -148,9 +148,12 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Moved the page footer into a new `<Footer />` component.
 * Refactored `<Header />` component to generate navlinks by mapping over an array.
 
-#### v 2.1.0.0  |  21 June 2021  |  commit --  |  Current Version
+#### v 2.1.0.0  |  21 June 2021  |  commit 986dfa36b8434dabf56de94da3469621e6cd2f79
 * Moved *Skills* data on `/about` page into a variable to be rendered in the function return.
 * Stubbed up `/resources` page with placeholder content.  Developing this page will be the first icebox task.
+
+#### v 2.1.0.1  |  21 June 2021  |  commit --  |  Current Version
+* Favicon isn't loading on deployed site.  Added a favicon to `<Helmet />` to see if that helps.  This is hard to troubleshoot because I'm getting a favicon on my local machine.
 
 [Back to Top](#top)
 
