@@ -11,6 +11,17 @@ import * as styles from '../../styles/projects.module.css';
 /******* END: IMPORT LOCAL FILES *******/
 
 
+/**     IMPORTANT!
+ * 
+ *      I know for a fact that at some point I'm going to ask why this page is alone in its own
+ *      directory.  The reason is that once I make a /projects/other-projects sub-directory that
+ *      page will need to be coded in here.  Then Gatsby will make that page a sub-directory of
+ *      the directory this index page is sitting in.  Don't take this file out of the folder it's
+ *      in until I'm absolutely sure I know how I want to arrange the pathways for main and other
+ *      projects when this site is fully-realized.
+ */
+
+
 export default function Projects({data}) {
     const projects = data.allMarkdownRemark.nodes;
 

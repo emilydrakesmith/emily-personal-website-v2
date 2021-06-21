@@ -17,6 +17,15 @@ export default function About() {
     Outside of work I love spending time with my wife.  We greatly enjoy playing board games, camping in our trailer, cooking, the New York Rangers, fishing, and wine tasting.<br/><br/>
     Please look around this site to get to know me better.  I'm currently a free agent looking for my next opportunity for professional growth and am open to relocation.  Don't hesitate reach out if you'd like to add me to your team.</p>;
 
+    const skills = 
+        <>
+            <p>JavaScript ES6+  {bar}  HTML5  {bar}  CSS3  {bar}  Python3</p>
+            <p>React  {bar}  Gatsby  {bar}  Node.js  {bar}  Express  {bar}  jQuery  {bar}  Django</p>
+            <p>MongoDB  {bar}  Mongoose  {bar}  PostgreSQL  {bar}  GraphQL</p>
+            <p>CLI & Git  {bar}  GitHub  {bar}  Agile Process  {bar}  UX/UI</p>
+            <p>MERN Stack  {bar}  MEN Stack</p>
+        </>;
+
     return (
         <Layout>
             <div className={styles.about_main}>
@@ -33,11 +42,7 @@ export default function About() {
                     <hr />
                 </section>
                 <section className={styles.skills_content}>
-                    <p>JavaScript ES6+  {bar}  HTML5  {bar}  CSS3  {bar}  Python3</p>
-                    <p>React  {bar}  Gatsby  {bar}  Node.js  {bar}  Express  {bar}  jQuery  {bar}  Django</p>
-                    <p>MongoDB  {bar}  Mongoose  {bar}  PostgreSQL  {bar}  GraphQL</p>
-                    <p>CLI & Git  {bar}  GitHub  {bar}  Agile Process  {bar}  UX/UI</p>
-                    <p>MERN Stack  {bar}  MEN Stack</p>
+                    {skills}
                 </section>
             </div>
         </Layout>

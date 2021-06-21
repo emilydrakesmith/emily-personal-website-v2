@@ -134,7 +134,7 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Created a GraphQL query in the `project-details.js` template to retrieve markdown data for each page generated.
 * Pages generated from `project-details.js` template render with data from the correct `.md` file in the `/data/projects` directory.
 
-#### v 2.0.5.0  |  21 June 2021  |  commit --  |  Current Version
+#### v 2.0.5.0  |  21 June 2021  |  commit 40d8f3f48852aad27638085dc61efbbf284d80ce
 * Fix bug where content overflows footer, some pages had a max-height value on the `<main>` which was unnecessary.
 * Added notes to `gatsby-node.js` so I can use the file as a model in future projects.
 * Added *Back to Top* links at the end of every section in this `README.md` file.
@@ -147,6 +147,10 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Completed all styling for `project-detail.js` template-generated pages.
 * Moved the page footer into a new `<Footer />` component.
 * Refactored `<Header />` component to generate navlinks by mapping over an array.
+
+#### v 2.1.0.0  |  21 June 2021  |  commit --  |  Current Version
+* Moved *Skills* data on `/about` page into a variable to be rendered in the function return.
+* Stubbed up `/resources` page with placeholder content.  Developing this page will be the first icebox task.
 
 [Back to Top](#top)
 
@@ -222,8 +226,13 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Host the site on Netlify or research alternatives.
 
 ### Ice Box
-* Use relative postiioning on side navs so they're always visible on the screen.
-* Add mobile-responsiveness to the design.  This will be a goal for shortly after I reach MVP.
+* Consider generating the element `<main>` inside pages loaded to the `<Layout />` component instead of hardcoded inside it.
+  * Each page loaded into `<Layout />` needs to have a top-level `<div>`.  Can't use fragments `<> </>` because I need the top-level `<div>` to have a class for styling purposes.  This feels like an unnecessary wrapper.
+* Generate content for the `/resources` index page.  Currently I'm going live with placeholder content.
+* Split projects into two buckets, *Main* and *Other*.
+  * Main projects will be shown on the `/projects` main index page and linked at `/projects/project-name`
+  * The final link div on the `/projects` index page will be *Other Projects* with an icon.  This will go to another index page at `/projects/other` listing minor projects not central to my portfolio.
+  * The *Other Projects* page may be a single page or it may display links in the same manner as the `/projects` index page and link to projects at `/projects/other/project-name` if that doesn't cause problems for Gatsby.* Add mobile-responsiveness to the design.  This will be a goal for shortly after I reach MVP.
 * Add Google Maps to `/contact` page.  Before doing this I need to decide where to deploy my site and see how they configure hidden data (in this case an API key).  [See here for more information.](https://www.gatsbyjs.com/plugins/gatsby-source-googlemaps-static/)
 * Add Google Analytics to the website.  This should be relatively easy since I already have it set up for my site's previous version.
 * Render the `<Layout>` compoonent using Gatsby Server Rendering APIs. [More info here.](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/)
