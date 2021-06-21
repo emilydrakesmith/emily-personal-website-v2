@@ -152,8 +152,11 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Moved *Skills* data on `/about` page into a variable to be rendered in the function return.
 * Stubbed up `/resources` page with placeholder content.  Developing this page will be the first icebox task.
 
-#### v 2.1.0.1  |  21 June 2021  |  commit --  |  Current Version
+#### v 2.1.0.1  |  21 June 2021  |  commit 2a0057e12748be65d87ad7054b775a977f765ff7
 * Favicon isn't loading on deployed site.  Added a favicon to `<Helmet />` to see if that helps.  This is hard to troubleshoot because I'm getting a favicon on my local machine.
+
+#### v 2.1.0.2  |  21 June 2021  |  commit --  |  Current Version
+* Favicon still isn't loading.  I found information on how to configure `gatsby-plugin-sharp` to load a favicon, let's see if that works.
 
 [Back to Top](#top)
 

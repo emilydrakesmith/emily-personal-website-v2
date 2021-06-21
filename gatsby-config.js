@@ -14,7 +14,12 @@ module.exports = {
   /* Your site config here */
 	plugins: [
 		'gatsby-plugin-react-helmet',				// customize metadata in website's <head> component
-		'gatsby-plugin-sharp',
+		{
+			resolve: 'gatsby-plugin-sharp',
+			options: {
+				icon: `src/images/favicons/favicon-16x16.png`
+			}
+		},
 		'gatsby-transformer-sharp',
 		'gatsby-transformer-remark',            	// creates a graphQL interface for markdown files
 		{
