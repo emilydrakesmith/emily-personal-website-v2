@@ -21,16 +21,16 @@ html {
 
 body {
     background-color: #181818;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
 }
 
-#___gatsby {                    /* gatbsy wrapper around content */
-    height: 100%;               /* make wrapper full-size of parent container */
+#___gatsby {                        /* gatbsy wrapper around content */
+    min-height: 100%;               /* make wrapper full-size of parent container */
 }
 
-#gatsby-focus-wrapper {         /* gatbsy wrapper around content */
-    height: 100%;               /* make wrapper full-size of parent container */
+#gatsby-focus-wrapper {             /* gatbsy wrapper around content */
+    min-height: 100%;               /* make wrapper full-size of parent container */
 }
 
 /* this is the top-level content container */
@@ -42,8 +42,7 @@ body {
         'header header header'
         'left-sidenav main right-sidenav'
         'footer footer footer';
-    height: 100%;
-    margin: 0 auto;
+    min-height: 100vh;
     padding: 10px;
 }
 
@@ -125,11 +124,15 @@ header h1:hover {
 
 #sidenav {
     grid-area: left-sidenav;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 10vh;
 }
 
 #sidenav img {
@@ -147,19 +150,20 @@ header h1:hover {
 
 #main {
     grid-area: main;                    /* place content in the grid area named 'main' */
+    padding-bottom: 30px;
 }
 
 #right-sidenav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
     writing-mode: vertical-rl;
     letter-spacing: 2px;
-    padding-bottom: 10vh;
 }
 
 #right-sidenav a {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 50px;
     padding: 8px 6px;
     color: #A100F2;
 }

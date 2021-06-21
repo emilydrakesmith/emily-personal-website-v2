@@ -2,11 +2,17 @@
 title: Tic Tac Toe
 stack: JavaScript HTML CSS
 slug: tic-tac-toe
-main: false
+main: true
+sequence: 5
 fullImg: ../../images/projects/full/tic-tac-toe.png
 thumbImg: ../../images/projects/thumb/tic-tac-toe.png
+app: https://mhsmith321.github.io/GA-tic-tac-toe
+repo: https://github.com/mhsmith321/GA-tic-tac-toe
 ---
 
-Bacon ipsum dolor amet turkey ribeye burgdoggen rump landjaeger t-bone shank tongue ham strip steak corned beef. Chicken drumstick strip steak turducken biltong shoulder. Drumstick buffalo prosciutto burgdoggen shank ball tip bacon biltong turkey picanha ground round beef ribs pancetta filet mignon. Bacon tail biltong ground round picanha frankfurter burgdoggen ham hock turkey beef ribs. Flank brisket short loin turducken beef ribs boudin capicola pork meatball. Salami shankle drumstick corned beef capicola, porchetta pastrami.
+### About
+A simple Tic Tac Toe game, and a great example of a simple project with outstanding execution.  The code is clean and easy to follow, the documentation is extensive, and the design is crisp and user-intuitive.
 
-Pork belly capicola ball tip buffalo, landjaeger tail tenderloin shoulder porchetta sausage pancetta pig doner ham hock. Pork drumstick chuck tail ground round shank chislic beef ribs rump prosciutto pastrami. Chislic chuck ball tip ribeye andouille short loin tongue biltong venison. Ground round ball tip salami, burgdoggen bresaola jerky pig. Pork chop jowl pancetta short loin pork, venison tail fatback rump chuck tongue hamburger.
+### Tech Stack
+JavaScript ES6+  
+HTML5 • CSS3  

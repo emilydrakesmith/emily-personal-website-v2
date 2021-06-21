@@ -3,8 +3,18 @@ title: Job Hound
 stack: Node Express MongoDB
 slug: job-hound
 main: true
+sequence: 2
 fullImg: ../../images/projects/full/job-hound.png
 thumbImg: ../../images/projects/thumb/job-hound.png
+app: https://jobhound-1-mhs.herokuapp.com
+repo: https://github.com/mhsmith321/GA-project-2-job-hound
 ---
 
-Job Hound is an app for a working professional to organize data related to an active job search.  It allows users to enter vital information about jobs they've applied to as well as organize information about contacts and follow-up activities.  Applying for jobs in the modern world is a numbers game, and Job Hound organizes data and makes it clear to see at a glance where your job search stands and what you need to do.
+### About
+
+Job Hound is an app to organize data related to an active job search.  Users can enter data about applications and track contacts & follow-up activities.  Applying for jobs is a numbers game, and Job Hound shows at a glance where your search stands.
+
+### Tech Stack
+Node.js • Express • EJS  
+MongoDB • Mongoose  
+Google OAuth

@@ -3,10 +3,20 @@ title: ScriptStud.io
 stack: React Node Express MongoDB
 slug: script-studio
 main: true
+sequence: 1
 fullImg: ../../images/projects/full/script-studio.png
 thumbImg: ../../images/projects/thumb/script-studio.png
+app: http://script-studio.herokuapp.com/
+repo: https://github.com/ScriptStud-io/ScriptStud.io
 ---
 
-Bacon ipsum dolor amet turkey ribeye burgdoggen rump landjaeger t-bone shank tongue ham strip steak corned beef. Chicken drumstick strip steak turducken biltong shoulder. Drumstick buffalo prosciutto burgdoggen shank ball tip bacon biltong turkey picanha ground round beef ribs pancetta filet mignon. Bacon tail biltong ground round picanha frankfurter burgdoggen ham hock turkey beef ribs. Flank brisket short loin turducken beef ribs boudin capicola pork meatball. Salami shankle drumstick corned beef capicola, porchetta pastrami.
+### About
 
-Pork belly capicola ball tip buffalo, landjaeger tail tenderloin shoulder porchetta sausage pancetta pig doner ham hock. Pork drumstick chuck tail ground round shank chislic beef ribs rump prosciutto pastrami. Chislic chuck ball tip ribeye andouille short loin tongue biltong venison. Ground round ball tip salami, burgdoggen bresaola jerky pig. Pork chop jowl pancetta short loin pork, venison tail fatback rump chuck tongue hamburger.
+All developers use Google to troubleshoot code, but most places on the internet where they might find help are designed around the sharing of code that's broken, poorly-written, or otherwise problematic. ScriptStud.io is a website by and for developers to document, save, and share examples of well-written functional code.
+
+### Tech Stack
+Node.js • Express  
+MongoDB • Mongoose  
+React  
+Tailwind CSS • Prism.js  
+JWT Authentication

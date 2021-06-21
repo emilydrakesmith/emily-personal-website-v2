@@ -9,6 +9,7 @@ import {Helmet} from "react-helmet";
 import Header from './Header';
 import LeftSidenav from './LeftSidenav';
 import RightSidenav from './RightSidenav';
+import Footer from './Footer';
 import '../styles/global.css';
 /******* END: IMPORT LOCAL FILES *******/
 
@@ -18,15 +19,13 @@ export default function Layout({children}) {
         query siteInfo {
             site {
                 siteMetadata {
-                    title,
-                    copyright
+                    title
                 }
             }
         }
     `);
 
     const {title} = data.site.siteMetadata;
-    const {copyright} = data.site.siteMetadata;
 
     return (
         <div id='layout'>
@@ -41,9 +40,7 @@ export default function Layout({children}) {
                 {children}
             </main>
             <RightSidenav />
-            <footer id='footer'>
-                <p>{copyright}</p>
-            </footer>
+            <Footer />
         </div>
     );
 }

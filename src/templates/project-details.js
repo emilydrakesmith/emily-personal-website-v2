@@ -13,19 +13,29 @@ import * as styles from '../styles/project-details.module.css';
 
 export default function ProjectDetails({data}) {
     const {html} = data.markdownRemark;
-    const {title, stack} = data.markdownRemark.frontmatter;
+    const {title, app, repo} = data.markdownRemark.frontmatter;
     const {fluid} = data.markdownRemark.frontmatter.fullImg.childImageSharp;
 
     return (
         <Layout>
-            <div className={styles.details}>
-                <h2>{title}</h2>
-                <h3>{stack}</h3>
-                <div className={styles.featured}>
-                    <Img fluid={fluid} />
-                </div>
-                <div className={styles.html} dangerouslySetInnerHTML={{__html: html}} />
-            </div>
+            <article className={styles.details}>
+                <h1>{title}</h1>
+                <hr />
+                <section className={styles.details_content}>
+                    <div className={styles.picture_frame}>
+                        <Img fluid={fluid} />
+                    </div>
+                    <div className={styles.details_text} >
+                        <div className={styles.html} dangerouslySetInnerHTML={{__html: html}} />
+                        <div className={styles.details_linkdiv}>
+                            <a href={app} target="_blank" rel="noreferrer">Link to Live App</a>
+                        </div>
+                        <div className={styles.details_linkdiv}>
+                            <a href={repo} target="_blank" rel="noreferrer">Link to Repo</a>
+                        </div>
+                    </div>
+                </section>
+            </article>
         </Layout>
     );
 }
@@ -35,8 +45,9 @@ export const query = graphql`
         markdownRemark(frontmatter: {slug: {eq: $slug}}) {
             html
             frontmatter {
-                stack
                 title
+                app
+                repo
                 fullImg {
                     childImageSharp {
                         fluid {

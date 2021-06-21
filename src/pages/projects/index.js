@@ -31,9 +31,10 @@ export default function Projects({data}) {
                             <h4>{project.frontmatter.stack}</h4>
                         </Link>
                     ))}
-                    <Link to='/projects/other-projects'>
+                    {/* TODO: make an 'other projects page featuring minor projects */}
+                    {/* <Link to='/projects/other-projects'>
                         <h3>Other Projects</h3>
-                    </Link>
+                    </Link> */}
                 </section>
             </div>
         </Layout>
@@ -43,13 +44,17 @@ export default function Projects({data}) {
 // export page query
 export const query = graphql`
     query MainProjects {
-        allMarkdownRemark(filter: {frontmatter: {main: {eq: true}}}) {
+        allMarkdownRemark(
+            filter: {frontmatter: {main: {eq: true}}}
+            sort: {fields: frontmatter___sequence}
+            ) {
             nodes {
                 frontmatter {
                     main
                     slug
                     stack
                     title
+                    sequence
                     fullImg {
                         childImageSharp {
                             fluid {

@@ -3,10 +3,17 @@ title: SoQuiz.me
 stack: Python Django Materialize
 slug: so-quiz-me
 main: true
+sequence: 6
 fullImg: ../../images/projects/full/so-quiz-me.png
 thumbImg: ../../images/projects/thumb/so-quiz-me.png
+app: https://mhsmith321.github.io/Thinkful-Quiz-App
+repo: https://github.com/mhsmith321/Thinkful-Quiz-App
 ---
 
-Bacon ipsum dolor amet turkey ribeye burgdoggen rump landjaeger t-bone shank tongue ham strip steak corned beef. Chicken drumstick strip steak turducken biltong shoulder. Drumstick buffalo prosciutto burgdoggen shank ball tip bacon biltong turkey picanha ground round beef ribs pancetta filet mignon. Bacon tail biltong ground round picanha frankfurter burgdoggen ham hock turkey beef ribs. Flank brisket short loin turducken beef ribs boudin capicola pork meatball. Salami shankle drumstick corned beef capicola, porchetta pastrami.
+### About
 
-Pork belly capicola ball tip buffalo, landjaeger tail tenderloin shoulder porchetta sausage pancetta pig doner ham hock. Pork drumstick chuck tail ground round shank chislic beef ribs rump prosciutto pastrami. Chislic chuck ball tip ribeye andouille short loin tongue biltong venison. Ground round ball tip salami, burgdoggen bresaola jerky pig. Pork chop jowl pancetta short loin pork, venison tail fatback rump chuck tongue hamburger.
+A work in progress!  Previously I built a simple front-end Quiz App using jQuery.  Always linking the design but feeling this would be better realized with back-end processing and CRUD functionality, I'm currently redeveloping it to work with a Python back-end married to a React front-end.  The links go to the original completed project but the new work in progress is in my GitHub as well.
+
+### Stack
+JavaScript ES6+ • jQuery  
+HTML5 • CSS3

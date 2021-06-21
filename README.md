@@ -1,6 +1,10 @@
+<a id='top'></a>
+
 # Introduction
 
 This is the remote repository for the version 2.0 of my personal website, to be hosted at martysmith.tech.  If you are reading this text, the website coded here is under development and has not yet been deployed.  You can view the current iteration of my website at [martysmith.tech](https://martysmith.tech/) now and see the [code in its repository](https://github.com/mhsmith321/Marty-Smith-Personal-Homepage) here.
+
+[Back to Top](#top)
 
 # Version Notes
 
@@ -126,9 +130,25 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Stubbed up a template form `project-details.js` to layout individual project pages.
 * Initialized a `gatsby-node.js` file to generate pages using template `project-details.js` and markdown data from `/src/data/projects`.
 
-#### v 2.0.4.8  |  20 June 2021  |  commit --  |  Current Version
+#### v 2.0.4.8  |  20 June 2021  |  commit 9e13ce7ddf93da23dd85095092f5f211aef81191
 * Created a GraphQL query in the `project-details.js` template to retrieve markdown data for each page generated.
 * Pages generated from `project-details.js` template render with data from the correct `.md` file in the `/data/projects` directory.
+
+#### v 2.0.5.0  |  21 June 2021  |  commit --  |  Current Version
+* Fix bug where content overflows footer, some pages had a max-height value on the `<main>` which was unnecessary.
+* Added notes to `gatsby-node.js` so I can use the file as a model in future projects.
+* Added *Back to Top* links at the end of every section in this `README.md` file.
+* Added `sequence` field to project markdown frontmatter to use for sorting in GraphQL query.
+* Built out content in `.md` files for project data for projects I'm currently displaying.
+* Added some mobile-responsiveness to pages in `/projects` directory.
+  * Index page in changes spacing on smaller screens so that content is evenly distributed.
+  * Project details pages switch to column view on smaller screens with text below the image and content centered.
+* Completed formatting data in `.md` files for project detail pages.
+* Completed all styling for `project-detail.js` template-generated pages.
+* Moved the page footer into a new `<Footer />` component.
+* Refactored `<Header />` component to generate navlinks by mapping over an array.
+
+[Back to Top](#top)
 
 # Tech Framework
 
@@ -186,6 +206,8 @@ This is the remote repository for the version 2.0 of my personal website, to be 
   * For some reason keys and values which are strings must be written with double-quotes (single-quotes will throw errors).
 * [Full documentation is available here.](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest)
 
+[Back to Top](#top)
+
 # Future Plans
 
 ### Goals for MVP
@@ -196,7 +218,6 @@ This is the remote repository for the version 2.0 of my personal website, to be 
     * incorporate into *Tech Framework*?
   * *Contribute* with license info, permission to reuse, and my own contact information
   * *Screenshots* page (instructional video too?)
-  * *Back to Top* links after all sections of this document
 * Consider a `/src/notes` directory with `.txt` files to hold larger bodies of text that don't warrant full markdown-syntax pages.  This will greatly simplify updating content text on the website.
 * Host the site on Netlify or research alternatives.
 
@@ -207,6 +228,8 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Add Google Analytics to the website.  This should be relatively easy since I already have it set up for my site's previous version.
 * Render the `<Layout>` compoonent using Gatsby Server Rendering APIs. [More info here.](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/)
 
+[Back to Top](#top)
+
 # Special Thanks
 * I built this website with Gatsby.js, a free single-site generator resource.  I used the [Hello World](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world) starter page which is intended as a truly "blank slate" layout.
 * This is my first independent Gatsby.js project.  To learn Gatsby I've followed [the extensive documentation](https://www.gatsbyjs.com/docs/) from [the creators](https://www.gatsbyjs.com/about/) as well as the free [Net Ninja Gatsby Tutorial](https://www.youtube.com/watch?v=Qms4k6y7OgI&list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB) series on YouTube created by the [Net Ninja Shaun](https://github.com/iamshaunjp).
@@ -216,6 +239,8 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Formatting this `README.md` file was easy with the help of the [Markdown Live Preview](https://markdownlivepreview.com/) tool and GitHub Guide's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) page.
 * I inserted metadata into my page's `<head>` using [React Helmet](https://www.gatsbyjs.com/docs/add-page-metadata/), a free utility created and maintained by [the NFL](https://github.com/nfl/react-helmet).
 * The icons used on this site were acquired free from [flaticon.com](https://www.flaticon.com/) with permission to use so long as proper attribution is provided in documentation.
+
+[Back to Top](#top)
 
 # Planning & Development Notes
 

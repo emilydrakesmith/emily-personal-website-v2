@@ -2,12 +2,11 @@
 .home_main {
     display: grid;
     grid-template-columns: 2.5fr 9fr 2fr;
-    grid-template-rows: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr ;
     grid-template-areas: 
         'top-buffer top-buffer top-buffer'
         'left-buffer intro right-buffer'
-        'left-buffer nav right-buffer'
-        'bottom-buffer bottom-buffer bottom-buffer';
+        'left-buffer nav right-buffer';
 }
 /******* END: PARENT CONTAINER *******/
 
