@@ -11,6 +11,7 @@ import LeftSidenav from './LeftSidenav';
 import RightSidenav from './RightSidenav';
 import Footer from './Footer';
 import '../styles/global.css';
+import favicon from '../images/favicons/favicon.ico';
 /******* END: IMPORT LOCAL FILES *******/
 
 
@@ -31,7 +32,7 @@ export default function Layout({children}) {
         <div id='layout'>
             <Helmet>
                 <link rel="canonical" href="https://martysmith.tech" />
-                <link rel="icon" href="../images/favicons/favicon-16x16.png" type="image/png" />
+                <link rel="icon" href={favicon} type="image/x-icon" />
                 <title>{title}</title>
             </Helmet>
             <Header />

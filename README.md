@@ -162,8 +162,11 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Deleted the full web manifest since I can't tell which three lines are throwing errors.  I can reinstate it later.
 * Created a custom 404 page.
 
-#### v 2.1.0.2  |  21 June 2021  |  commit 4bf66b580a4b9402e9ebb7f250c99c8ef1635e72
+#### v 2.1.0.2  |  21 June 2021  |  commit e82dcda6a99080d445182414bcfe59074f4a4336
 * Deleted link to the web manifest from `<Helmet />` component.
+
+#### v 2.1.0.2  |  21 June 2021  |  commit --  |  Current Version
+* Imported `favicon.ico` to `<Layout />` and linked in `<Helmet />` with `200` status code in local environment.
 
 [Back to Top](#top)
 
