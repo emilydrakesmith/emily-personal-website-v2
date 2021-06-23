@@ -13,6 +13,10 @@ export default function Header() {
     const navLinks = destinations.map((dest, idx) => <Link to={dest.path} id={dest.idString} className='navlink' key={idx}>{dest.text}</Link>);
 
     const [open, setOpen] = useState(false);
+
+    const handleToggle = () => {
+        setOpen(!open);
+    }
     
     return (
         <header>
@@ -24,14 +28,15 @@ export default function Header() {
             </nav>
             
             <nav id="mobile-header-nav">
-                <section>
-                    X
+                <section id='hamburger' onClick={() => handleToggle()}>
+                    <div className='burger-bar'></div>
+                    <div className='burger-bar'></div>
+                    <div className='burger-bar'></div>
                 </section>
-                <section id='mobile-header-menu'>
-
+                <section id='mobile-header-menu' className={open ? 'null' : 'hide-div'}>
+                    {navLinks}
                 </section>
             </nav>
-
         </header>
     );
 }
