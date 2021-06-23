@@ -165,8 +165,12 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### v 2.1.0.2  |  21 June 2021  |  commit e82dcda6a99080d445182414bcfe59074f4a4336
 * Deleted link to the web manifest from `<Helmet />` component.
 
-#### v 2.1.0.2  |  21 June 2021  |  commit --  |  Current Version
+#### v 2.1.0.2  |  21 June 2021  |  commit e1efc5401dfb33ba1da0a161ed8ab287676167d6
 * Imported `favicon.ico` to `<Layout />` and linked in `<Helmet />` with `200` status code in local environment.
+  * **FUTURE REFERENCE**: This was it!
+
+#### v 2.1.1.0  |  21 June 2021  |  commit e1efc5401dfb33ba1da0a161ed8ab287676167d6  |  Current Version
+* Nav links are now generated outside the render function in `<Header />` and loaded by it.
 
 [Back to Top](#top)
 

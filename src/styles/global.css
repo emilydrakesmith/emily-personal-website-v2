@@ -122,6 +122,16 @@ header h1:hover {
     text-decoration-thickness: 2px;
 }
 
+#mobile-header-nav {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+
+#mobile-header-menu {
+    
+}
+
 #sidenav {
     grid-area: left-sidenav;
     position: fixed;
@@ -186,3 +196,18 @@ footer p {
     color: #BBB;
     margin: 0 auto;
 }
+
+
+/******* START: TOGGLE HAMBURGER MENU ON SMALL SCREENS *******/
+@media (min-width: 820px) {
+    #mobile-header-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 820px) {
+    #header-nav {
+        display: none;
+    }
+}
+/******* END: TOGGLE HAMBURGER MENU ON SMALL SCREENS *******/

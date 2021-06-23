@@ -78,3 +78,9 @@
     font-size: 22px;
     color: #FF8B00;
 }
+
+@media (max-width: 600px) {
+    .about_main {
+        padding: 20px;
+    }
+}

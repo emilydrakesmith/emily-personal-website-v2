@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'gatsby';
+
 
 export default function Header() {
     const destinations = [
@@ -9,6 +10,9 @@ export default function Header() {
         {path: '/resources', idString: 'navlink-resources', text: 'Resources'},
         {path: '/contact', idString: 'navlink-contact', text: 'Contact'}
     ];
+    const navLinks = destinations.map((dest, idx) => <Link to={dest.path} id={dest.idString} className='navlink' key={idx}>{dest.text}</Link>);
+
+    const [open, setOpen] = useState(false);
     
     return (
         <header>
@@ -16,8 +20,18 @@ export default function Header() {
                 <h1>M</h1>
             </Link>
             <nav id='header-nav'>
-                {destinations.map((dest, idx) => <Link to={dest.path} id={dest.idString} className='navlink' key={idx}>{dest.text}</Link>)}
+                {navLinks}
             </nav>
+            
+            <nav id="mobile-header-nav">
+                <section>
+                    X
+                </section>
+                <section id='mobile-header-menu'>
+
+                </section>
+            </nav>
+
         </header>
     );
 }
