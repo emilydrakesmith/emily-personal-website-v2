@@ -1,5 +1,7 @@
+/******* START: IMPORT REACT AND DONGLES *******/
 import React, {useState} from 'react';
 import {Link} from 'gatsby';
+/******* END: IMPORT REACT AND DONGLES *******/
 
 
 export default function Header() {

@@ -169,8 +169,16 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Imported `favicon.ico` to `<Layout />` and linked in `<Helmet />` with `200` status code in local environment.
   * **FUTURE REFERENCE**: This was it!
 
-#### v 2.1.1.0  |  21 June 2021  |  commit e1efc5401dfb33ba1da0a161ed8ab287676167d6  |  Current Version
+#### v 2.1.1.0  |  21 June 2021  |  commit --  |  Current Version
 * Nav links are now generated outside the render function in `<Header />` and loaded by it.
+* Added comments to section off import sections of `Header.js` and `Footer.js` files.
+* Uninstalled dependencies I'm not using:
+  * `@fortawesome/fontawesome-svg-core`
+  * `@fortawesome/free-solid-svg-icons`
+  * `@fortawesome/react-fontawesome`
+  * `bootstrap`
+  * `react-burger-menu`
+* Completed mobile responsiveness for `/about` index page.
 
 [Back to Top](#top)
 

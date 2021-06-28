@@ -13,6 +13,7 @@
 }
 
 .about_main hr {
+    margin-bottom: 4px;
     border: 1px solid #FF8B00;
     background-color: #FF8B00;
 }
@@ -33,14 +34,14 @@
     color: #8c959c;
 }
 
-.self_portrait {
+.self_portrait_desktop {
     background: 
-    /* top, transparent red, faked with gradient */ 
+    /* top: transparent orange, faked with gradient */ 
     linear-gradient(
         rgba(255, 140, 0, 0.4), 
         rgba(255, 140, 0, 0.4)
     ),
-    /* bottom, image */
+    /* bottom: image */
     url(../images/pictures/self-portrait-narrow.jpeg);
     width: 291px;
     height: 314px;
@@ -49,15 +50,19 @@
     float: right;
 }
 
-.self_portrait:hover {
+.self_portrait_desktop:hover {
     background: 
-    /* top, transparent red, faked with gradient */ 
+    /* top: transparent orange, faked with gradient */ 
     linear-gradient(
         rgba(255, 140, 0, 0), 
         rgba(255, 140, 0, 0)
     ),
-    /* bottom, image */
+    /* bottom: image */
     url(../images/pictures/self-portrait-narrow.jpeg);
+}
+
+.self_portrait_mobile {
+    display: none;
 }
 
 .about_content img {
@@ -70,17 +75,78 @@
     color: #8c959c;
 }
 
+.skills_mobile {
+    display: none;
+}
+
 .skills_content p {
     margin: 6px 0;
 }
 
-.orange_bar {
+.orange_separator {
     font-size: 22px;
     color: #FF8B00;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .about_main {
         padding: 20px;
+    }
+
+    .about_header {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .self_portrait_desktop {
+        display: none;
+    }
+
+    .picture_frame_mobile {
+        width: 50%;
+        min-width: 200px;
+        float: right;
+    }
+
+    .self_portrait_mobile {
+        display: flex;
+        max-width: 260px;
+        margin-left: 12px;
+        border: 2px solid #BBB;
+        border-radius: 4px;
+    }
+
+    .skills_desktop {
+        display: none;
+    }
+
+    .skills_mobile {
+        display: block;
+    }
+
+    .skills_mobile > p {
+        padding-bottom: 8px;
+    }
+}
+
+@media (max-width: 580px) {
+    .about_main {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .picture_frame_mobile {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .self_portrait_mobile {
+        margin: 0 auto;
+        margin-bottom: 8px;
+    }
+
+    .skills_content {
+        font-size: 14px;
+        letter-spacing: 1.5px;
     }
 }
