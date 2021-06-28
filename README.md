@@ -188,8 +188,12 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### v 2.1.2.0  |  28 June 2021  |  commit 79dc2e07fc1841bb5d0cf37492c8c36ed759c11a
 * Minor refactor to how I call my mobile-version portrait to fix an error on Netlify.
 
-#### v 2.1.2.0  |  28 June 2021  |  commit --  |  Current Version
+#### v 2.1.2.0  |  28 June 2021  |  commit caf20047f70ce647914fe712783d902a4030ded1
 * Refactor to graphql query to try to fix the same error from the previous commit.
+  * **FUTURE REFERENCE** *This was it!*  The problem was using an `id` in the graphql query.  Using the image `src` as a filter worked.
+
+#### v 2.1.2.1  |  28 June 2021  |  commit --  |  Current Version
+* Replaced the HTML/CSS hamburger menu icon with an SVG.
 
 [Back to Top](#top)
 

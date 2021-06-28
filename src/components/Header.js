@@ -4,6 +4,11 @@ import {Link} from 'gatsby';
 /******* END: IMPORT REACT AND DONGLES *******/
 
 
+/******* START: IMPORT LOCAL FILES *******/
+import hamburger_icon from '../images/icons/hamburger-icon.svg';
+/******* END: IMPORT LOCAL FILES *******/
+
+
 export default function Header() {
     const destinations = [
         {path: '/', idString: 'navlink-home', text: 'Home'},
@@ -30,11 +35,7 @@ export default function Header() {
             </nav>
             
             <nav id="mobile-header-nav">
-                <section id='hamburger' onClick={() => handleToggle()}>
-                    <div className='burger-bar'></div>
-                    <div className='burger-bar'></div>
-                    <div className='burger-bar'></div>
-                </section>
+                <img src={hamburger_icon}  alt='hamburger menu icon' id='hamburger' onClick={() => handleToggle()}/>
                 <section id='mobile-header-menu' className={open ? 'null' : 'hide-div'}>
                     {navLinks}
                 </section>
