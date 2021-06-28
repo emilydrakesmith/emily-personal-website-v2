@@ -172,7 +172,10 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### v 2.1.1.0  |  22 June 2021  |  commit afc75d45d894e1bbad9bcd8785f701166425023f
 * Nav links are now generated outside the render function in `<Header />` and loaded by it.
 
-#### v 2.1.1.1  |  21 June 2021  |  commit 677899c94457edf157d691be8a29870b7fa66ed8
+#### v 2.1.1.1  |  23 June 2021  |  commit 677899c94457edf157d691be8a29870b7fa66ed8
+* Built hamburger menu for mobile version of site.
+
+#### v 2.1.2.0  |  23 June 2021  |  commit 2d62efcc5b967b064f390501077cd5416095c8c8
 * Added comments to section off import sections of `Header.js` and `Footer.js` files.
 * Uninstalled dependencies I'm not using:
   * `@fortawesome/fontawesome-svg-core`
@@ -182,8 +185,11 @@ This is the remote repository for the version 2.0 of my personal website, to be 
   * `react-burger-menu`
 * Completed mobile responsiveness for `/about` index page.
 
-#### v 2.1.1.1  |  21 June 2021  |  commit --  |  Current Version
+#### v 2.1.2.0  |  28 June 2021  |  commit 79dc2e07fc1841bb5d0cf37492c8c36ed759c11a
 * Minor refactor to how I call my mobile-version portrait to fix an error on Netlify.
+
+#### v 2.1.2.0  |  28 June 2021  |  commit --  |  Current Version
+* Refactor to graphql query to try to fix the same error from the previous commit.
 
 [Back to Top](#top)
 

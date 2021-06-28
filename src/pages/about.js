@@ -80,7 +80,9 @@ export default function About({data}) {
 
 export const query = graphql`
     query Portrait {
-        imageSharp(id: {eq: "b5b460f1-9594-543d-90c1-217c5b3f3edc"}) {
+        imageSharp(
+            fluid: {src: {eq: "/static/c0192249c8b42d3e5cc638c21d0a7e1b/385a6/self-portrait-narrow.jpg"}}
+        ) {
             id
             fluid {
                 ...GatsbyImageSharpFluid
