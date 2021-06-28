@@ -175,7 +175,7 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### v 2.1.1.1  |  23 June 2021  |  commit 677899c94457edf157d691be8a29870b7fa66ed8
 * Built hamburger menu for mobile version of site.
 
-#### v 2.1.2.0  |  23 June 2021  |  commit 2d62efcc5b967b064f390501077cd5416095c8c8
+#### v 2.1.2.0  |  28 June 2021  |  commit 2d62efcc5b967b064f390501077cd5416095c8c8
 * Added comments to section off import sections of `Header.js` and `Footer.js` files.
 * Uninstalled dependencies I'm not using:
   * `@fortawesome/fontawesome-svg-core`
@@ -192,8 +192,11 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 * Refactor to graphql query to try to fix the same error from the previous commit.
   * **FUTURE REFERENCE** *This was it!*  The problem was using an `id` in the graphql query.  Using the image `src` as a filter worked.
 
-#### v 2.1.2.1  |  28 June 2021  |  commit --  |  Current Version
+#### v 2.1.2.1  |  28 June 2021  |  commit ab2c29d9a2f03b72111f2ecf0e213fc45cdd8ad0
 * Replaced the HTML/CSS hamburger menu icon with an SVG.
+
+#### v 2.1.3.0  |  28 June 2021  |  commit --  |  Current Version
+* Add styling to links in the hamburger menu.
 
 [Back to Top](#top)
 

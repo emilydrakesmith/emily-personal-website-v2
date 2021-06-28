@@ -17,7 +17,7 @@ export default function Header() {
         {path: '/resources', idString: 'navlink-resources', text: 'Resources'},
         {path: '/contact', idString: 'navlink-contact', text: 'Contact'}
     ];
-    const navLinks = destinations.map((dest, idx) => <Link to={dest.path} id={dest.idString} className='navlink' key={idx}>{dest.text}</Link>);
+    const links = destinations.map((dest, idx) => <Link to={dest.path} id={dest.idString} className='navlink' key={idx}>{dest.text}</Link>);
 
     const [open, setOpen] = useState(false);
 
@@ -31,13 +31,13 @@ export default function Header() {
                 <h1>M</h1>
             </Link>
             <nav id='header-nav'>
-                {navLinks}
+                {links}
             </nav>
             
             <nav id="mobile-header-nav">
                 <img src={hamburger_icon}  alt='hamburger menu icon' id='hamburger' onClick={() => handleToggle()}/>
                 <section id='mobile-header-menu' className={open ? 'null' : 'hide-div'}>
-                    {navLinks}
+                    {links}
                 </section>
             </nav>
         </header>

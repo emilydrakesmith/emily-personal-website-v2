@@ -137,24 +137,25 @@ header h1:hover {
     height: 40px;
 }
 
-.burger-bar {
-    width: 40px;
-    height: 5px;
-    border-radius: 5px;
-    transform-origin: 1px;
-    position: relative;
-    background-color: #BBB;
-}
-
 .hide-div {
     display: none !important;
 }
 
 #mobile-header-menu {
+    width: 120px;
+    margin-top: 6px;
+    background-color: #212529;
+    border: 2px solid #E40203;
+    border-radius: 4px;
+}
+
+#mobile-header-menu a {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    width: 10rem;
+    justify-content: right;
+    align-items: right;
+    padding: 3px;
+    font-weight: 600;
 }
 
 #sidenav {
