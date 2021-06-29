@@ -67,6 +67,11 @@
     word-spacing: 14px;
 }
 
+.yellow_separator {
+    font-size: 22px;
+    color: #FEED00;
+}
+
 @media (max-width: 1250px) {
     .project_previews {
         justify-content: space-around;
@@ -83,15 +88,13 @@
     }
 
     .project_previews > a {
-        /* display: flex;
-        flex-direction: column; */
         text-align: center;
         margin: 16px 0;
         padding: 12px;
         width: 240px;
         height: 240px;
         color: #8C959C;
-        /* outline: 3px solid red; */
+
         border-radius: 8px;
     }
 

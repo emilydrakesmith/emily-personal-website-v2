@@ -9,7 +9,7 @@
 /******* END: PARENT CONTAINER *******/
 
 .details > h1 {
-    font-size: 45px !important;
+    font-size: 45px;
     color: #BBB;
 }
 
@@ -100,5 +100,43 @@
         width: 70%;
         align-self: center;
         margin-bottom: 20px;
+    }
+
+    .html > p:last-child {
+        text-align: center;
+    }
+}
+
+@media (max-width: 680px) {
+    .details {
+        padding: 0;
+    }
+
+    .details_text {
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .details_linkdiv {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 620px) {
+    .details_linkdiv {
+        font-size: 12px;
+    }
+
+    .details > h1 {
+        align-self: center;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 370px) {
+    .details_linkdiv {
+        font-size: 10px;
     }
 }

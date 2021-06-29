@@ -24,6 +24,8 @@ import * as styles from '../../styles/projects.module.css';
 
 export default function Projects({data}) {
     const projects = data.allMarkdownRemark.nodes;
+    // TODO: format tech stack data with bullets:
+    // const bullet = <span className={styles.yellow_separator}> • </span>;
 
 	return (
         <Layout>
