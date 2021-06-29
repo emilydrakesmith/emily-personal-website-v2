@@ -198,9 +198,13 @@ This is the remote repository for the version 2.0 of my personal website, to be 
 #### v 2.1.3.0  |  28 June 2021  |  commit 161bd7cd0ba61edb0f1c7b399fb55729c594c03e
 * Add styling to links in the hamburger menu.
 
-#### v 2.1.3.1  |  28 June 2021  |  commit --  |  Current Version
+#### v 2.1.4.0  |  28 June 2021  |  commit b44af9a8ca387954ffa2b29c56e2400f3578e6e1
 * Refactor `/` main index page to use flexbox instead of grid.
 * Add mobile responsiveness to `/` main index page.
+
+#### v 2.1.5.0  |  28 June 2021  |  commit --  |  Current Version
+* Reduced text size on index page to fit on more phone screens without wrapping.
+* Completed mobile responsiveness for `/projects` index page.
 
 [Back to Top](#top)
 

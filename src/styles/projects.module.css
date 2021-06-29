@@ -71,7 +71,35 @@
     .project_previews {
         justify-content: space-around;
     }
+
     .project_previews > a {
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    .projects_main {
+        padding: 0;
+    }
+
+    .project_previews > a {
+        /* display: flex;
+        flex-direction: column; */
+        text-align: center;
+        margin: 16px 0;
+        padding: 12px;
+        width: 240px;
+        height: 240px;
+        color: #8C959C;
+        /* outline: 3px solid red; */
+        border-radius: 8px;
+    }
+
+    .picture_frame {
+        margin: 8px;
+        width: 160px;
+        height: 160px;
+        border: 2px solid #BBB;
+        border-radius: 4px;
     }
 }
