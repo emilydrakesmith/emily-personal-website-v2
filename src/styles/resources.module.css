@@ -42,10 +42,15 @@
 
     .resources_main h1 {
         font-size: 30px;
-        text-align: center;
     }
 
     .resources_content > p {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resources_main h1 {
+        text-align: center;
     }
 }

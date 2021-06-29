@@ -13,13 +13,13 @@ import twitter_solid_icon from '../images/icons/twitter-solid-icon.svg';
 
 
 export default function Contact() {
-	const formPreviewText = 'Before sending me a message know that you risk it being missed amongst the 10-20 spam messages this form generates daily.  Email and LinkedIn are the best ways to contact me.';
+	const formPreviewText = 'Before sending a note realize you risk it being missed amongst the 10-20 spam messages this form generates daily.  Email & LinkedIn are the best ways to contact me.';
 
     return (
         <Layout>
             <div className={styles.contact_main}>
                 <section className={styles.contact_header}>
-                    <h1>Direct Messaging</h1>
+                    <h1>Messaging</h1>
                     <hr />
                 </section>
                 <section className={styles.direct_messaging}>
