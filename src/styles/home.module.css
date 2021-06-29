@@ -1,19 +1,16 @@
 /******* START: PARENT CONTAINER *******/
 .home_main {
-    display: grid;
-    grid-template-columns: 2.5fr 9fr 2fr;
-    grid-template-rows: 1fr 4fr 4fr ;
-    grid-template-areas: 
-        'top-buffer top-buffer top-buffer'
-        'left-buffer intro right-buffer'
-        'left-buffer nav right-buffer';
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-left: 120px;
+    width: 100%;
 }
 /******* END: PARENT CONTAINER *******/
 
 
 /******* START: INTRO GRID SECTION *******/
 .grid_intro {
-    grid-area: intro;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +26,7 @@
     color: #E40203;
 }
 
-.grid_intro h2 {
+.grid_intro h1 {
     font-size: 7vh;
 }
 
@@ -39,6 +36,7 @@
 
 .grid_intro p {
     margin-top: 10px;
+    width: 100%;
     max-width: 620px;
     color: #BBB;
 }
@@ -49,6 +47,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 60px;
     min-width: 180px;
     min-height: 60px;
     border: 2px solid #E40203;
@@ -66,13 +65,13 @@
 
 /******* START: NAV GRID SECTION *******/
 .nav_links {
-    grid-area: nav;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 10px;
-    width: 620px;
+    max-width: 620px;
 }
 
 .nav_links img {
@@ -85,12 +84,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 12px;
+    margin-bottom: 16px;
     min-width: 130px;
     min-height: 130px;
     border-radius: 15px;
 }
 /******* END: NAV GRID SECTION *******/
-
 
 
 /******* START: STYLING FOR '/about' LINK *******/
@@ -154,3 +154,40 @@
     color: #004DFF;
 }
 /******* END: STYLING FOR '/contact' LINK *******/
+
+@media (max-width: 1024px) {
+    .home_main {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home_main {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .grid_intro h1 {
+        font-size: 5.2vh;
+    }
+
+    .grid_intro p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .contact_button {
+        display: none;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .nav_links > a {
+
+    }
+}
