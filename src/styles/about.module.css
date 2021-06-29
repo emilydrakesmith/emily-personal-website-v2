@@ -131,8 +131,7 @@
 
 @media (max-width: 580px) {
     .about_main {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 0 5px 0 5px;
     }
     
     .picture_frame_mobile {

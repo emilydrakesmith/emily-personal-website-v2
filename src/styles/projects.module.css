@@ -87,6 +87,11 @@
         padding: 0;
     }
 
+    .projects_main h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
     .project_previews > a {
         text-align: center;
         margin: 16px 0;

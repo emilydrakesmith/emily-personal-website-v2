@@ -4,6 +4,7 @@
     flex-direction: column;
     margin-top: 80px;
     margin-left: 120px;
+    max-width: 800px;
     width: 100%;
 }
 /******* END: PARENT CONTAINER *******/
