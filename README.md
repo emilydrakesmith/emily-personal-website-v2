@@ -215,8 +215,11 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Completed mobile responsive styling for `/resources` index page.
 * Made `<h1>` styling on `/projects` index page consistent with other index pages.
 
-#### v 2.2.0.0  |  28 June 2021  |  commit --  |  Current Version
+#### v 2.2.0.0  |  29 June 2021  |  commit 08c3be7b844311d4b8ae5fa9ae8818216462dc1f  |  Current Version
 * All mobile-responsive styling is complete!
+
+#### [Version]  |  [Date]  |  commit **  |  Current Version
+* 
 
 [Back to Top](#top)
 
