@@ -26,7 +26,7 @@ export default function ProjectDetails({data}) {
                         <Img fluid={fluid} />
                     </div>
                     <div className={styles.details_text} >
-                        <div className={styles.html} dangerouslySetInnerHTML={{__html: html}} />
+                        <div className={styles.project_details_html} dangerouslySetInnerHTML={{__html: html}} />
                         <div className={styles.details_linkdiv}>
                             <a href={app} target="_blank" rel="noreferrer">Link to Live App</a>
                         </div>

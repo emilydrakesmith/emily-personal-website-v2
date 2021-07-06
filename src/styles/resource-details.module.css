@@ -1,0 +1,36 @@
+/******* START: PARENT CONTAINER *******/
+.resource_subgroup {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    height: 100%;
+    padding: 20px 40px 0 80px;
+}
+/******* END: PARENT CONTAINER *******/
+
+.resource_subgroup_header > h1 {
+    font-size: 45px;
+    color: #BBB;
+}
+
+.resource_subgroup_header > hr {
+    border: 1px solid #38A000;
+    background-color: #38A000;
+    margin-bottom: 20px;
+}
+
+.resource_article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+}
+
+.resource_article:hover .green_line_left {
+    background-color: #38A000;
+}
+
+.green_line_left {
+    min-width: 3px;
+    margin-right: 20px;
+}

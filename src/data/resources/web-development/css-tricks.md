@@ -1,6 +1,8 @@
 ---
 title: CSS Tricks
 url: https://css-tricks.com/
+requiresAccount: false
+tiers: Free
 group: resources
 subgroup: web-development
 pageTitle: Web Development
