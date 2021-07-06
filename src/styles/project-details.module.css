@@ -25,9 +25,9 @@
     flex-wrap: nowrap;
 }
 
-.picture_frame {
+.project_picture_frame {
     align-self: flex-start;
-    flex-grow: 2;
+    flex-grow: 2;                   /* I really don't think I need this line, try deleting it sometime */
     min-width: 200px;
     border: 2px solid #BBB;
     border-radius: 6px;

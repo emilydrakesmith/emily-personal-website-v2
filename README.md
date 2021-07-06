@@ -237,11 +237,14 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Create images for links in `/resources/web-development` and `/resources/html-css` directories.
 * Successfully query data in `resource-details.js` file (not specific to sub-directory, always queries `subgroup: web-development` type).
 
-#### v 2.2.1.3  |  06 July 2021  |  commit --  |  Current Version
+#### v 2.2.1.3  |  06 July 2021  |  commit 6bc73a23adda2fa2787df3edae3a305716642049
 * Built-out `.md` data files for links in the `/resources/web-development` directory for *Codepen*, *Codecademy*, and *CSS Tricks*.
 * Add styling to page `<h1>` and `<hr />` for title.
 * Render resource name and content information for imported `.md` files in `resource-details.js` template.
 * Green line appears left of each resource item when hovered in `resource-details.js` template.
+
+#### v 2.2.1.4  |  06 July 2021  |  commit --  |  Current Version
+* Complete desktop styling for `/resources` sub-directories.
 
 [Back to Top](#top)
 

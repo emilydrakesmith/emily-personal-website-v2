@@ -22,7 +22,7 @@ export default function ProjectDetails({data}) {
                 <h1>{title}</h1>
                 <hr />
                 <section className={styles.details_content}>
-                    <div className={styles.picture_frame}>
+                    <div className={styles.project_picture_frame}>
                         <Img fluid={fluid} />
                     </div>
                     <div className={styles.details_text} >
