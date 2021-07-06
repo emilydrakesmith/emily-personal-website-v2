@@ -18,12 +18,16 @@ exports.createPages = async ({graphql, actions}) => {
     
     // deconstruct nodes data from graphql query data
     const {nodes} = data.allMarkdownRemark;
+    
+    // isolate nodes for projects directory
     const projectNodes = nodes.filter(node => node.frontmatter.group === 'projects');
+    
+    // isolate subgroups to generate resources sub-directories
     const resourceNodes = nodes.filter(node => node.frontmatter.group === 'resources');
     const resourceNodeSubgroups = resourceNodes.map(node => node.frontmatter.subgroup);
     const resourceNodeSubgroupsUnique = [...new Set(resourceNodeSubgroups)];
 
-    // iterate through nodes
+    // iterate through nodes for project sub-directory pages
     projectNodes.forEach(node => {
         // deconstruct slug from each node
         const {slug} = node.frontmatter;
@@ -35,7 +39,7 @@ exports.createPages = async ({graphql, actions}) => {
         });
     });
 
-    // iterate through nodes
+    // iterate through nodes for resources sub-directory pages
     resourceNodeSubgroupsUnique.forEach(subgroup => {
         actions.createPage({
             path: '/resources/' + subgroup,

@@ -10,13 +10,31 @@ import Layout from '../components/Layout';
 import * as styles from '../styles/resource-details.module.css';
 /******* END: IMPORT LOCAL FILES *******/
 
-export default function ResourceDetails({data}) {
+export default function ResourceDetails({location, data}) {
     const {nodes} = data.allMarkdownRemark;
-    console.log(nodes);
+    const {pathname} = location;
+    
+    let pageTitle = '';
+    switch (pathname) {
+        case '/resources/web-development':
+            pageTitle = 'Web Development';
+            break;
+        case '/resources/html-css':
+            pageTitle = 'HTML & CSS';
+            break;
+        case '/resources/javascript':
+            pageTitle = 'JavaScript';
+            break;
+        case '/resources/react':
+            pageTitle = 'React';
+            break;
+        default:
+            pageTitle = 'Resources';
+    }
+
     const resourceLinks = nodes.map((node, idx) => (
         <article className={styles.resource_article} key={idx}>
             <div className={styles.green_line_left} />
-            
             <div className={styles.resource_article_content}>
                 <h2>{node.frontmatter.title}</h2>
                 <div className={styles.resource_article_details}>
@@ -38,7 +56,7 @@ export default function ResourceDetails({data}) {
         <Layout>
             <div className={styles.resource_subgroup}>
                 <section className={styles.resource_subgroup_header}>
-                    <h1>Web Development</h1>
+                    <h1>{pageTitle}</h1>
                     <hr />
                 </section>
                 <section>
@@ -50,21 +68,13 @@ export default function ResourceDetails({data}) {
 }
 
 export const query = graphql`
-    query ResourceDetails {
-        allMarkdownRemark(filter: {frontmatter: {subgroup: {eq: "web-development"}}}) {
+    query ResourceDetails($subgroup: String) {
+        allMarkdownRemark(filter: {frontmatter: {subgroup: {eq: $subgroup}}}) {
             nodes {
                 frontmatter {
                     title
                     url
-                    pageTitle
                     squareImg {
-                        childImageSharp {
-                            fluid {
-                                ...GatsbyImageSharpFluid
-                            }
-                        }
-                    }
-                    wideImg {
                         childImageSharp {
                             fluid {
                                 ...GatsbyImageSharpFluid

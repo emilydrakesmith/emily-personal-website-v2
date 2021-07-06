@@ -237,14 +237,20 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Create images for links in `/resources/web-development` and `/resources/html-css` directories.
 * Successfully query data in `resource-details.js` file (not specific to sub-directory, always queries `subgroup: web-development` type).
 
-#### v 2.2.1.3  |  06 July 2021  |  commit 6bc73a23adda2fa2787df3edae3a305716642049
+#### v 2.2.1.3  |  06 July 2021  |  commit ef8cfcb6f287513a4aa88c9fd704f391ffa9dba4
 * Built-out `.md` data files for links in the `/resources/web-development` directory for *Codepen*, *Codecademy*, and *CSS Tricks*.
 * Add styling to page `<h1>` and `<hr />` for title.
 * Render resource name and content information for imported `.md` files in `resource-details.js` template.
 * Green line appears left of each resource item when hovered in `resource-details.js` template.
 
-#### v 2.2.1.4  |  06 July 2021  |  commit --  |  Current Version
+#### v 2.2.1.4  |  06 July 2021  |  commit 5839a92bec3e9a2a30b834c3fb6f75ea3a6469d7
 * Complete desktop styling for `/resources` sub-directories.
+
+#### v 2.2.1.5  |  06 July 2021  |  commit --  |  Current Version
+* Fixed incorrect commit number attached to the commit immediately before this one.
+* Built-out `.md` data files for links in the `/resources/html-css` directory for *Flexbox Froggy* and *Grid Garden*.
+* Add comments to better section and explain code in `gatsby-node.js` file.
+* Sub-directory pages in the `/resources` directory now render the correct data (not just *Web Development* resources).
 
 [Back to Top](#top)
 
@@ -323,23 +329,18 @@ This is the remote repository for the version 2.0 of my personal website which y
   * Expand `gatsby-node.js` to build out sub-directory pages for each resource page.
 * Topics and sub-topics for *Resources* page (sub-topics in `.md` files):
   * General Web Dev Stuff
-    * CSS Tricks (main page)
     * MDN Docs
     * W3Schools
     * Repl.it
-    * Codepen
     * Mastering Markdown (GitHub)
     * Markdown Live Preview
     * Net Ninja
-    * Codecademy
     * General Assembly
     * Flat Icon
     * Icon Scout
   * HTML/CSS
     * CSS Tricks: Flexbox
     * CSS Tricks: Grid
-    * Flexbox Froggy
-    * Grid Garden
     * Layoutit Grid
   * JavaScript
     * Higher-Order Function Reference Page
