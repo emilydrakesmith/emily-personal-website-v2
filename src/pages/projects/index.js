@@ -27,6 +27,16 @@ export default function Projects({data}) {
     // TODO: format tech stack data with bullets:
     // const bullet = <span className={styles.yellow_separator}> • </span>;
 
+    const projectLinkData = projects.map(project => (
+        <Link to={'/projects/' + project.frontmatter.slug} key={project.id}>
+            <div className={styles.picture_frame}>
+                <Img fluid={project.frontmatter.fullImg.childImageSharp.fluid}/>
+            </div>
+            <h3>{project.frontmatter.title}</h3>
+            <h4>{project.frontmatter.stack}</h4>
+        </Link>
+    ));
+
 	return (
         <Layout>
             <div className={styles.projects_main}>
@@ -35,15 +45,7 @@ export default function Projects({data}) {
                     <hr />
                 </section>
                 <section className={styles.project_previews}>
-                    {projects.map(project => (
-                        <Link to={'/projects/' + project.frontmatter.slug} key={project.id}>
-                            <div className={styles.picture_frame}>
-                                <Img fluid={project.frontmatter.fullImg.childImageSharp.fluid}/>
-                            </div>
-                            <h3>{project.frontmatter.title}</h3>
-                            <h4>{project.frontmatter.stack}</h4>
-                        </Link>
-                    ))}
+                    {projectLinkData}
                     {/* TODO: make an 'other projects page featuring minor projects */}
                     {/* <Link to='/projects/other-projects'>
                         <h3>Other Projects</h3>

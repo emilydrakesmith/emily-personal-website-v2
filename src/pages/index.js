@@ -14,6 +14,46 @@ import contact_icon from '../images/icons/contact-icon.svg';
 
 
 export default function Home() {
+	const linkArray = [
+		{
+			title: 'About Me',
+			icon: about_icon,
+			altText: 'icon for link to About Me page',
+			path: '/about',
+			css: styles.about_div
+		},
+		{
+			title: 'Projects',
+			icon: projects_icon,
+			altText: 'icon for link to Projects page',
+			path: '/projects',
+			css: styles.projects_div
+		},
+		{
+			title: 'Resources',
+			icon: resources_icon,
+			altText: 'icon for link to Resources page',
+			path: '/resources',
+			css: styles.resources_div
+		},
+		{
+			title: 'Contact',
+			icon: contact_icon,
+			altText: 'icon for link to Contact page',
+			path: '/contact',
+			css: styles.contact_div
+		}
+	];
+
+	const linkData = linkArray.map((link, idx) => (
+		<Link to={link.path} key={idx}>
+			<div className={link.css}>
+				<img src={link.icon} alt={link.altText}/>
+				<h4>{link.title}</h4>
+			</div>
+		</Link>
+	));
+
 	return (
 		<Layout>
 			<div className={styles.home_main}>
@@ -26,30 +66,7 @@ export default function Home() {
 					</a>
 				</section>
 				<section className={styles.nav_links}>
-					<Link to='/about'>
-						<div className={styles.about_div}>
-							<img src={about_icon} alt='icon for "about" page link'/>
-							<h4>About Me</h4>
-						</div>
-					</Link>
-					<Link to='/projects'>
-						<div className={styles.projects_div}>
-							<img src={projects_icon}  alt='icon for "projects" page link'/>
-							<h4>Projects</h4>
-						</div>
-					</Link>
-					<Link to='/resources'>
-						<div className={styles.resources_div}>
-							<img src={resources_icon}  alt='icon for "resources" page link'/>
-							<h4>Resources</h4>
-						</div>
-					</Link>
-					<Link to='/contact'>
-						<div className={styles.contact_div}>
-							<img src={contact_icon}  alt='icon for "contact" page link'/>
-							<h4>Contact</h4>
-						</div>
-					</Link>
+					{linkData}
 				</section>
 			</div>
 		</Layout>

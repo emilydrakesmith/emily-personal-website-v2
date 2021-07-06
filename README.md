@@ -215,11 +215,18 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Completed mobile responsive styling for `/resources` index page.
 * Made `<h1>` styling on `/projects` index page consistent with other index pages.
 
-#### v 2.2.0.0  |  29 June 2021  |  commit 08c3be7b844311d4b8ae5fa9ae8818216462dc1f  |  Current Version
+#### v 2.2.0.0  |  29 June 2021  |  commit 08c3be7b844311d4b8ae5fa9ae8818216462dc1f
 * All mobile-responsive styling is complete!
 
-#### [Version]  |  [Date]  |  commit **  |  Current Version
-* 
+#### v 2.2.0.1  |  03 July 2021  |  commit 334b8c89405bf31d9b85624afb9126ec5faa8896
+* Added `.svg` files to build-out `/resources` index page.
+
+#### v 2.2.1.0  |  05 July 2021  |  commit --  |  Current Version
+* Major refactor to to the `/` main index page file.
+  * Page links in the `<main>` are generated from metadata outside the return statement.
+  * Page links are generated outside the return statement by mapping over metadata and loading JSX template data into a variable.
+* Refactor to `/projects` index page also generate link elements outside the return statement by mapping over metadata and loanding JSX template data into a variable.
+* Added more `.svg` files to build-out `/resources` index page.
 
 [Back to Top](#top)
 
@@ -283,7 +290,7 @@ This is the remote repository for the version 2.0 of my personal website which y
 
 # Future Plans
 
-### Goals for MVP
+### Short Term
 * Continue building out more sections of this `README.md` file.
   * *Table of Contents* with links
   * *Instructions for Use*, minimal since this page is informational only
@@ -293,6 +300,35 @@ This is the remote repository for the version 2.0 of my personal website which y
   * *Screenshots* page (instructional video too?)
 * Consider a `/src/notes` directory with `.txt` files to hold larger bodies of text that don't warrant full markdown-syntax pages.  This will greatly simplify updating content text on the website.
 * Host the site on Netlify or research alternatives.
+* Build out the *Resources* directory.
+  * Make a page for the main `/resources` index.
+  * Expand `gatsby-node.js` to build out sub-directory pages for each resource page.
+* Topics and sub-topics for *Resources* page (sub-topics in `.md` files):
+  * General Web Dev Stuff
+    * CSS Tricks (main page)
+    * MDN Docs
+    * W3Schools
+    * Repl.it
+    * Codepen
+    * Mastering Markdown (GitHub)
+    * Markdown Live Preview
+    * Net Ninja
+    * Codecademy
+    * General Assembly
+    * Flat Icon
+    * Icon Scout
+  * HTML/CSS
+    * CSS Tricks: Flexbox
+    * CSS Tricks: Grid
+    * Flexbox Froggy
+    * Grid Garden
+    * Layoutit Grid
+  * JavaScript
+    * Higher-Order Function Reference Page
+  * React/Gatsby
+    * Net Ninja: React
+    * Net Ninja: Gatsby
+  * Node
 
 ### Ice Box
 * Consider generating the element `<main>` inside pages loaded to the `<Layout />` component instead of hardcoded inside it.
