@@ -229,9 +229,13 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Render `/resources` (mobile and desktop versions) with links to sub-directories (not yet built).
 * Added more `.svg` files to build-out `/resources` index page.
 
-#### v 2.2.1.1  |  05 July 2021  |  commit --  |  Current Version
+#### v 2.2.1.1  |  05 July 2021  |  commit 187472103958c23cb79f23fe51916261a0d90ef1
 * Added the key `group` to all `.md` files to allow filtering of graphql results for different sub-directories on the website.
 * Rendering sub-directory pages of the `/resources` directory linked properly in the `/resources` index page.
+
+#### v 2.2.1.2  |  05 July 2021  |  commit --  |  Current Version
+* Create images for links in `/resources/web-development` and `/resources/html-css` directories.
+* Successfully query data in `resource-details.js` file (not specific to directory, always queries `subgroup: web-development` type).
 
 [Back to Top](#top)
 
