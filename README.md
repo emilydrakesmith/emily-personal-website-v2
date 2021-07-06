@@ -246,11 +246,15 @@ This is the remote repository for the version 2.0 of my personal website which y
 #### v 2.2.1.4  |  06 July 2021  |  commit 5839a92bec3e9a2a30b834c3fb6f75ea3a6469d7
 * Complete desktop styling for `/resources` sub-directories.
 
-#### v 2.2.1.5  |  06 July 2021  |  commit --  |  Current Version
+#### v 2.2.1.5  |  06 July 2021  |  commit ca0f5863b2935bd47d1654e37987c8136898a850
 * Fixed incorrect commit number attached to the commit immediately before this one.
 * Built-out `.md` data files for links in the `/resources/html-css` directory for *Flexbox Froggy* and *Grid Garden*.
 * Add comments to better section and explain code in `gatsby-node.js` file.
 * Sub-directory pages in the `/resources` directory now render the correct data (not just *Web Development* resources).
+
+#### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
+* Added mobile-responsiveness to `/resources` sub-directory pages.  Not perfected yet but definitely good enough to push to production.
+* Disabled *JavaScript* and *React* links on the `/resources` index page.  I don't have data ready for them yet so they aren't rendering properly.  I don't want to stop them from letting me push to production.
 
 [Back to Top](#top)
 
