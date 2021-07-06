@@ -8,6 +8,8 @@ exports.createPages = async ({graphql, actions}) => {
                 nodes {
                     frontmatter {
                         slug
+                        group
+                        subgroup
                     }
                 }
             }
@@ -16,9 +18,13 @@ exports.createPages = async ({graphql, actions}) => {
     
     // deconstruct nodes data from graphql query data
     const {nodes} = data.allMarkdownRemark;
+    const projectNodes = nodes.filter(node => node.frontmatter.group === 'projects');
+    const resourceNodes = nodes.filter(node => node.frontmatter.group === 'resources');
+    const resourceNodeSubgroups = resourceNodes.map(node => node.frontmatter.subgroup);
+    const resourceNodeSubgroupsUnique = [...new Set(resourceNodeSubgroups)];
 
     // iterate through nodes
-    nodes.forEach(node => {
+    projectNodes.forEach(node => {
         // deconstruct slug from each node
         const {slug} = node.frontmatter;
         // create a page using the slug to make a pathway and pass slug to page to get the rest of the data
@@ -26,6 +32,15 @@ exports.createPages = async ({graphql, actions}) => {
             path: '/projects/' + slug,
             component: path.resolve('./src/templates/project-details.js'),
             context: {slug: slug}
+        });
+    });
+
+    // iterate through nodes
+    resourceNodeSubgroupsUnique.forEach(subgroup => {
+        actions.createPage({
+            path: '/resources/' + subgroup,
+            component: path.resolve('./src/templates/resource-details.js'),
+            context: {subgroup: subgroup}
         });
     });
 }

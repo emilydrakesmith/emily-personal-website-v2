@@ -2,6 +2,7 @@
 title: Dog Pictures
 stack: JavaScript HTML CSS
 slug: dog-pictures
+group: projects
 main: false
 sequence: 7
 fullImg: ../../images/projects/full/dog-pictures.png

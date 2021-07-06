@@ -3,6 +3,7 @@ title: My Website
 stack: Gatsby React GraphQL
 slug: my-website
 main: true
+group: projects
 sequence: 3
 fullImg: ../../images/projects/full/marty-smith-dot-tech.png
 thumbImg: ../../images/projects/thumb/marty-smith-dot-tech.png

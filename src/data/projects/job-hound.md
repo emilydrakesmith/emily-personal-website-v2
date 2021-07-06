@@ -3,6 +3,7 @@ title: Job Hound
 stack: Node Express MongoDB
 slug: job-hound
 main: true
+group: projects
 sequence: 2
 fullImg: ../../images/projects/full/job-hound.png
 thumbImg: ../../images/projects/thumb/job-hound.png

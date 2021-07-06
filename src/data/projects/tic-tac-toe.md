@@ -3,6 +3,7 @@ title: Tic Tac Toe
 stack: JavaScript HTML CSS
 slug: tic-tac-toe
 main: true
+group: projects
 sequence: 5
 fullImg: ../../images/projects/full/tic-tac-toe.png
 thumbImg: ../../images/projects/thumb/tic-tac-toe.png

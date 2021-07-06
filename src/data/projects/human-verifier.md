@@ -2,6 +2,7 @@
 title: Human Verifier
 stack: JavaScript HTML CSS
 slug: human-verifier
+group: projects
 main: true
 sequence: 4
 fullImg: ../../images/projects/full/human-verifier.png

@@ -221,12 +221,17 @@ This is the remote repository for the version 2.0 of my personal website which y
 #### v 2.2.0.1  |  03 July 2021  |  commit 334b8c89405bf31d9b85624afb9126ec5faa8896
 * Added `.svg` files to build-out `/resources` index page.
 
-#### v 2.2.1.0  |  05 July 2021  |  commit --  |  Current Version
+#### v 2.2.1.0  |  05 July 2021  |  commit ab3d34a8d0c79aa039bde49fe6703468619cfe18
 * Major refactor to to the `/` main index page file.
   * Page links in the `<main>` are generated from metadata outside the return statement.
   * Page links are generated outside the return statement by mapping over metadata and loading JSX template data into a variable.
 * Refactor to `/projects` index page also generate link elements outside the return statement by mapping over metadata and loanding JSX template data into a variable.
+* Render `/resources` (mobile and desktop versions) with links to sub-directories (not yet built).
 * Added more `.svg` files to build-out `/resources` index page.
+
+#### v 2.2.1.1  |  05 July 2021  |  commit --  |  Current Version
+* Added the key `group` to all `.md` files to allow filtering of graphql results for different sub-directories on the website.
+* Rendering sub-directory pages of the `/resources` directory linked properly in the `/resources` index page.
 
 [Back to Top](#top)
 

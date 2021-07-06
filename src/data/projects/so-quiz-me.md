@@ -3,6 +3,7 @@ title: SoQuiz.me
 stack: Python Django Materialize
 slug: so-quiz-me
 main: true
+group: projects
 sequence: 6
 fullImg: ../../images/projects/full/so-quiz-me.png
 thumbImg: ../../images/projects/thumb/so-quiz-me.png

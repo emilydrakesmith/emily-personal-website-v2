@@ -3,6 +3,7 @@ title: OG martysmith.tech
 stack: HTML CSS
 slug: og-personal-website
 main: false
+group: projects
 sequence: 8
 fullImg: ../../images/projects/full/legacy-website.png
 thumbImg: ../../images/projects/thumb/legacy-website.png

@@ -3,6 +3,7 @@ title: ScriptStud.io
 stack: React Node Express MongoDB
 slug: script-studio
 main: true
+group: projects
 sequence: 1
 fullImg: ../../images/projects/full/script-studio.png
 thumbImg: ../../images/projects/thumb/script-studio.png

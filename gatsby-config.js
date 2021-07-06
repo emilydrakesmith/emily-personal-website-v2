@@ -26,14 +26,21 @@ module.exports = {
 			resolve: `gatsby-source-filesystem`,			// loads data from .txt and .md files to website
 			options: {
 				name: `projects`,							// name of this instance of the plugin
-				path: `${__dirname}/src/data/projects/`,	// directory this plugin will access
+				path: `${__dirname}/src/data/projects/`	// directory this plugin will access
 			},
 		},
 		{
 			resolve: `gatsby-source-filesystem`,			// loads data from .txt and .md files to website
 			options: {
 				name: `images`,							// name of this instance of the plugin
-				path: `${__dirname}/src/images/`,	// directory this plugin will access
+				path: `${__dirname}/src/images/`	// directory this plugin will access
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,			// loads data from .txt and .md files to website
+			options: {
+				name: `resources`,							// name of this instance of the plugin
+				path: `${__dirname}/src/data/resources/`	// directory this plugin will access
 			},
 		}
 	],
