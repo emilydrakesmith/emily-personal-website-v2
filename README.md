@@ -285,9 +285,19 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Deleted placeholder test files in `src/data/resources/javascript` and `src/data/resources/react`.  I think the build on Netlify may have failed due to incomplete data files being skipped by the build in my local environment.
   * **FUTURE REFERENCE** *This was it!*  So from now on, no half-built `.md` files.  Every created file needs to be blank or fully-built.  Two test files with half-developed dummy data failed to build because of the missing data.
 
-#### v 2.2.2.1  |  13 July 2021  |  commit --  |  Current Version
+#### v 2.2.2.1  |  13 July 2021  |  commit 8c567e73516c3a688181d0ae3be6425cc4de6dd9  |  Current Version
 * Moved all `.md` files being stored in the `/src/data/resources/tempfiles` directory to the `/src/data/resources/web-development` directory.
 * Re-activated the link to the `/resources/html-css` sub-directory page.
+* Built out `.md` files for the following links in the `/resources/web-development` sub-directory page:
+  * Flaticon
+  * General Assembly
+  * Lunapic
+  * Markdown Live Preview
+  * Mastering Markdown
+  * MDN Web Docs
+  * The Net Ninja
+  * Repl.it
+  * W3Schools
 
 [Back to Top](#top)
 
