@@ -32,6 +32,8 @@ export default function ResourceDetails({location, data}) {
             pageTitle = 'Resources';
     }
 
+    console.log(nodes)
+
     const resourceLinks = nodes.map((node, idx) => (
         <article className={styles.resource_article} key={idx}>
             <div className={styles.green_line_left} />
@@ -39,7 +41,7 @@ export default function ResourceDetails({location, data}) {
                 <h2>{node.frontmatter.title}</h2>
                 <div className={styles.resource_article_details}>
                     <div className={styles.resource_picture_frame}>
-                        <Img fluid={node.frontmatter.squareImg.childImageSharp.fluid} />
+                        <Img fixed={node.frontmatter.squareImg.childImageSharp.fixed} />
                     </div>
                     <div className={styles.resource_article_text}>
                         <div className={styles.resource_details_html} dangerouslySetInnerHTML={{__html: node.html}} />
@@ -76,8 +78,8 @@ export const query = graphql`
                     url
                     squareImg {
                         childImageSharp {
-                            fluid {
-                                ...GatsbyImageSharpFluid
+                            fixed {
+                                ...GatsbyImageSharpFixed
                             }
                         }
                     }

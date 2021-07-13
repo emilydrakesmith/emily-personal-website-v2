@@ -264,11 +264,18 @@ This is the remote repository for the version 2.0 of my personal website which y
 * I disabled the code to render images in `resource-details.js` currently at line 35: `<Img fluid={node.frontmatter.squareImg.childImageSharp.fluid} />`
   * Netlify says the error exists both here and at the query, but disabling it here will eliminate at least one complicating factor.
 
-#### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
+#### v 2.2.2.0  |  06 July 2021  |  commit 072d871b84d4177a34bd5c87792718ef65c62a38
 * I did not anticipate in the last commit my website would now build, but without the images in question.  I restored the previous line of code removed, but now I need to finish this fix tonight or else my site will be live with missing images.
   * For the time being I've locked Netlify into using the last successful build.  Auto-publishing is disabled.
+
+#### v 2.2.2.0  |  06 July 2021  |  commit 78646c32aaf32b92648a43a0a12caa920ef7a960
 * I moved the empty `.md` files from the directory `/src/data/resources/web-development` to `/src/data/resources/tempfiles` in case their presence is the reason the build is failing.  It's probably not but their presence is an unnecessary complicating factor.
-* Redeveloped GraphQL query in `project-details.js` from scratch.
+* Redeveloped GraphQL query in `resource-details.js` from scratch.
+
+#### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
+* I changed image sharp fluid to image sharp fixed in `resource-details.js` to see if a fixed inquiry will work.
+
+
 
 [Back to Top](#top)
 
