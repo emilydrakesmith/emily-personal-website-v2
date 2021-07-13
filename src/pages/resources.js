@@ -20,25 +20,25 @@ export default function Resources() {
             icon: web_dev_icon,
             altText: 'icon for link to Web Development resources page',
             path: '/resources/web-development',
-        },
+        },/*
         {
             title: 'HTML & CSS',
             icon: html_css_icon,
             altText: 'icon for link to HTML & CSS resources page',
             path: '/resources/html-css',
         },
-        // {
-        //     title: 'JavaScript',
-        //     icon: javascript_icon,
-        //     altText: 'icon for link to JavaScript resources page',
-        //     path: '/resources/javascript'
-        // },
-        // {
-        //     title: 'React',
-        //     icon: react_icon,
-        //     altText: 'icon for link to React resources page',
-        //     path: '/resources/react'
-        // }
+        {
+            title: 'JavaScript',
+            icon: javascript_icon,
+            altText: 'icon for link to JavaScript resources page',
+            path: '/resources/javascript'
+        },
+        {
+            title: 'React',
+            icon: react_icon,
+            altText: 'icon for link to React resources page',
+            path: '/resources/react'
+        }*/
     ];
 
     const resourcesLinkData = resourcesLinkArray.map((link, idx) => (

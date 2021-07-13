@@ -252,9 +252,12 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Add comments to better section and explain code in `gatsby-node.js` file.
 * Sub-directory pages in the `/resources` directory now render the correct data (not just *Web Development* resources).
 
-#### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
+#### v 2.2.2.0  |  06 July 2021  |  commit 0ec1445329957bc8d5eb33146f044f81139223db
 * Added mobile-responsiveness to `/resources` sub-directory pages.  Not perfected yet but definitely good enough to push to production.
 * Disabled *JavaScript* and *React* links on the `/resources` index page.  I don't have data ready for them yet so they aren't rendering properly.  I don't want to stop them from letting me push to production.
+
+#### v 2.2.2.1  |  06 July 2021  |  commit --  |  Current Version
+* I disabled all links in the `/resources` index page except for *Web Development*.  I'm wondering if the build is failing because I'm running queries for pages that don't yet have content.
 
 [Back to Top](#top)
 
@@ -334,6 +337,7 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Topics and sub-topics for *Resources* page (sub-topics in `.md` files):
   * General Web Dev Stuff
     * MDN Docs
+    * Netlify
     * W3Schools
     * Repl.it
     * Mastering Markdown (GitHub)
