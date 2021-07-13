@@ -4,6 +4,8 @@
 
 This is the remote repository for the version 2.0 of my personal website which you can view at [martysmith.tech](https://martysmith.tech/).  If you'd like to see how far my development skills have come since version 1, you can [view a legacy version here](https://mhsmith321.github.io/Marty-Smith-Personal-Homepage/).
 
+I have published this website under the [MIT License](#license).
+
 [Back to Top](#top)
 
 # Version Notes
@@ -301,7 +303,7 @@ This is the remote repository for the version 2.0 of my personal website which y
   * Repl.it
   * W3Schools
 
-#### v 2.2.3.0  |  13 July 2021  |  commit --  |  Current Version
+#### v 2.2.3.0  |  13 July 2021  |  commit 55b82cdcfd9efab0294c8be3b60021afc6dc3a9c
 * Added a field `slug` to the frontmatter in all `.md` files in the `src/data/resources` directory.  This is necessary for anchor tags for in-page hyperlinking.
 * Added  `id={node.frontmatter.slug}` as an attribute to the top-level element `<article>` in `resource-details.js` to have a target for in-page hperlinking.
 * Added `className={styles.resource_external_hyperlink}` as an attribute to external link anchor tags in `resource-details.js` file.
@@ -313,6 +315,10 @@ This is the remote repository for the version 2.0 of my personal website which y
   * CSS Tricks - Flexbox
   * CSS Tricks - Grid
   * Layoutit
+
+#### v 2.2.3.1  |  13 July 2021  |  commit --  |  Current Version
+* Updated items listed in *Ice Box* section of `README.md` to reflect implemented features.
+* Added the MIT License to the publication and use terms of this website.
 
 [Back to Top](#top)
 
@@ -373,6 +379,20 @@ This is the remote repository for the version 2.0 of my personal website which y
 * [Full documentation is available here.](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest)
 
 [Back to Top](#top)
+<a id='license'></a>
+
+# License
+### MIT License
+
+Copyright (c) 2021 Martin "Marty" Smith
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute,  ublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+[Back to Top](#top)
 
 # Future Plans
 
@@ -385,37 +405,20 @@ This is the remote repository for the version 2.0 of my personal website which y
   * *Contribute* with license info, permission to reuse, and my own contact information
   * *Screenshots* page (instructional video too?)
 * Consider a `/src/notes` directory with `.txt` files to hold larger bodies of text that don't warrant full markdown-syntax pages.  This will greatly simplify updating content text on the website.
-* Host the site on Netlify or research alternatives.
-* Build out the *Resources* directory.
-  * Make a page for the main `/resources` index.
-  * Expand `gatsby-node.js` to build out sub-directory pages for each resource page.
 * Topics and sub-topics for *Resources* page (sub-topics in `.md` files):
   * General Web Dev Stuff
-    * MDN Docs
-    * Netlify
-    * W3Schools
-    * Repl.it
-    * Mastering Markdown (GitHub)
-    * Markdown Live Preview
-    * Net Ninja
-    * General Assembly
-    * Flat Icon
     * Icon Scout
-  * HTML/CSS
-    * CSS Tricks: Flexbox
-    * CSS Tricks: Grid
-    * Layoutit Grid
   * JavaScript
     * Higher-Order Function Reference Page
   * React/Gatsby
     * Net Ninja: React
     * Net Ninja: Gatsby
   * Node
+* Generate in-page hyperlinking in `/resources` sub-directories to utilize frontmatter data rather than hardcoding into HTML section.
 
 ### Ice Box
 * Consider generating the element `<main>` inside pages loaded to the `<Layout />` component instead of hardcoded inside it.
   * Each page loaded into `<Layout />` needs to have a top-level `<div>`.  Can't use fragments `<> </>` because I need the top-level `<div>` to have a class for styling purposes.  This feels like an unnecessary wrapper.
-* Generate content for the `/resources` index page.  Currently I'm going live with placeholder content.
 * Split projects into two buckets, *Main* and *Other*.
   * Main projects will be shown on the `/projects` main index page and linked at `/projects/project-name`
   * The final link div on the `/projects` index page will be *Other Projects* with an icon.  This will go to another index page at `/projects/other` listing minor projects not central to my portfolio.
