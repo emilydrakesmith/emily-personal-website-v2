@@ -260,9 +260,13 @@ This is the remote repository for the version 2.0 of my personal website which y
 #### v 2.2.2.0  |  06 July 2021  |  commit 34c38188cbfcc3e3ad6c0982309dd7f7db484a9e
 * I disabled all links in the `/resources` index page except for *Web Development*.  I'm wondering if the build is failing because I'm running queries for pages that don't yet have content.  Edit: Not it.  At least not the only issue.  I'm leaving it like this for now though just for the sake of simplicity.
 
-#### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
+#### v 2.2.2.0  |  06 July 2021  |  commit 411197eb73a97b8e0b76bdc59ef580e1f38a6a99
 * I disabled the code to render images in `resource-details.js` currently at line 35: `<Img fluid={node.frontmatter.squareImg.childImageSharp.fluid} />`
   * Netlify says the error exists both here and at the query, but disabling it here will eliminate at least one complicating factor.
+
+#### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
+* I did not anticipate in the last commit my website would now build, but without the images in question.  I restored the previous line of code removed, but now I need to finish this fix tonight or else my site will be live with missing images.
+* I moved the empty `.md` files from the directory `/src/data/resources/web-development` to `/src/data/resources/tempfiles` in case their presence is the reason the build is failing.  It's probably not but their presence is an unnecessary complicating factor.
 
 [Back to Top](#top)
 
