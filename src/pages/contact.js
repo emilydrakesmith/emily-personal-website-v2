@@ -4,7 +4,6 @@ import React from "react";
 
 
 /******* START: IMPORT LOCAL FILES *******/
-import Layout from '../components/Layout';
 import * as styles from '../styles/contact.module.css';
 import envelope_icon from '../images/icons/envelope-icon.svg';
 import linkedin_solid_icon from '../images/icons/linkedin-solid-icon.svg';
@@ -16,7 +15,6 @@ export default function Contact() {
 	const formPreviewText = 'Before sending a note realize you risk it being missed amongst the 10-20 spam messages this form generates daily.  Email & LinkedIn are the best ways to contact me.';
 
     return (
-        <Layout>
             <div className={styles.contact_main}>
                 <section className={styles.contact_header}>
                     <h1>Messaging</h1>
@@ -69,10 +67,8 @@ export default function Contact() {
                 {/* <section className={styles.contact_header}>
                     <h1>Over Coffee</h1>
                     <hr />
-
                 </section> */}
                 {/* TODO: in the future I'll embed a Google Map here, see README.md Future Plans/Icebox for more information */}
             </div>
-        </Layout>
 	);
 }

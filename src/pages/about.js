@@ -6,7 +6,6 @@ import Img from 'gatsby-image';
 
 
 /******* START: IMPORT LOCAL FILES *******/
-import Layout from '../components/Layout';
 import * as styles from '../styles/about.module.css';
 /******* END: IMPORT LOCAL FILES *******/
 
@@ -53,7 +52,6 @@ export default function About({data}) {
     const skillsMobile = skillsMobileArray.map((skill, idx) => <p key={idx}>{bullet} {skill} {bullet}</p>);
 
     return (
-        <Layout>
             <div className={styles.about_main}>
                 <section className={styles.about_header}>
                     <h1>About Marty</h1>
@@ -75,7 +73,6 @@ export default function About({data}) {
                     <div className={styles.skills_mobile}>{skillsMobile}</div>
                 </section>
             </div>
-        </Layout>
 	);
 }
 

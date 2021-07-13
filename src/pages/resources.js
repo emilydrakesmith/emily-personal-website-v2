@@ -5,7 +5,6 @@ import {Link} from 'gatsby';
 
 
 /******* START: IMPORT LOCAL FILES *******/
-import Layout from '../components/Layout';
 import * as styles from '../styles/resources.module.css';
 import web_dev_icon from '../images/icons/web-dev-icon.svg';
 import html_css_icon from '../images/icons/html-css-icon.svg';
@@ -49,7 +48,6 @@ export default function Resources() {
     ));
 
     return (
-        <Layout>
             <div className={styles.resources_main}>
                 <section>
                     <h1>Resources</h1>
@@ -59,6 +57,5 @@ export default function Resources() {
                     {resourcesLinkData}
                 </section>
             </div>
-        </Layout>
 	);
 }
