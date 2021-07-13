@@ -316,9 +316,15 @@ I have published this website under the [MIT License](#license).
   * CSS Tricks - Grid
   * Layoutit
 
-#### v 2.2.3.1  |  13 July 2021  |  commit --  |  Current Version
+#### v 2.2.3.1  |  13 July 2021  |  commit 46b8a49d66d9b76fb9131c73ba6241b215145e53
 * Updated items listed in *Ice Box* section of `README.md` to reflect implemented features.
 * Added the MIT License to the publication and use terms of this website.
+
+#### BRANCH render-layout-through-ssr  |  13 July 2021  |  commit --  |  Current Version
+* Initialized `gatsby-ssr.js` and `gatsby-browser.js` files.
+* Wrote functions in both new files to automatically wrap `<Layout />` around page elements.
+* Removed `<Layout />` wrapper from all render functions and corresponding import statements from relevant files.
+* Confirmed all pages including sub-directories are rendering properly.
 
 [Back to Top](#top)
 
@@ -425,7 +431,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   * The *Other Projects* page may be a single page or it may display links in the same manner as the `/projects` index page and link to projects at `/projects/other/project-name` if that doesn't cause problems for Gatsby.* Add mobile-responsiveness to the design.  This will be a goal for shortly after I reach MVP.
 * Add Google Maps to `/contact` page.  Before doing this I need to decide where to deploy my site and see how they configure hidden data (in this case an API key).  [See here for more information.](https://www.gatsbyjs.com/plugins/gatsby-source-googlemaps-static/)
 * Add Google Analytics to the website.  This should be relatively easy since I already have it set up for my site's previous version.
-* Render the `<Layout>` compoonent using Gatsby Server Rendering APIs. [More info here.](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/)
 
 [Back to Top](#top)
 

@@ -4,7 +4,6 @@ import {Link} from 'gatsby';
 /******* END: IMPORT REACT AND DONGLES *******/
 
 /******* START: IMPORT LOCAL FILES *******/
-import Layout from '../components/Layout';
 import * as styles from '../styles/home.module.css';
 import about_icon from '../images/icons/about-icon.svg';
 import projects_icon from '../images/icons/projects-icon.svg';
@@ -55,7 +54,6 @@ export default function Home() {
 	));
 
 	return (
-		<Layout>
 			<div className={styles.home_main}>
 				<section className={styles.grid_intro}>
 					<h4>Hi, my name is</h4>
@@ -69,6 +67,5 @@ export default function Home() {
 					{linkData}
 				</section>
 			</div>
-		</Layout>
 	);
 }

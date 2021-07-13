@@ -6,7 +6,6 @@ import Img from 'gatsby-image';
 
 
 /******* START: IMPORT LOCAL FILES *******/
-import Layout from '../../components/Layout';
 import * as styles from '../../styles/projects.module.css';
 /******* END: IMPORT LOCAL FILES *******/
 
@@ -38,7 +37,6 @@ export default function Projects({data}) {
     ));
 
 	return (
-        <Layout>
             <div className={styles.projects_main}>
                 <section>
                     <h1>Projects</h1>
@@ -52,7 +50,6 @@ export default function Projects({data}) {
                     </Link> */}
                 </section>
             </div>
-        </Layout>
 	);
 }
 

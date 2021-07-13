@@ -6,7 +6,6 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 
 /******* START: IMPORT LOCAL FILES *******/
-import Layout from '../components/Layout';
 import * as styles from '../styles/resource-details.module.css';
 /******* END: IMPORT LOCAL FILES *******/
 
@@ -42,7 +41,7 @@ export default function ResourceDetails({location, data}) {
                         <GatsbyImage alt={node.frontmatter.title} image={node.frontmatter.squareImg.childImageSharp.gatsbyImageData} />
                     </div>
                     <div className={styles.resource_article_text}>
-                        <div className={styles.resource_details_html} dangerouslySetInnerHTML={{__html: node.html}} />
+                        <div dangerouslySetInnerHTML={{__html: node.html}} />
                         <div className={styles.resource_linkdiv}>
                             <a className={styles.resource_external_hyperlink} href={node.frontmatter.url} target="_blank" rel="noreferrer">Click to View</a>
                         </div>
@@ -53,17 +52,15 @@ export default function ResourceDetails({location, data}) {
     ));
 
     return (
-        <Layout>
-            <div className={styles.resource_subgroup}>
-                <section className={styles.resource_subgroup_header}>
-                    <h1>{pageTitle}</h1>
-                    <hr />
-                </section>
-                <section>
-                    {resourceLinks}
-                </section>
-            </div>
-        </Layout>
+        <div className={styles.resource_subgroup}>
+            <section className={styles.resource_subgroup_header}>
+                <h1>{pageTitle}</h1>
+                <hr />
+            </section>
+            <section>
+                {resourceLinks}
+            </section>
+        </div>
     );
 }
 

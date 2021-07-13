@@ -4,7 +4,6 @@ import React from "react";
 
 
 /******* START: IMPORT LOCAL FILES *******/
-import Layout from '../components/Layout';
 import * as styles from '../styles/404.module.css';
 /******* END: IMPORT LOCAL FILES *******/
 
@@ -18,7 +17,6 @@ export default function NotFound() {
     </>;
 
     return (
-        <Layout>
             <div className={styles.notfound_main}>
                 <section>
                     <h1>404</h1>
@@ -28,6 +26,5 @@ export default function NotFound() {
                     {text}
                 </section>
             </div>
-        </Layout>
     );
 }
