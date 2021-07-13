@@ -281,8 +281,13 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Ran the codemod via `npx gatsby-codemods gatsby-plugin-image /Users/martinsmith/code/personal-projects/Marty-personal-website/Marty-Smith-personal-website-2/src/templates` to update code.
 * Restructured how I call images in `project-details.js` to reflect the new file structure returned by GraphQL.
 
-#### v 2.2.2.0  |  13 July 2021  |  commit --  |  Current Version
-* Deleted placeholder test files in `src/data/resources/javascript` and `src/data/resources/react`.  I think the build on Netlify may have failed due to incomplete data files being skipped by the build in my local environment. 
+#### v 2.2.2.0  |  13 July 2021  |  commit b3358bd96057ed8d47cc4735acb522a582520a4a
+* Deleted placeholder test files in `src/data/resources/javascript` and `src/data/resources/react`.  I think the build on Netlify may have failed due to incomplete data files being skipped by the build in my local environment.
+  * **FUTURE REFERENCE** *This was it!*  So from now on, no half-built `.md` files.  Every created file needs to be blank or fully-built.  Two test files with half-developed dummy data failed to build because of the missing data.
+
+#### v 2.2.2.1  |  13 July 2021  |  commit --  |  Current Version
+* Moved all `.md` files being stored in the `/src/data/resources/tempfiles` directory to the `/src/data/resources/web-development` directory.
+* Re-activated the link to the `/resources/html-css` sub-directory page.
 
 [Back to Top](#top)
 
