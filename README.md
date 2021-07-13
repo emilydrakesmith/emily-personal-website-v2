@@ -255,9 +255,14 @@ This is the remote repository for the version 2.0 of my personal website which y
 #### v 2.2.2.0  |  06 July 2021  |  commit 0ec1445329957bc8d5eb33146f044f81139223db
 * Added mobile-responsiveness to `/resources` sub-directory pages.  Not perfected yet but definitely good enough to push to production.
 * Disabled *JavaScript* and *React* links on the `/resources` index page.  I don't have data ready for them yet so they aren't rendering properly.  I don't want to stop them from letting me push to production.
+* **Edit** Build failed at the GraphQL query in `resource-details.js`, now time to figure out why.
 
-#### v 2.2.2.1  |  06 July 2021  |  commit --  |  Current Version
-* I disabled all links in the `/resources` index page except for *Web Development*.  I'm wondering if the build is failing because I'm running queries for pages that don't yet have content.
+#### v 2.2.2.0  |  06 July 2021  |  commit 34c38188cbfcc3e3ad6c0982309dd7f7db484a9e
+* I disabled all links in the `/resources` index page except for *Web Development*.  I'm wondering if the build is failing because I'm running queries for pages that don't yet have content.  Edit: Not it.  At least not the only issue.  I'm leaving it like this for now though just for the sake of simplicity.
+
+#### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
+* I disabled the code to render images in `resource-details.js` currently at line 35: `<Img fluid={node.frontmatter.squareImg.childImageSharp.fluid} />`
+  * Netlify says the error exists both here and at the query, but disabling it here will eliminate at least one complicating factor.
 
 [Back to Top](#top)
 
