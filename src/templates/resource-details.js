@@ -1,7 +1,7 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from 'react';
 import {graphql} from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 /******* END: IMPORT REACT AND DONGLES *******/
 
 
@@ -41,7 +41,7 @@ export default function ResourceDetails({location, data}) {
                 <h2>{node.frontmatter.title}</h2>
                 <div className={styles.resource_article_details}>
                     <div className={styles.resource_picture_frame}>
-                        <Img fixed={node.frontmatter.squareImg.childImageSharp.fixed} />
+                        <GatsbyImage image={node.frontmatter.squareImg.childImageSharp.gatsbyImageData} />
                     </div>
                     <div className={styles.resource_article_text}>
                         <div className={styles.resource_details_html} dangerouslySetInnerHTML={{__html: node.html}} />
@@ -69,23 +69,20 @@ export default function ResourceDetails({location, data}) {
     );
 }
 
-export const query = graphql`
-    query ResourceDetail($subgroup: String) {
-        allMarkdownRemark(filter: {frontmatter: {subgroup: {eq: $subgroup}}}) {
-            nodes {
-                frontmatter {
-                    title
-                    url
-                    squareImg {
-                        childImageSharp {
-                            fixed {
-                                ...GatsbyImageSharpFixed
-                            }
-                        }
-                    }
-                }
-                html
-            }
+export const query = graphql`query ResourceDetail($subgroup: String) {
+  allMarkdownRemark(filter: {frontmatter: {subgroup: {eq: $subgroup}}}) {
+    nodes {
+      frontmatter {
+        title
+        url
+        squareImg {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
         }
+      }
+      html
     }
+  }
+}
 `

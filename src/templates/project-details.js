@@ -1,7 +1,7 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from 'react';
 import {graphql} from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 /******* END: IMPORT REACT AND DONGLES *******/
 
 
@@ -14,7 +14,7 @@ import * as styles from '../styles/project-details.module.css';
 export default function ProjectDetails({data}) {
     const {html} = data.markdownRemark;
     const {title, app, repo} = data.markdownRemark.frontmatter;
-    const {fluid} = data.markdownRemark.frontmatter.fullImg.childImageSharp;
+    const fluid = data.markdownRemark.frontmatter.fullImg.childImageSharp.gatsbyImageData;
 
     return (
         <Layout>
@@ -23,7 +23,7 @@ export default function ProjectDetails({data}) {
                 <hr />
                 <section className={styles.details_content}>
                     <div className={styles.project_picture_frame}>
-                        <Img fluid={fluid} />
+                        <GatsbyImage image={fluid} />
                     </div>
                     <div className={styles.details_text} >
                         <div className={styles.project_details_html} dangerouslySetInnerHTML={{__html: html}} />
@@ -40,22 +40,19 @@ export default function ProjectDetails({data}) {
     );
 }
 
-export const query = graphql`
-    query ProjectDetail($slug: String) {
-        markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-            html
-            frontmatter {
-                title
-                app
-                repo
-                fullImg {
-                    childImageSharp {
-                        fluid {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }
-            }
+export const query = graphql`query ProjectDetail($slug: String) {
+  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    html
+    frontmatter {
+      title
+      app
+      repo
+      fullImg {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
+      }
     }
+  }
+}
 `

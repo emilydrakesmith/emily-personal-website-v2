@@ -272,10 +272,14 @@ This is the remote repository for the version 2.0 of my personal website which y
 * I moved the empty `.md` files from the directory `/src/data/resources/web-development` to `/src/data/resources/tempfiles` in case their presence is the reason the build is failing.  It's probably not but their presence is an unnecessary complicating factor.
 * Redeveloped GraphQL query in `resource-details.js` from scratch.
 
-#### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
+#### v 2.2.2.0  |  06 July 2021  |  commit e5448edc1e620c83ea42ae4bc609f3272092b240
 * I changed image sharp fluid to image sharp fixed in `resource-details.js` to see if a fixed inquiry will work.
+  * Edit: Nope, fixed doesn't work either.
 
-
+#### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
+* Registered the new plugin `gatsby-plugin-image` in `gatsby-config.js`; this replaces the plugin `gatsby-image` (which is now deprecated).  Installed via `npm i gatsby-plugin-image` in the terminal.
+* Ran the codemod via `npx gatsby-codemods gatsby-plugin-image /Users/martinsmith/code/personal-projects/Marty-personal-website/Marty-Smith-personal-website-2/src/templates` to update code.
+* Restructured how I call images in `project-details.js` to reflect the new file structure returned by GraphQL.
 
 [Back to Top](#top)
 

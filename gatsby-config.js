@@ -20,6 +20,7 @@ module.exports = {
 				icon: `src/images/favicons/favicon-16x16.png`
 			}
 		},
+		`gatsby-plugin-image`,
 		'gatsby-transformer-sharp',
 		'gatsby-transformer-remark',            	// creates a graphQL interface for markdown files
 		{
