@@ -1,5 +1,6 @@
 ---
 title: Lunapic
+slug: lunapic
 url: https://www.lunapic.com/
 requiresAccount: false
 tiers: Free

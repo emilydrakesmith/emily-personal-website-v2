@@ -1,5 +1,6 @@
 ---
 title: Mastering Markdown
+slug: mastering-markdown
 url: https://guides.github.com/features/mastering-markdown/
 requiresAccount: false
 tiers: Free

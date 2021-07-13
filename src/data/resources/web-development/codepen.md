@@ -1,5 +1,6 @@
 ---
 title: Codepen
+slug: codepen
 url: https://codepen.io/
 requiresAccount: true
 tiers: Free & Paid

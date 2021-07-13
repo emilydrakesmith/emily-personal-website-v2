@@ -1,5 +1,6 @@
 ---
 title: Flaticon
+slug: flaticon
 url: https://www.flaticon.com/
 requiresAccount: false
 tiers: Free & Paid

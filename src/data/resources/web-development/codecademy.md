@@ -1,5 +1,6 @@
 ---
 title: Codecademy
+slug: codecademy
 url: https://www.codecademy.com/
 requiresAccount: true
 tiers: Free & Paid

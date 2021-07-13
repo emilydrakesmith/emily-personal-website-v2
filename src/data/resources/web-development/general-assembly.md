@@ -1,5 +1,6 @@
 ---
 title: General Assembly
+slug: general-assembly
 url: https://generalassemb.ly/
 requiresAccount: true
 tiers: Paid

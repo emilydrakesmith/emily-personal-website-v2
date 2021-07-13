@@ -23,7 +23,7 @@ export default function ProjectDetails({data}) {
                 <hr />
                 <section className={styles.details_content}>
                     <div className={styles.project_picture_frame}>
-                        <GatsbyImage image={fluid} />
+                        <GatsbyImage alt={title} image={fluid} />
                     </div>
                     <div className={styles.details_text} >
                         <div className={styles.project_details_html} dangerouslySetInnerHTML={{__html: html}} />
@@ -54,5 +54,4 @@ export const query = graphql`query ProjectDetail($slug: String) {
       }
     }
   }
-}
-`
+}`

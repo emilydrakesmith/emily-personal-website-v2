@@ -32,21 +32,19 @@ export default function ResourceDetails({location, data}) {
             pageTitle = 'Resources';
     }
 
-    console.log(nodes)
-
     const resourceLinks = nodes.map((node, idx) => (
-        <article className={styles.resource_article} key={idx}>
+        <article id={node.frontmatter.slug} className={styles.resource_article} key={idx}>
             <div className={styles.green_line_left} />
             <div className={styles.resource_article_content}>
                 <h2>{node.frontmatter.title}</h2>
                 <div className={styles.resource_article_details}>
                     <div className={styles.resource_picture_frame}>
-                        <GatsbyImage image={node.frontmatter.squareImg.childImageSharp.gatsbyImageData} />
+                        <GatsbyImage alt={node.frontmatter.title} image={node.frontmatter.squareImg.childImageSharp.gatsbyImageData} />
                     </div>
                     <div className={styles.resource_article_text}>
                         <div className={styles.resource_details_html} dangerouslySetInnerHTML={{__html: node.html}} />
                         <div className={styles.resource_linkdiv}>
-                            <a href={node.frontmatter.url} target="_blank" rel="noreferrer">Click to Open</a>
+                            <a className={styles.resource_external_hyperlink} href={node.frontmatter.url} target="_blank" rel="noreferrer">Click to View</a>
                         </div>
                     </div>
                 </div>
@@ -70,19 +68,19 @@ export default function ResourceDetails({location, data}) {
 }
 
 export const query = graphql`query ResourceDetail($subgroup: String) {
-  allMarkdownRemark(filter: {frontmatter: {subgroup: {eq: $subgroup}}}) {
-    nodes {
-      frontmatter {
-        title
-        url
-        squareImg {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
+    allMarkdownRemark(filter: {frontmatter: {subgroup: {eq: $subgroup}}}) {
+        nodes {
+            frontmatter {
+                title
+                url
+                slug
+                squareImg {
+                    childImageSharp {
+                        gatsbyImageData(layout: FULL_WIDTH)
+                    }
+                }
+            }
+            html
         }
-      }
-      html
     }
-  }
-}
-`
+}`

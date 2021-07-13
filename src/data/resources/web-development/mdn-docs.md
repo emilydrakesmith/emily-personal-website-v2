@@ -1,5 +1,6 @@
 ---
 title: MDN Web Docs
+slug: mdn-web-docs
 url: https://developer.mozilla.org/
 requiresAccount: false
 tiers: Free

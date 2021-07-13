@@ -285,9 +285,11 @@ This is the remote repository for the version 2.0 of my personal website which y
 * Deleted placeholder test files in `src/data/resources/javascript` and `src/data/resources/react`.  I think the build on Netlify may have failed due to incomplete data files being skipped by the build in my local environment.
   * **FUTURE REFERENCE** *This was it!*  So from now on, no half-built `.md` files.  Every created file needs to be blank or fully-built.  Two test files with half-developed dummy data failed to build because of the missing data.
 
-#### v 2.2.2.1  |  13 July 2021  |  commit 8c567e73516c3a688181d0ae3be6425cc4de6dd9  |  Current Version
+#### v 2.2.2.1  |  13 July 2021  |  commit 8c567e73516c3a688181d0ae3be6425cc4de6dd9
 * Moved all `.md` files being stored in the `/src/data/resources/tempfiles` directory to the `/src/data/resources/web-development` directory.
 * Re-activated the link to the `/resources/html-css` sub-directory page.
+
+#### v 2.2.2.2  |  13 July 2021  |  commit 115de568ab74484f4b4f9d85758fcb525c34ad65  |  Current Version
 * Built out `.md` files for the following links in the `/resources/web-development` sub-directory page:
   * Flaticon
   * General Assembly
@@ -298,6 +300,19 @@ This is the remote repository for the version 2.0 of my personal website which y
   * The Net Ninja
   * Repl.it
   * W3Schools
+
+#### v 2.2.3.0  |  13 July 2021  |  commit --  |  Current Version
+* Added a field `slug` to the frontmatter in all `.md` files in the `src/data/resources` directory.  This is necessary for anchor tags for in-page hyperlinking.
+* Added  `id={node.frontmatter.slug}` as an attribute to the top-level element `<article>` in `resource-details.js` to have a target for in-page hperlinking.
+* Added `className={styles.resource_external_hyperlink}` as an attribute to external link anchor tags in `resource-details.js` file.
+* Refactor CSS in `resource-details.module.css` such that styles previously targeting `.resource_article_details a` now target the new `resource_external_hyperlink` class.
+* Added in-page hyperlinks to every resource listed in the `/resources` sub-directories which name another resource.
+* Added additional `margin-bottom` spacing to external hyperlinks in `/resources` sub-directories for mobile devices.
+* Added alt text to all instances of `<GatsbyImage />` to satisfy errors.
+* Built out `.md` files for the following links in the `/resources/html-css` sub-directory page:
+  * CSS Tricks - Flexbox
+  * CSS Tricks - Grid
+  * Layoutit
 
 [Back to Top](#top)
 

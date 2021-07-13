@@ -1,5 +1,6 @@
 ---
 title: CSS Tricks
+slug: css-tricks
 url: https://css-tricks.com/
 requiresAccount: false
 tiers: Free
