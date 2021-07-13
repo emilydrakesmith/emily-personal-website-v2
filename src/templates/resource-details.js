@@ -68,7 +68,7 @@ export default function ResourceDetails({location, data}) {
 }
 
 export const query = graphql`
-    query ResourceDetails($subgroup: String) {
+    query ResourceDetail($subgroup: String) {
         allMarkdownRemark(filter: {frontmatter: {subgroup: {eq: $subgroup}}}) {
             nodes {
                 frontmatter {

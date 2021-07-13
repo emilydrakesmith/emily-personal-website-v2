@@ -266,7 +266,9 @@ This is the remote repository for the version 2.0 of my personal website which y
 
 #### v 2.2.2.0  |  06 July 2021  |  commit --  |  Current Version
 * I did not anticipate in the last commit my website would now build, but without the images in question.  I restored the previous line of code removed, but now I need to finish this fix tonight or else my site will be live with missing images.
+  * For the time being I've locked Netlify into using the last successful build.  Auto-publishing is disabled.
 * I moved the empty `.md` files from the directory `/src/data/resources/web-development` to `/src/data/resources/tempfiles` in case their presence is the reason the build is failing.  It's probably not but their presence is an unnecessary complicating factor.
+* Redeveloped GraphQL query in `project-details.js` from scratch.
 
 [Back to Top](#top)
 
