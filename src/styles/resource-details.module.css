@@ -8,6 +8,10 @@
 }
 /******* END: PARENT CONTAINER *******/
 
+.resource_subgroup a {
+    color: #38A000;
+}
+
 .resource_subgroup_header > h1 {
     font-size: 45px;
     color: #BBB;
@@ -68,7 +72,6 @@
     padding: 8px 12px;
     text-align: center;
     letter-spacing: 2px;
-    color: #38A000;
     border: 1px solid #38A000;
     border-radius: 10px;
 }

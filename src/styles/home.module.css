@@ -80,13 +80,11 @@
     margin-bottom: 10px;
 }
 
-.nav_links div {
+.nav_links > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 12px;
-    margin-bottom: 16px;
     min-width: 130px;
     min-height: 130px;
     border-radius: 15px;
@@ -186,9 +184,5 @@
     .nav_links {
         flex-direction: column;
         flex-wrap: nowrap;
-    }
-
-    .nav_links > a {
-
     }
 }

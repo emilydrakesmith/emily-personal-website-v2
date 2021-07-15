@@ -45,11 +45,9 @@ export default function Home() {
 	];
 
 	const linkData = linkArray.map((link, idx) => (
-		<Link to={link.path} key={idx}>
-			<div className={link.css}>
-				<img src={link.icon} alt={link.altText}/>
-				<h4>{link.title}</h4>
-			</div>
+		<Link to={link.path} className={link.css} key={idx}>
+			<img src={link.icon} alt={link.altText}/>
+			<h4>{link.title}</h4>
 		</Link>
 	));
 

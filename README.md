@@ -293,38 +293,55 @@ I have published this website under the [MIT License](#license).
 
 #### v 2.2.2.2  |  13 July 2021  |  commit 115de568ab74484f4b4f9d85758fcb525c34ad65  |  Current Version
 * Built out `.md` files for the following links in the `/resources/web-development` sub-directory page:
-  * Flaticon
-  * General Assembly
-  * Lunapic
-  * Markdown Live Preview
-  * Mastering Markdown
-  * MDN Web Docs
-  * The Net Ninja
-  * Repl.it
-  * W3Schools
+  * [Flaticon](https://www.flaticon.com/)
+  * [General Assembly](https://generalassemb.ly/)
+  * [Lunapic](https://www.lunapic.com/)
+  * [Markdown Live Preview](https://markdownlivepreview.com/)
+  * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+  * [MDN Web Docs](https://developer.mozilla.org/)
+  * [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
+  * [Repl.it](https://replit.com/)
+  * [W3Schools](https://www.w3schools.com/)
 
 #### v 2.2.3.0  |  13 July 2021  |  commit 55b82cdcfd9efab0294c8be3b60021afc6dc3a9c
 * Added a field `slug` to the frontmatter in all `.md` files in the `src/data/resources` directory.  This is necessary for anchor tags for in-page hyperlinking.
-* Added  `id={node.frontmatter.slug}` as an attribute to the top-level element `<article>` in `resource-details.js` to have a target for in-page hperlinking.
+* Added  `id={node.frontmatter.slug}` as an attribute to the top-level element `<article>` in `resource-details.js` to have a target for in-page hyperlinking.
 * Added `className={styles.resource_external_hyperlink}` as an attribute to external link anchor tags in `resource-details.js` file.
 * Refactor CSS in `resource-details.module.css` such that styles previously targeting `.resource_article_details a` now target the new `resource_external_hyperlink` class.
 * Added in-page hyperlinks to every resource listed in the `/resources` sub-directories which name another resource.
 * Added additional `margin-bottom` spacing to external hyperlinks in `/resources` sub-directories for mobile devices.
 * Added alt text to all instances of `<GatsbyImage />` to satisfy errors.
 * Built out `.md` files for the following links in the `/resources/html-css` sub-directory page:
-  * CSS Tricks - Flexbox
-  * CSS Tricks - Grid
-  * Layoutit
+  * [CSS Tricks - Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  * [CSS Tricks - Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+  * [Layoutit](https://grid.layoutit.com/)
 
 #### v 2.2.3.1  |  13 July 2021  |  commit 46b8a49d66d9b76fb9131c73ba6241b215145e53
 * Updated items listed in *Ice Box* section of `README.md` to reflect implemented features.
 * Added the MIT License to the publication and use terms of this website.
 
-#### BRANCH render-layout-through-ssr  |  13 July 2021  |  commit --  |  Current Version
+#### BRANCH render-layout-through-ssr  |  13 July 2021  |  commit 65a45be3b9aafac772918da7355742de8e5aeef0
 * Initialized `gatsby-ssr.js` and `gatsby-browser.js` files.
 * Wrote functions in both new files to automatically wrap `<Layout />` around page elements.
 * Removed `<Layout />` wrapper from all render functions and corresponding import statements from relevant files.
 * Confirmed all pages including sub-directories are rendering properly.
+
+#### v 2.2.4.0  |  13 July 2021  |  commit 5fd9b1e3c46706015f348967cbb57de1c5af804f
+* Pushed branch `render-layout-through-ssr` and merged into main on GitHub.
+* Pulled this commit from GitHub to sync local `main` with `origin/main`.
+
+#### v 2.2.4.1  |  15 July 2021  |  commit --  |  Current Version
+* Removed an unnecessary `<div>` wrapper around the `<Link />` elements in the `index.js` page.
+* Added an `.md` file for [Making CSS](https://makingcss.com/) to be rendered in the `/resources/html-css` directory.
+* Added .`md` files for [Netlify](https://www.netlify.com/) and [Heroku](https://www.heroku.com/) to be rendered in the `/resources/web-development` directory.
+* *Important!* since I don't seem to be using wide images in my links to external resources, I've stopped creating them when I make new resource entries.  For the time being I'm keeping the `wideImg` field in the frontmatter of new `.md` files but leaving it set to `null`.  I'm going to keep the field and the existing wide images until a later time when I'm sure I'll never use them.  I don't think they look as good as the square screenshots anyway.
+* Made alterations to the organization of the `src/images/resources` directory:
+  * Deleted the directory `src/images/resources/internal` since I'm not using it.
+  * Moved all the files in the `src/images/resources/external` directory to `src/images/resources` since I don't have sub-directories in that directory anymore.
+  * Deleted the directory `src/images/resources/external` as it's now empty and obsolete.
+  * Updated all the image filepaths in `.md` files in the `src/data/resources` directory.  This was easy since it's just removing `/external` from each filepaths.
+* Modified `resource-details.module.css` to use color-match in-page links with external links.
+* Hyperlinked records in *Version Notes* of `README.md` of adding external resources to `/resources` sub-directories.
 
 [Back to Top](#top)
 
