@@ -11,6 +11,6 @@ squareImg: ../../../images/resources/heroku-square.png
 wideImg: null
 ---
 
-Netlify is my go-to source for simple webhosting.  It's easy to use and configure for a simple website which will not experience enough traffic to justify paid hosting with AWS.  Its only drawback is that it does not support apps with an active back-end, so any projects you build using Node.js or Django need to be hosted elsewhere.
+Heroku is a cloud-hosting platforms with free and paid tiers where you can host web apps.  It should be noted that it has frequent downtimes for paid users, which among other reasons makes Netlify generally superior alternative.  However, it has support for apps with a Node.js or Django back-end which Netlify does not.  For apps that require such and don't warrant paid hosting with AWS, Heroku is best choice.
 
-See also: <a href="#heroku">Heroku</a>
+See also: <a href="#netlify">Netlify</a>

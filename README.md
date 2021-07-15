@@ -330,7 +330,7 @@ I have published this website under the [MIT License](#license).
 * Pushed branch `render-layout-through-ssr` and merged into main on GitHub.
 * Pulled this commit from GitHub to sync local `main` with `origin/main`.
 
-#### v 2.2.4.1  |  15 July 2021  |  commit --  |  Current Version
+#### v 2.2.4.1  |  15 July 2021  |  commit 99c641bf72ebab5b91f2cd4831aa42b809c987a8
 * Removed an unnecessary `<div>` wrapper around the `<Link />` elements in the `index.js` page.
 * Added an `.md` file for [Making CSS](https://makingcss.com/) to be rendered in the `/resources/html-css` directory.
 * Added .`md` files for [Netlify](https://www.netlify.com/) and [Heroku](https://www.heroku.com/) to be rendered in the `/resources/web-development` directory.
@@ -342,6 +342,10 @@ I have published this website under the [MIT License](#license).
   * Updated all the image filepaths in `.md` files in the `src/data/resources` directory.  This was easy since it's just removing `/external` from each filepaths.
 * Modified `resource-details.module.css` to use color-match in-page links with external links.
 * Hyperlinked records in *Version Notes* of `README.md` of adding external resources to `/resources` sub-directories.
+
+#### v 2.2.4.2  |  15 July 2021  |  commit --  |  Current Version
+* Updated data in `heroku.md` file; I copy/pasted data from `netlify.md` as a template but forgot to update the `html` data (resource description and in-page hylerlink) in the file.
+* Added an `.md` file for [GitHub](https://github.com/) to be rendered in the `/resources/web-development` directory.
 
 [Back to Top](#top)
 
