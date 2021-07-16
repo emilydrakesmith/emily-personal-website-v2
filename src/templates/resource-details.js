@@ -15,6 +15,9 @@ export default function ResourceDetails({location, data}) {
     
     let pageTitle = '';
     switch (pathname) {
+        case '/resources/tutorials':
+            pageTitle = 'Tutorials';
+            break;
         case '/resources/web-development':
             pageTitle = 'Web Development';
             break;

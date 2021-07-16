@@ -5,8 +5,8 @@ url: https://generalassemb.ly/
 requiresAccount: true
 tiers: Paid
 group: resources
-subgroup: web-development
-pageTitle: Web Development
+subgroup: tutorials
+pageTitle: Tutorials
 squareImg: ../../../images/resources/general-assembly-square.png
 wideImg: ../../../images/resources/general-assembly-wide.png
 ---

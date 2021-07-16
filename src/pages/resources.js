@@ -6,6 +6,7 @@ import {Link} from 'gatsby';
 
 /******* START: IMPORT LOCAL FILES *******/
 import * as styles from '../styles/resources.module.css';
+import tutorials_icon from '../images/icons/tutorials-icon.svg';
 import web_dev_icon from '../images/icons/web-dev-icon.svg';
 import html_css_icon from '../images/icons/html-css-icon.svg';
 import javascript_icon from '../images/icons/javascript-icon.svg';
@@ -14,6 +15,12 @@ import react_icon from '../images/icons/react-icon.svg';
 
 export default function Resources() {
     const resourcesLinkArray = [
+        {
+            title: 'Tutorials',
+            icon: tutorials_icon,
+            altText: 'icon for link to Tutorials resources page',
+            path: '/resources/tutorials',
+        },
         {
             title: 'Web Dev',
             icon: web_dev_icon,

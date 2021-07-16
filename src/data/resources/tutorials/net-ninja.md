@@ -5,8 +5,8 @@ url: https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg
 requiresAccount: false
 tiers: Free & Paid
 group: resources
-subgroup: web-development
-pageTitle: Web Development
+subgroup: tutorials
+pageTitle: Tutorials
 squareImg: ../../../images/resources/net-ninja-square.png
 wideImg: ../../../images/resources/net-ninja-wide.png
 ---

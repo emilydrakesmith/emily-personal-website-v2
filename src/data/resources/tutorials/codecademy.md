@@ -5,8 +5,8 @@ url: https://www.codecademy.com/
 requiresAccount: true
 tiers: Free & Paid
 group: resources
-subgroup: web-development
-pageTitle: Web Development
+subgroup: tutorials
+pageTitle: Tutorials
 squareImg: ../../../images/resources/codecademy-square.png
 wideImg: ../../../images/resources/codecademy-wide.png
 ---

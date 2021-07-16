@@ -5,7 +5,7 @@
  */
 
 /**		IMPORTANT!  Any change to this file requires restarting the development server for changes to
- *		take effect.  Exit the server and run `gatsby develop` to do this.
+ *		take effect.  Exit the server and run `gatsby develop` in the terminal to do this.
  */
 
 // TODO: consider building URL pathways into siteMetadata

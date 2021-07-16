@@ -5,8 +5,8 @@ url: https://css-tricks.com/
 requiresAccount: false
 tiers: Free
 group: resources
-subgroup: web-development
-pageTitle: Web Development
+subgroup: tutorials
+pageTitle: Tutorials
 squareImg: ../../../images/resources/css-tricks-square.png
 wideImg: ../../../images/resources/css-tricks-wide.png
 ---
