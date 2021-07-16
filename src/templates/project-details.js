@@ -38,17 +38,17 @@ export default function ProjectDetails({data}) {
 }
 
 export const query = graphql`query ProjectDetail($slug: String) {
-  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
-	html
-	frontmatter {
-	  title
-	  app
-	  repo
-	  fullImg {
-		childImageSharp {
-		  gatsbyImageData(layout: FULL_WIDTH)
+	markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+		html
+		frontmatter {
+			title
+			app
+			repo
+			fullImg {
+				childImageSharp {
+					gatsbyImageData(layout: FULL_WIDTH)
+				}
+			}
 		}
-	  }
 	}
-  }
 }`

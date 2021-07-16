@@ -46,7 +46,9 @@ export default function ResourceDetails({location, data}) {
                     <div className={styles.resource_article_text}>
                         <div dangerouslySetInnerHTML={{__html: node.html}} />
                         <div className={styles.resource_linkdiv}>
-                            <a className={styles.resource_external_hyperlink} href={node.frontmatter.url} target="_blank" rel="noreferrer">Click to View</a>
+                            <a className={styles.resource_external_hyperlink} href={node.frontmatter.url} target="_blank" rel="noreferrer">
+                                Click to View
+                            </a>
                         </div>
                     </div>
                 </div>

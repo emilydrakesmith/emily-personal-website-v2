@@ -347,14 +347,18 @@ I have published this website under the [MIT License](#license).
 * Updated data in `heroku.md` file; I copy/pasted data from `netlify.md` as a template but forgot to update the `html` data (resource description and in-page hyperlink) in the file.
 * Added an `.md` file for [GitHub](https://github.com/) to be rendered in the `/resources/web-development` directory.
 
-#### v 2.2.4.3  |  15 July 2021  |  commit --  |  Current Version
+#### v 2.2.4.3  |  15 July 2021  |  commit a0765382b14575734a33fd688030dc025eadcee4
 * Added an `.md` file for [Bacon Ipsum](https://baconipsum.com/) to be rendered in the `/resources/web-development` directory.
 * Created a new *Learning* resource in the `/resources` directory.
 * Moved the following `.md` files for the following resources from `src/data/resources/web-development` to `src/data/resources/tutorials`:
-  * [CSS Tricks](https://www.css-tricks.com/)
   * [Codecademy](https://www.codecademy.com/)
+  * [CSS Tricks](https://www.css-tricks.com/)
   * [General Assembly](https://generalassemb.ly/)
   * [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
+
+#### v 2.2.4.4  |  15 July 2021  |  commit --   |  Current Version
+* Refactored `gatsby-browser.js` and `gatsby-ssr.js` to use arrow function notation.
+* Added alt-text to icons loaded in the `/resources` index page.
 
 [Back to Top](#top)
 

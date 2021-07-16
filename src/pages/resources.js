@@ -49,7 +49,7 @@ export default function Resources() {
 
     const resourcesLinkData = resourcesLinkArray.map((link, idx) => (
         <Link to={link.path} className={styles.resource_link} key={idx}>
-            <img src={link.icon} />
+            <img src={link.icon} alt={link.altText} />
             <h4>{link.title}</h4>
         </Link>
     ));
