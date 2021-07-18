@@ -1,6 +1,7 @@
 ---
 title: React Native
 slug: react-native
+sequence: 6
 url: https://reactnative.dev/
 requiresAccount: false
 tiers: Free

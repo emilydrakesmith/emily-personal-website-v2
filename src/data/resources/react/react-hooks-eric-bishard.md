@@ -1,6 +1,7 @@
 ---
 title: Eric Bishard - React Hooks
 slug: react-hooks-eric-bishard
+sequence: 4
 url: https://www.telerik.com/kendo-react-ui/react-hooks-guide/
 requiresAccount: false
 tiers: Free

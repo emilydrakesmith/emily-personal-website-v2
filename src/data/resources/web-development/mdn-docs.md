@@ -1,6 +1,7 @@
 ---
 title: MDN Web Docs
 slug: mdn-web-docs
+sequence: 11
 url: https://developer.mozilla.org/
 requiresAccount: false
 tiers: Free

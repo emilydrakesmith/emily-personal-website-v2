@@ -1,6 +1,7 @@
 ---
 title: Bacon Ipsum
 slug: bacon-ipsum
+sequence: 6
 url: https://baconipsum.com/
 requiresAccount: false
 tiers: Free

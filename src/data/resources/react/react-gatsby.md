@@ -1,6 +1,7 @@
 ---
 title: GatsbyJS
 slug: react-gatsby
+sequence: 5
 url: https://www.gatsbyjs.com/
 requiresAccount: false
 tiers: Free

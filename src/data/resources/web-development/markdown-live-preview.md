@@ -1,6 +1,7 @@
 ---
 title: Markdown Live Preview
 slug: markdown-live-preview
+sequence: 10
 url: https://markdownlivepreview.com/
 requiresAccount: false
 tiers: Free

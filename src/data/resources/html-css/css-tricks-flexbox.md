@@ -1,6 +1,7 @@
 ---
 title: CSS Tricks - Flexbox
 slug: css-tricks-flexbox
+sequence: 1
 url: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 requiresAccount: false
 tiers: null

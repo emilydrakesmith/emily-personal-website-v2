@@ -1,6 +1,7 @@
 ---
 title: W3Schools
 slug: w3schools
+sequence: 12
 url: https://www.w3schools.com/
 requiresAccount: true
 tiers: Free

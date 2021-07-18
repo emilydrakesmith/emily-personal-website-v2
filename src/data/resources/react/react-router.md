@@ -1,6 +1,7 @@
 ---
 title: React Router
 slug: react-router
+sequence: 3
 url: https://reactrouter.com/
 requiresAccount: false
 tiers: Free

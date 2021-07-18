@@ -1,6 +1,7 @@
 ---
 title: Grid Garden
 slug: grid-garden
+sequence: 4
 url: https://cssgridgarden.com/
 requiresAccount: false
 tiers: null

@@ -1,6 +1,7 @@
 ---
 title: Net Ninja - React
 slug: react-net-ninja
+sequence: 2
 url: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d
 requiresAccount: false
 tiers: Free & Paid

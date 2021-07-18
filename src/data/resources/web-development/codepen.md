@@ -1,6 +1,7 @@
 ---
 title: Codepen
 slug: codepen
+sequence: 1
 url: https://codepen.io/
 requiresAccount: true
 tiers: Free & Paid

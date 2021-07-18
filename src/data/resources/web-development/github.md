@@ -1,6 +1,7 @@
 ---
 title: GitHub
 slug: github
+sequence: 3
 url: https://github.com/
 requiresAccount: true
 tiers: Free & Paid

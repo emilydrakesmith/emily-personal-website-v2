@@ -1,6 +1,7 @@
 ---
 title: Repl.it
 slug: replit
+sequence: 2
 url: https://replit.com/
 requiresAccount: true
 tiers: Free & Paid

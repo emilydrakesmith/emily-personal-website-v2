@@ -1,6 +1,7 @@
 ---
 title: Netlify
 slug: netlify
+sequence: 4
 url: https://www.netlify.com/
 requiresAccount: true
 tiers: Free & Paid

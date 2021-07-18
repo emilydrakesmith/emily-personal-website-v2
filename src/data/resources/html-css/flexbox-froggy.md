@@ -1,6 +1,7 @@
 ---
 title: Flexbox Froggy
 slug: flexbox-froggy
+sequence: 2
 url: https://flexboxfroggy.com/
 requiresAccount: false
 tiers: null

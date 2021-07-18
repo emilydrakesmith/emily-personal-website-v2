@@ -1,6 +1,7 @@
 ---
 title: Making CSS
 slug: making-css
+sequence: 6
 url: https://makingcss.com/
 requiresAccount: false
 tiers: null

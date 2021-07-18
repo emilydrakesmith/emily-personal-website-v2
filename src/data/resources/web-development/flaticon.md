@@ -1,6 +1,7 @@
 ---
 title: Flaticon
 slug: flaticon
+sequence: 7
 url: https://www.flaticon.com/
 requiresAccount: false
 tiers: Free & Paid

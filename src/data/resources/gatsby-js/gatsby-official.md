@@ -1,6 +1,7 @@
 ---
 title: GatsbyJS
 slug: gatsby-official
+sequence: 1
 url: https://www.gatsbyjs.com/
 requiresAccount: false
 tiers: Free

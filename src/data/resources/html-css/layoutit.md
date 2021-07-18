@@ -1,6 +1,7 @@
 ---
 title: Layoutit!
 slug: layoutit
+sequence: 5
 url: https://grid.layoutit.com/
 requiresAccount: false
 tiers: null

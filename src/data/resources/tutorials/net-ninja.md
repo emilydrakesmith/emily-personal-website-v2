@@ -1,6 +1,7 @@
 ---
 title: The Net Ninja
 slug: net-ninja
+sequence: 2
 url: https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg
 requiresAccount: false
 tiers: Free & Paid

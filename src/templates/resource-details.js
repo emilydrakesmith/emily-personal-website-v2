@@ -15,13 +15,25 @@ export default function ResourceDetails({location, data}) {
     
     let pageTitle = '';
     switch (pathname) {
-        case '/resources/tutorials': pageTitle = 'Tutorials';
-        case '/resources/web-development': pageTitle = 'Web Development';
-        case '/resources/html-css': pageTitle = 'HTML & CSS';
-        case '/resources/javascript': pageTitle = 'JavaScript';
-        case '/resources/react': pageTitle = 'React';
-        case '/resources/gatsby-js': pageTitle = 'Gatsby';
-        default: pageTitle = 'Resources';
+        case '/resources/tutorials':
+            pageTitle = 'Tutorials';
+            break;
+        case '/resources/web-development':
+            pageTitle = 'Web Development';
+            break;
+        case '/resources/html-css':
+            pageTitle = 'HTML & CSS';
+            break;
+        case '/resources/javascript':
+            pageTitle = 'JavaScript';
+            break;
+        case '/resources/react':
+            pageTitle = 'React';
+            break;
+        case '/resources/gatsby-js': pageTitle = 'Gatsby'
+            break;
+        default:
+            pageTitle = 'Resources';
     }
 
     const resourceLinks = nodes.map((node, idx) => (
@@ -60,7 +72,10 @@ export default function ResourceDetails({location, data}) {
 }
 
 export const query = graphql`query ResourceDetail($subgroup: String) {
-    allMarkdownRemark(filter: {frontmatter: {subgroup: {eq: $subgroup}}}) {
+    allMarkdownRemark(
+        filter: {frontmatter: {subgroup: {eq: $subgroup}}}
+        sort: {fields: frontmatter___sequence, order: ASC}
+        ) {
         nodes {
             frontmatter {
                 title

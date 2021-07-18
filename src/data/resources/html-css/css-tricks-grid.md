@@ -1,6 +1,7 @@
 ---
 title: CSS Tricks - Grid
 slug: css-tricks-grid
+sequence: 3
 url: https://css-tricks.com/snippets/css/complete-guide-grid/
 requiresAccount: false
 tiers: null

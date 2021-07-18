@@ -1,6 +1,7 @@
 ---
 title: React.js
 slug: react
+sequence: 1
 url: https://reactjs.org/
 requiresAccount: false
 tiers: Free

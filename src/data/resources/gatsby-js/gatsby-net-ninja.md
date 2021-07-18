@@ -1,6 +1,7 @@
 ---
 title: Net Ninja - Gatsby
 slug: gatsby-net-ninja
+sequence: 2
 url: https://www.youtube.com/playlist?list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB
 requiresAccount: false
 tiers: Free & Paid

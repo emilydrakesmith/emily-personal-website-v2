@@ -1,6 +1,7 @@
 ---
 title: General Assembly
 slug: general-assembly
+sequence: 4
 url: https://generalassemb.ly/
 requiresAccount: true
 tiers: Paid

@@ -1,6 +1,7 @@
 ---
 title: Lunapic
 slug: lunapic
+sequence: 8
 url: https://www.lunapic.com/
 requiresAccount: false
 tiers: Free
