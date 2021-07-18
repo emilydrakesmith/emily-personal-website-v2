@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: null
 group: resources
 subgroup: html-css
-pageTitle: HTML & CSS
 squareImg: ../../../images/resources/flexbox-froggy-square.png
 wideImg: ../../../images/resources/flexbox-froggy-wide.png
 ---

@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: Free & Paid
 group: resources
 subgroup: tutorials
-pageTitle: Tutorials
 squareImg: ../../../images/resources/net-ninja-square.png
 wideImg: ../../../images/resources/net-ninja-wide.png
 ---

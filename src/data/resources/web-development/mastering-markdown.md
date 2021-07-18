@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: Free
 group: resources
 subgroup: web-development
-pageTitle: Web Development
 squareImg: ../../../images/resources/mastering-markdown-square.png
 wideImg: ../../../images/resources/mastering-markdown-wide.png
 ---

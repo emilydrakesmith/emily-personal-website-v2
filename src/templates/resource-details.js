@@ -1,7 +1,7 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from 'react';
 import {graphql} from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import {GatsbyImage} from "gatsby-plugin-image";
 /******* END: IMPORT REACT AND DONGLES *******/
 
 
@@ -15,23 +15,13 @@ export default function ResourceDetails({location, data}) {
     
     let pageTitle = '';
     switch (pathname) {
-        case '/resources/tutorials':
-            pageTitle = 'Tutorials';
-            break;
-        case '/resources/web-development':
-            pageTitle = 'Web Development';
-            break;
-        case '/resources/html-css':
-            pageTitle = 'HTML & CSS';
-            break;
-        case '/resources/javascript':
-            pageTitle = 'JavaScript';
-            break;
-        case '/resources/react':
-            pageTitle = 'React';
-            break;
-        default:
-            pageTitle = 'Resources';
+        case '/resources/tutorials': pageTitle = 'Tutorials';
+        case '/resources/web-development': pageTitle = 'Web Development';
+        case '/resources/html-css': pageTitle = 'HTML & CSS';
+        case '/resources/javascript': pageTitle = 'JavaScript';
+        case '/resources/react': pageTitle = 'React';
+        case '/resources/gatsby-js': pageTitle = 'Gatsby';
+        default: pageTitle = 'Resources';
     }
 
     const resourceLinks = nodes.map((node, idx) => (

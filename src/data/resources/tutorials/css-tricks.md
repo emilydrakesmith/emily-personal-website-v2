@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: Free
 group: resources
 subgroup: tutorials
-pageTitle: Tutorials
 squareImg: ../../../images/resources/css-tricks-square.png
 wideImg: ../../../images/resources/css-tricks-wide.png
 ---

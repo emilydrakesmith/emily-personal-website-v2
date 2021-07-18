@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: null
 group: resources
 subgroup: html-css
-pageTitle: HTML & CSS
 squareImg: ../../../images/resources/grid-garden-square.png
 wideImg: ../../../images/resources/grid-garden-wide.png
 ---

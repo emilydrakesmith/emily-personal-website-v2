@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: Free
 group: resources
 subgroup: web-development
-pageTitle: Web Development
 squareImg: ../../../images/resources/mdn-docs-square.png
 wideImg: ../../../images/resources/mdn-docs-wide.png
 ---

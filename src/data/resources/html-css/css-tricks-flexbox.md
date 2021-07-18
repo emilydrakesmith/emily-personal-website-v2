@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: null
 group: resources
 subgroup: html-css
-pageTitle: HTML & CSS
 squareImg: ../../../images/resources/css-tricks-guide-to-flexbox-square.png
 wideImg: ../../../images/resources/css-tricks-guide-to-flexbox-wide.png
 ---

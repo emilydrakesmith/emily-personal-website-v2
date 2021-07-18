@@ -1,7 +1,7 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from 'react';
 import {graphql} from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
+import {GatsbyImage} from "gatsby-plugin-image";
 /******* END: IMPORT REACT AND DONGLES *******/
 
 

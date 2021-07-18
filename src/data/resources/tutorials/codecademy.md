@@ -6,7 +6,6 @@ requiresAccount: true
 tiers: Free & Paid
 group: resources
 subgroup: tutorials
-pageTitle: Tutorials
 squareImg: ../../../images/resources/codecademy-square.png
 wideImg: ../../../images/resources/codecademy-wide.png
 ---

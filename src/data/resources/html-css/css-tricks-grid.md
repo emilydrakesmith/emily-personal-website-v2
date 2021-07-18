@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: null
 group: resources
 subgroup: html-css
-pageTitle: HTML & CSS
 squareImg: ../../../images/resources/css-tricks-guide-to-grid-square.png
 wideImg: ../../../images/resources/css-tricks-guide-to-grid-wide.png
 ---

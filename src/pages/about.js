@@ -22,7 +22,7 @@ export default function About({data}) {
     const skillsDesktop = 
         <>
             <p>JavaScript ES6+  {bar}  HTML5  {bar}  CSS3</p>
-            <p>React  {bar}  Gatsby.js  {bar}  Node.js  {bar}  Express  {bar}  jQuery</p>
+            <p>React  {bar}  GatsbyJS  {bar}  Node.js  {bar}  Express  {bar}  jQuery</p>
             <p>Python 3  {bar}  Django</p>
             <p>MongoDB  {bar}  Mongoose  {bar}  PostgreSQL  {bar}  GraphQL</p>
             <p>CLI & Git  {bar}  GitHub  {bar}  Agile Process  {bar}  UX/UI</p>

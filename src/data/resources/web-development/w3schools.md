@@ -6,7 +6,6 @@ requiresAccount: true
 tiers: Free
 group: resources
 subgroup: web-development
-pageTitle: Web Development
 squareImg: ../../../images/resources/w3schools-square.png
 wideImg: ../../../images/resources/w3schools-wide.png
 ---

@@ -6,7 +6,6 @@ requiresAccount: true
 tiers: Free & Paid
 group: resources
 subgroup: web-development
-pageTitle: Web Development
 squareImg: ../../../images/resources/codepen-square.png
 wideImg: ../../../images/resources/codepen-wide.png
 ---

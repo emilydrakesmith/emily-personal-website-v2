@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: null
 group: resources
 subgroup: html-css
-pageTitle: HTML & CSS
 squareImg: ../../../images/resources/making-css-square.png
 wideImg: null
 ---

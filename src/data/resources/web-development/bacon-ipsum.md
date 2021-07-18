@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: Free
 group: resources
 subgroup: web-development
-pageTitle: Web Development
 squareImg: ../../../images/resources/bacon-ipsum-square.png
 wideImg: null
 ---

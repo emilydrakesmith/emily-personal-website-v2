@@ -11,6 +11,7 @@ import web_dev_icon from '../images/icons/web-dev-icon.svg';
 import html_css_icon from '../images/icons/html-css-icon.svg';
 import javascript_icon from '../images/icons/javascript-icon.svg';
 import react_icon from '../images/icons/react-icon.svg';
+import gatsby_icon from '../images/icons/gatsby-icon.svg';
 /******* END: IMPORT LOCAL FILES *******/
 
 export default function Resources() {
@@ -33,18 +34,24 @@ export default function Resources() {
             altText: 'icon for link to HTML & CSS resources page',
             path: '/resources/html-css',
         },
-        /*{
-            title: 'JavaScript',
-            icon: javascript_icon,
-            altText: 'icon for link to JavaScript resources page',
-            path: '/resources/javascript'
-        },
+        // {
+        //     title: 'JavaScript',
+        //     icon: javascript_icon,
+        //     altText: 'icon for link to JavaScript resources page',
+        //     path: '/resources/javascript'
+        // },
         {
             title: 'React',
             icon: react_icon,
             altText: 'icon for link to React resources page',
             path: '/resources/react'
-        }*/
+        },
+        {
+            title: 'Gatsby',
+            icon: gatsby_icon,
+            altText: 'icon for link to Gatsby resources page',
+            path: '/resources/gatsby-js'
+        }
     ];
 
     const resourcesLinkData = resourcesLinkArray.map((link, idx) => (

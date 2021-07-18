@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: Free & Paid
 group: resources
 subgroup: web-development
-pageTitle: Web Development
 squareImg: ../../../images/resources/flaticon-square.png
 wideImg: ../../../images/resources/flaticon-wide.png
 ---

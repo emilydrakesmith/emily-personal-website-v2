@@ -6,7 +6,6 @@ requiresAccount: false
 tiers: Free
 group: resources
 subgroup: web-development
-pageTitle: Web Development
 squareImg: ../../../images/resources/lunapic-square.png
 wideImg: ../../../images/resources/lunapic-wide.png
 ---

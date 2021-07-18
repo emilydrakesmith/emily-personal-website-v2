@@ -6,7 +6,6 @@ requiresAccount: true
 tiers: Paid
 group: resources
 subgroup: tutorials
-pageTitle: Tutorials
 squareImg: ../../../images/resources/general-assembly-square.png
 wideImg: ../../../images/resources/general-assembly-wide.png
 ---

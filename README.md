@@ -356,9 +356,24 @@ I have published this website under the [MIT License](#license).
   * [General Assembly](https://generalassemb.ly/)
   * [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg)
 
-#### v 2.2.4.4  |  15 July 2021  |  commit --   |  Current Version
+#### v 2.2.4.4  |  15 July 2021  |  commit 21830608745276f775d9d12c42e8cb2c777303cf
 * Refactored `gatsby-browser.js` and `gatsby-ssr.js` to use arrow function notation.
 * Added alt-text to icons loaded in the `/resources` index page.
+
+#### v 2.2.4.5  |  17 July 2021  |  commit --  |  Current Version
+* Removed the `pageTitle` field from the frontmatter of all `.md` files in the `src/data/resources` directory.  This field is unnecessary due to the switch statement I built into the `resource-details.js` file.
+* Removed all instances of the `break` operatory from the switch statement in the `resource-details.js` file.  It isn't necessary for how I built the statement.
+* Activated the `/resources/react` sub-directory and built out `.md` files for the following resources:
+  * [React.js](https://reactjs.org/)
+  * [React Router](https://reactrouter.com/)
+  * [React Native](https://reactnative.dev/)
+  * [React - Net Ninja Tutorial Series](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
+  * [React - GatsbyJS](https://www.gatsbyjs.com/)
+  * [React Hooks - Eric Bishard article](https://www.telerik.com/kendo-react-ui/react-hooks-guide/)
+* Activated the `/resources/gatsby-js` sub-directory and built out `.md` files for the following resources:
+  * [GatsbyJS](https://www.gatsbyjs.com/)
+  * [Gatsby - Net Ninja Tutorial Series](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB)
+* Updated several instances of typing `Gatsby.js` to read `GatsbyJS` throughout the website.
 
 [Back to Top](#top)
 
