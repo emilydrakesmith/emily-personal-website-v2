@@ -375,12 +375,13 @@ I have published this website under the [MIT License](#license).
   * [Gatsby - Net Ninja Tutorial Series](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB)
 * Updated several instances of typing `Gatsby.js` to read `GatsbyJS` throughout the website.
 
-#### v 2.2.4.6  |  17 July 2021  |  commit --  |  Current Version
+#### v 2.2.4.6  |  17 July 2021  |  commit 7a8385570939e45ef0e08aae2468f8f544b12e42
 * Reinstated the `break` operators in the switch statement in the `resource-details.js` file removed in the previous commit.  I actually did need them.  Oops.
 * Added a `sequence` value to the frontmatter of all `.md` files in the `src/data/resources` directory to allow in-page sorting of GraphQL query returns.
 * Updated GraphQL query in `resource-details.js` to sort returns by the new `sequence` value.
 
-
+#### v 2.2.4.6  |  19 July 2021  |  commit --  |  Current Version
+* **Bugfix!**  When I refactored the `<main>` nav links to remove the unnecessary wrapper in `index.js` I lost vertical spacing between the squares on mobile devices.  I added `margin-bottom: 28px;` styling to a `.nav_links > a` CSS selector under a `@media (max-width: 620px)` media query.  Now spacing is proper.
 
 [Back to Top](#top)
 

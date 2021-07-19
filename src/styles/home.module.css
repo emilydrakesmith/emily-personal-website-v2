@@ -75,19 +75,20 @@
     max-width: 620px;
 }
 
-.nav_links img {
-    max-width: 70px;
-    margin-bottom: 10px;
-}
-
 .nav_links > a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     min-width: 130px;
     min-height: 130px;
     border-radius: 15px;
+}
+
+.nav_links img {
+    max-width: 70px;
+    margin-bottom: 10px;
 }
 /******* END: NAV GRID SECTION *******/
 
@@ -184,5 +185,9 @@
     .nav_links {
         flex-direction: column;
         flex-wrap: nowrap;
+    }
+
+    .nav_links > a {
+        margin-bottom: 28px;
     }
 }
