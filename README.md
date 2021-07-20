@@ -6,7 +6,22 @@ This is the remote repository for the version 2.0 of my personal website which y
 
 I have published this website under the [MIT License](#license).
 
+# Table of Contents
+1. [Instructions for Use](#instructions)
+2. [Version Notes](#version-notes)
+3. [Tech Framework](#tech-framework)
+4. [License](#license)
+5. [Future Plans](#future-plans)
+6. [Special Thanks](#special-thanks)
+7. [Planning and Development Notes](#planning)
+
 [Back to Top](#top)
+
+<a id='instructions'></a>
+
+# Instructions for Use
+
+<a id='version-notes'></a>
 
 # Version Notes
 
@@ -380,10 +395,15 @@ I have published this website under the [MIT License](#license).
 * Added a `sequence` value to the frontmatter of all `.md` files in the `src/data/resources` directory to allow in-page sorting of GraphQL query returns.
 * Updated GraphQL query in `resource-details.js` to sort returns by the new `sequence` value.
 
-#### v 2.2.4.6  |  19 July 2021  |  commit --  |  Current Version
+#### v 2.2.4.6  |  19 July 2021  |  commit 28de1564ca3cc4ddad5bb7fcc2d48dedeb18100e
 * **Bugfix!**  When I refactored the `<main>` nav links to remove the unnecessary wrapper in `index.js` I lost vertical spacing between the squares on mobile devices.  I added `margin-bottom: 28px;` styling to a `.nav_links > a` CSS selector under a `@media (max-width: 620px)` media query.  Now spacing is proper.
 
+#### v 2.2.4.6  |  [19 July 2021] |  commit --  |  Current Version
+* Built a *Table of Contents* in the `README.md` file.
+
 [Back to Top](#top)
+
+<a id='tech-framework'></a>
 
 # Tech Framework
 
@@ -442,6 +462,7 @@ I have published this website under the [MIT License](#license).
 * [Full documentation is available here.](https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest)
 
 [Back to Top](#top)
+
 <a id='license'></a>
 
 # License
@@ -457,11 +478,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [Back to Top](#top)
 
+<a id='future-plans'></a>
+
 # Future Plans
 
 ### Short Term
 * Continue building out more sections of this `README.md` file.
-  * *Table of Contents* with links
   * *Instructions for Use*, minimal since this page is informational only
   * *Developer Notes* with information about file structure, interesting bits of code, etc
     * incorporate into *Tech Framework*?
@@ -491,17 +513,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [Back to Top](#top)
 
+<a id='special-thanks'></a>
+
 # Special Thanks
 * I built this website with Gatsby.js, a free single-site generator resource.  I used the [Hello World](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-hello-world) starter page which is intended as a truly "blank slate" layout.
 * This is my first independent Gatsby.js project.  To learn Gatsby I've followed [the extensive documentation](https://www.gatsbyjs.com/docs/) from [the creators](https://www.gatsbyjs.com/about/) as well as the free [Net Ninja Gatsby Tutorial](https://www.youtube.com/watch?v=Qms4k6y7OgI&list=PL4cUxeGkcC9hw1g77I35ZivVLe8k2nvjB) series on YouTube created by the [Net Ninja Shaun](https://github.com/iamshaunjp).
 * This is also my first new project after graduating from [General Assembly's Software Engineering Immersive](https://generalassemb.ly/) program.  I'd like to thank my instructors Ben Manley, David Stinson, and Shahzad Khan for their outstanding leadership as well as other graduates from the SEIR-EC-2-22 cohort.
 * Developing a color pallate involved the extensive use of [Coolors](https://coolors.co/), a free resource created by [Fabrizio Bianchi](http://fabrizio.io/) and checked with [ColorSafe](http://colorsafe.co/) for WCAG-compliant contrast ratios to ensure accessibility.
 * I created my favicon for free with the help of [favicon.io](https://favicon.io/), a free utility built by [John Sorrentino](https://twitter.com/johnsorrentino).
+* Logos for [The Net Ninja](https://www.youtube.com/c/TheNetNinja/playlists) are re-used with permission from Shaun Pelling, conferred over Twitter.
 * Formatting this `README.md` file was easy with the help of the [Markdown Live Preview](https://markdownlivepreview.com/) tool and GitHub Guide's [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) page.
 * I inserted metadata into my page's `<head>` using [React Helmet](https://www.gatsbyjs.com/docs/add-page-metadata/), a free utility created and maintained by [the NFL](https://github.com/nfl/react-helmet).
 * The icons used on this site were acquired free from [flaticon.com](https://www.flaticon.com/) with permission to use so long as proper attribution is provided in documentation.
 
 [Back to Top](#top)
+
+<a id='planning'></a>
 
 # Planning & Development Notes
 
