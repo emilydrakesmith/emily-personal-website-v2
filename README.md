@@ -21,6 +21,35 @@ I have published this website under the [MIT License](#license).
 
 # Instructions for Use
 
+### Navigating the Website
+
+This website is relatively easy to navigate given its nature being mostly informational.  Desktop users have access to quick links to all the main sub-directories in the directory `/` (main index page).  There are also nav links in the page header visible on all pages.  Mobile users will see a hamburger menu rather to display the same links.  The hamburger menu is fixed to the top of the screen and will not disappear if the page is scrolled.  The page is fully keyboard navigable on the desktop version.
+
+### Notes for Developers
+
+If you fork the code for my website there are some things that you should be aware of before doing so.  Presumably if you want to fork my code, you want to preserve and work with my architecture rather than delete it.
+
+**First some non-technical stuff:**
+* This page is published under the [MIT License](#license) and all of its terms extend to use of my code and design.
+* If you fork my code I would like to be recognized prominenetly in the first section of your `README.md` file with a link to `martysmith.tech` or `www.martysmith.tech` depending on which I'm using.  This is under the principle of please don't be a jerk if reusing my work.
+
+**Config files:**
+* The `gatsby-ssr.js` and `gatsby-browser.js` files apply the `<Layout>` wrapper to every page on the website.
+* The `gatsby-node.js` file feeds data from `src/data` into template functions to generate all sub-directories in the `/resources` and `/projects` URL pathways.  This file retrieves minimal information to determine the pages which need to be generated, then the template functions coding those pages retrieve more detailed data.
+* Plugins I'm using in `gatsby-config.js` generally serve three purposes:
+  1. make images in the `/src/images` directory available for GraphQL
+  2. make `.md` data in the `/src/data` available for `gatsby-node.js` and GraphQL
+  3. activate *React Helmet* which allows me to populate data into my website's `<Head>` component
+
+**Data:**
+* All of my images exist at a `640×640` pixel resolution.  Various pages in my website will resize them to smaller sizes using the `gatsby-image` plugin.  The size is somewhat arbitrary, it simply needs to be larger than I will presumably use images on my site and in the same aspect ratio (currently `1:1`).
+* All individual project pages in the `/projects` URL pathway are rendered using data from individual `.md` files in the `/src/data/projects` directory which is fed into the template file `project-details.js`.  To make new files, copy/paste data from an existing file into a new one and update the data.  Please note that I have the sequence coded into the `.md` frontmatter.  Achieving a custom sort sequence requires either this or hardcoding a sequence into the `projects.js` file.  I chose the former.  This does require however updating a number of files to avoid conflicts.
+* All individual resource pages in the `/resources` URL pathway are rendered using data from the collection of `.md` files in a given folder of the `/src/data/resources` directory which is fed into the template file `resource-details.js`.  That is, the collection resources listed in the page at a URL pathway `/resources/foo-bar` would be generated from data in each of the individual files `.md` files in the `/src/data/resources/foo-bar.js` directory.
+
+**Architecture:**
+* Each of the main URL pathways in the website (`/`, `/about`, `/projects`, `/resources`, `/contact`) are coded by a file in the `/src/pages` directory.  The central index page is `index.js`; Gatsby creates namespaces for all other files according to their filename.
+* The page `/projects` is coded by a file `index.js` in the `/src/pages/projects` directory.  This architecture is necessary to add pages at sub-directories in that URL pathway and I plan to add a page at `/resources/other-projects` at a later date.  Note that creating sub-directory pages does not require this architecture if the pages are being generated from template files.  The functions in `gatsby-node.js` will take care of that.
+
 <a id='version-notes'></a>
 
 # Version Notes
