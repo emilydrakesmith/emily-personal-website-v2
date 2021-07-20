@@ -427,8 +427,14 @@ If you fork the code for my website there are some things that you should be awa
 #### v 2.2.4.6  |  19 July 2021  |  commit 28de1564ca3cc4ddad5bb7fcc2d48dedeb18100e
 * **Bugfix!**  When I refactored the `<main>` nav links to remove the unnecessary wrapper in `index.js` I lost vertical spacing between the squares on mobile devices.  I added `margin-bottom: 28px;` styling to a `.nav_links > a` CSS selector under a `@media (max-width: 620px)` media query.  Now spacing is proper.
 
-#### v 2.2.4.6  |  [19 July 2021] |  commit --  |  Current Version
+#### v 2.2.4.6  |  19 July 2021 |  commit 95487bf8bf2b9614c4b8ac841578c95ae2122303
 * Built a *Table of Contents* in the `README.md` file.
+
+#### v 2.2.5.0  |  19 July 2021 |  commit afeec54eb0348e20eb3ddf02ddfc6cb1c47ae7f1
+* Built a *Instructions for Use* section in the `README.md` file.
+
+#### v 2.2.5.0  |  19 July 2021 |  commit --  |  Current Version
+* Added a version note for commit `afeec54eb0348e20eb3ddf02ddfc6cb1c47ae7f1` (ie the commit immediately before this one).  I got excited and pushed my code without doing so.  Oops.
 
 [Back to Top](#top)
 
