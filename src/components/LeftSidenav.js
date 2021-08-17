@@ -35,12 +35,12 @@ export default function LeftSidenav() {
         }
     ];
 
-    const leftSidenavData = leftSidenavArray.map(dest =>
-        <a href={dest.url} target='blank' rel='noreferrer'>
+    const leftSidenavData = leftSidenavArray.map((dest, idx) =>
+        <a href={dest.url} target='blank' rel='noreferrer' key={`LSD_${idx}`}>
             <img src={dest.imgSrc} alt={dest.altText} />
         </a>
     );
-    
+
     return (
         <nav id='sidenav'>
             {leftSidenavData}

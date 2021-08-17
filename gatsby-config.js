@@ -48,6 +48,7 @@ module.exports = {
 	siteMetadata: {
 		title: 'Marty Smith | Software Engineer',
 		description: 'Personal Website and Portfolio',
-		copyright: '© 2021 Marty Smith'
+		copyright: '© 2021 Marty Smith',
+		email: 'marty.smith01@yahoo.com'
 	}
 }

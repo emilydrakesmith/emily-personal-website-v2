@@ -1,5 +1,6 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from "react";
+import {graphql, useStaticQuery} from 'gatsby';
 /******* END: IMPORT REACT AND DONGLES *******/
 
 
@@ -11,8 +12,10 @@ import twitter_solid_icon from '../images/icons/twitter-solid-icon.svg';
 /******* START: IMPORT LOCAL FILES *******/
 
 
-export default function Contact() {
-	const formPreviewText = 'Before sending a note realize you risk it being missed amongst the 10-20 spam messages this form generates daily.  Email & LinkedIn are the best ways to contact me.';
+export default function Contact({data}) {
+    const {email} = data.site.siteMetadata;
+    
+    const formPreviewText = 'Before sending a note realize you risk it being missed amongst the 10-20 spam messages this form generates daily.  Email & LinkedIn are the best ways to contact me.';
 
     return (
             <div className={styles.contact_main}>
@@ -21,16 +24,16 @@ export default function Contact() {
                     <hr />
                 </section>
                 <section className={styles.direct_messaging}>
-                    <a href='mailto:marty.smith01@yahoo.com'>
+                    <a href={`mailto:${email}`}>
                         <img src={envelope_icon} alt='icon for email'/>
                         <h4>E-mail</h4>
                     </a>
                     <a href='https://www.linkedin.com/in/the-marty-smith/' target="_blank" rel="noreferrer">
-                        <img src={linkedin_solid_icon} alt='icon for email'/>
+                        <img src={linkedin_solid_icon} alt='icon for linkedin'/>
                         <h4>LinkedIn</h4>
                     </a>
                     <a href='https://twitter.com/doctrfed' target="_blank" rel="noreferrer">
-                        <img src={twitter_solid_icon} alt='icon for email'/>
+                        <img src={twitter_solid_icon} alt='icon for twitter'/>
                         <h4>Twitter</h4>
                     </a>
                 </section>
@@ -72,3 +75,13 @@ export default function Contact() {
             </div>
 	);
 }
+
+export const query = graphql`
+	query ContactPageMetadata {
+		site {
+			siteMetadata {
+				email
+			}
+		}
+	}
+`

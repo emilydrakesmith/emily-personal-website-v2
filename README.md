@@ -433,9 +433,17 @@ If you fork the code for my website there are some things that you should be awa
 #### v 2.2.5.0  |  19 July 2021 |  commit afeec54eb0348e20eb3ddf02ddfc6cb1c47ae7f1
 * Built a *Instructions for Use* section in the `README.md` file.
 
-#### v 2.2.5.0  |  19 July 2021 |  commit --  |  Current Version
+#### v 2.2.5.0  |  19 July 2021 |  commit cccee8b2add38e3ebf92c273958f1e0c4144b227
 * Added a version note for commit `afeec54eb0348e20eb3ddf02ddfc6cb1c47ae7f1` (ie the commit immediately before this one).  I got excited and pushed my code without doing so.  Oops.
+
+#### v 2.2.5.1  |  17 August 2021 |  commit 27b3ab2fa675d7d62725247b5a0ff1eea152c90d
 * Refactored the `LeftSidenav.js` component to map over an array of data to produce links instead of hardcoding them.
+
+#### v 2.2.5.2  |  17 August 2021 |  commit --  |  Current Version
+* Add my personal e-mail address to site metadata in the `gatsby-config.js` file.
+* Remove all instances of hardcoding `marty.smith01@yahoo.com` and load it from metadata instead:
+  * pages: `index.js` and `contact.js`
+  * component: `RightSidenav.js`
 
 [Back to Top](#top)
 

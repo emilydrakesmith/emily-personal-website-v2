@@ -1,6 +1,7 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from "react";
 import {Link} from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 /******* END: IMPORT REACT AND DONGLES *******/
 
 /******* START: IMPORT LOCAL FILES *******/
@@ -12,7 +13,10 @@ import contact_icon from '../images/icons/contact-icon.svg';
 /******* END: IMPORT LOCAL FILES *******/
 
 
-export default function Home() {
+export default function Home({data}) {
+
+	const {email} = data.site.siteMetadata;
+	
 	const linkArray = [
 		{
 			title: 'About Me',
@@ -57,7 +61,7 @@ export default function Home() {
 					<h4>Hi, my name is</h4>
 					<h1>Marty Smith</h1>
 					<p>I'm a software engineer who specializes in creating outstanding solutions for people and professionals alike.  Currently I reside in Columbia, South Carolina.</p>
-					<a href='mailto:marty.smith01@yahoo.com' className={styles.contact_button}>
+					<a href={`mailto:${email}`} className={styles.contact_button}>
 						<div>Talk to Me</div>
 					</a>
 				</section>
@@ -67,3 +71,13 @@ export default function Home() {
 			</div>
 	);
 }
+
+export const query = graphql`
+	query IndexPageMetadata {
+		site {
+			siteMetadata {
+				email
+			}
+		}
+	}
+`
