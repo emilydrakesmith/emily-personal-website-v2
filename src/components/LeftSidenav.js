@@ -12,20 +12,38 @@ import twitter_icon from '../images/icons/twitter-icon.svg';
 
 
 export default function LeftSidenav() {
+    const leftSidenavArray = [
+        {
+            url: 'https://github.com/mhsmith321',
+            imgSrc: github_icon,
+            altText: 'icon for external link to my GitHub profile'
+        },
+        {
+            url: 'https://codepen.io/mhsmith321',
+            imgSrc: codepen_icon,
+            altText: 'icon for external link to my CodePen profile'
+        },
+        {
+            url: 'https://www.linkedin.com/in/the-marty-smith',
+            imgSrc: linkedin_icon,
+            altText: 'icon for external link to my LinkedIn profile'
+        },
+        {
+            url: 'https://twitter.com/doctrfed',
+            imgSrc: twitter_icon,
+            altText: 'icon for external link to my Twitter profile'
+        }
+    ];
+
+    const leftSidenavData = leftSidenavArray.map(dest =>
+        <a href={dest.url} target='blank' rel='noreferrer'>
+            <img src={dest.imgSrc} alt={dest.altText} />
+        </a>
+    );
+    
     return (
         <nav id='sidenav'>
-            <a href='https://github.com/mhsmith321' target="_blank" rel="noreferrer">
-                <img src={github_icon} alt='icon for external link to my GitHub profile'/>
-            </a>
-            <a href='https://codepen.io/mhsmith321' target="_blank" rel="noreferrer">
-                <img src={codepen_icon} alt='icon for external link to my CodePen profile'/>
-            </a>
-            <a href='https://www.linkedin.com/in/the-marty-smith/' target="_blank" rel="noreferrer">
-                <img src={linkedin_icon} alt='icon for external link to my LinkedIn profile'/>
-            </a>
-            <a href='https://twitter.com/doctrfed' target="_blank" rel="noreferrer">
-                <img src={twitter_icon} alt='icon for external link to my Twitter profile'/>
-            </a>
+            {leftSidenavData}
         </nav>
     );
 }

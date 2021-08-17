@@ -435,6 +435,7 @@ If you fork the code for my website there are some things that you should be awa
 
 #### v 2.2.5.0  |  19 July 2021 |  commit --  |  Current Version
 * Added a version note for commit `afeec54eb0348e20eb3ddf02ddfc6cb1c47ae7f1` (ie the commit immediately before this one).  I got excited and pushed my code without doing so.  Oops.
+* Refactored the `LeftSidenav.js` component to map over an array of data to produce links instead of hardcoding them.
 
 [Back to Top](#top)
 
