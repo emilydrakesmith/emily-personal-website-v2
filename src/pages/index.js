@@ -1,7 +1,7 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from "react";
 import {Link} from 'gatsby';
-import {graphql, useStaticQuery} from 'gatsby';
+import {graphql} from 'gatsby';
 /******* END: IMPORT REACT AND DONGLES *******/
 
 /******* START: IMPORT LOCAL FILES *******/

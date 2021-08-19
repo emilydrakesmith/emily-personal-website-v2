@@ -445,9 +445,12 @@ If you fork the code for my website there are some things that you should be awa
   * pages: `index.js` and `contact.js`
   * component: `RightSidenav.js`
 
-#### v 2.2.5.3  |  18 August 2021  |  commit --  |  Current Version
+#### v 2.2.5.3  |  18 August 2021  |  commit 96ee1b0666812be0fbbdc4088170271ec42a7264
 * Added "TypeScript" to *Key Skills* section of the `about.js` page (mobile and desktop versions).
 * Added a link to *Pinterest* in the `LeftSidenav.js` component.
+
+#### v 2.2.5.3  |  18 August 2021  |  commit --  |  Current Version
+* Removed the `useStaticQuery` GraphQL dongle from `index.js` and `contact.js` files where it wasn't needed.
 
 [Back to Top](#top)
 

@@ -1,6 +1,6 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from "react";
-import {graphql, useStaticQuery} from 'gatsby';
+import {graphql} from 'gatsby';
 /******* END: IMPORT REACT AND DONGLES *******/
 
 
