@@ -439,11 +439,15 @@ If you fork the code for my website there are some things that you should be awa
 #### v 2.2.5.1  |  17 August 2021 |  commit 27b3ab2fa675d7d62725247b5a0ff1eea152c90d
 * Refactored the `LeftSidenav.js` component to map over an array of data to produce links instead of hardcoding them.
 
-#### v 2.2.5.2  |  17 August 2021 |  commit --  |  Current Version
+#### v 2.2.5.2  |  17 August 2021 |  commit e9e23019d918db6751d72f94072f5a41ac8284fe
 * Add my personal e-mail address to site metadata in the `gatsby-config.js` file.
-* Remove all instances of hardcoding `marty.smith01@yahoo.com` and load it from metadata instead:
+* Remove all instances of hardcoding `marty.smith01@yahoo.com` and load it from site metadata instead:
   * pages: `index.js` and `contact.js`
   * component: `RightSidenav.js`
+
+#### v 2.2.5.3  |  18 August 2021  |  commit --  |  Current Version
+* Added "TypeScript" to *Key Skills* section of the `about.js` page (mobile and desktop versions).
+* Added a link to *Pinterest* in the `LeftSidenav.js` component.
 
 [Back to Top](#top)
 

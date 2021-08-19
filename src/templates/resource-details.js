@@ -30,7 +30,8 @@ export default function ResourceDetails({location, data}) {
         case '/resources/react':
             pageTitle = 'React';
             break;
-        case '/resources/gatsby-js': pageTitle = 'Gatsby'
+        case '/resources/gatsby-js':
+            pageTitle = 'Gatsby';
             break;
         default:
             pageTitle = 'Resources';

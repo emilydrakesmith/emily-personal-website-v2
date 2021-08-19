@@ -21,7 +21,7 @@ export default function About({data}) {
 
     const skillsDesktop = 
         <>
-            <p>JavaScript ES6+  {bar}  HTML5  {bar}  CSS3</p>
+            <p>JavaScript ES6+  {bar}  TypeScript  {bar}  HTML5  {bar}  CSS3</p>
             <p>React  {bar}  GatsbyJS  {bar}  Node.js  {bar}  Express  {bar}  jQuery</p>
             <p>Python 3  {bar}  Django</p>
             <p>MongoDB  {bar}  Mongoose  {bar}  PostgreSQL  {bar}  GraphQL</p>
@@ -31,6 +31,7 @@ export default function About({data}) {
 
     const skillsMobileArray = [
         'JavaScript ES6+',
+        'TypeScript',
         'HTML5 & CSS3',
         'Python & Django',
         'React',
@@ -40,7 +41,7 @@ export default function About({data}) {
         'jQuery',
         'MongoDB & Mongoose',
         'PostgreSQL',
-        'GraphQL & GraphiQL',
+        'GraphQL',
         'CLI & Git',
         'GitHub',
         'Agile Process',
