@@ -47,8 +47,11 @@ module.exports = {
 	],
 	siteMetadata: {
 		title: 'Marty Smith | Software Engineer',
+		author: 'Marty Smith',
 		description: 'Personal Website and Portfolio',
+		long_description: "I'm Marty Smith, a full-stack software engineer currently based in the Raleigh-Durham area.  Check out my website to learn more about me, view my portfolio of works, and get in touch.",
 		copyright: '© 2021 Marty Smith',
-		email: 'marty.smith01@yahoo.com'
+		email: 'marty.smith01@yahoo.com',
+		url: 'https://martysmith.tech'
 	}
 }

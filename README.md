@@ -449,8 +449,13 @@ If you fork the code for my website there are some things that you should be awa
 * Added "TypeScript" to *Key Skills* section of the `about.js` page (mobile and desktop versions).
 * Added a link to *Pinterest* in the `LeftSidenav.js` component.
 
-#### v 2.2.5.3  |  18 August 2021  |  commit --  |  Current Version
+#### v 2.2.5.3  |  18 August 2021  |  commit c0095152d240dca50cda20282f82c7546c9ba707
 * Removed the `useStaticQuery` GraphQL dongle from `index.js` and `contact.js` files where it wasn't needed.
+
+#### v 2.2.5.4  |  04 September 2021  |  commit --  |  Current Version
+* Changed my home city as listed in `index.js` to Raleigh-Durham.
+* Added `<meta>` tags to React Helmet for `author` and `description` content fields.
+  * Data lives in `siteMetadata` of the `gatsby-config.js` file and is imported through GraphQL.
 
 [Back to Top](#top)
 

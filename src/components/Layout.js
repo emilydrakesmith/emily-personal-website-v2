@@ -21,17 +21,22 @@ export default function Layout({children}) {
             site {
                 siteMetadata {
                     title
+                    author
+                    long_description
+                    url
                 }
             }
         }
     `);
 
-    const {title} = data.site.siteMetadata;
+    const {title, author, long_description, url} = data.site.siteMetadata;
 
     return (
         <div id='layout'>
             <Helmet>
-                <link rel="canonical" href="https://martysmith.tech" />
+                <meta name='author' content={author} />
+                <meta name='description' content={long_description} />
+                <link rel="canonical" href={url} />
                 <link rel="icon" href={favicon} type="image/x-icon" />
                 <title>{title}</title>
             </Helmet>
