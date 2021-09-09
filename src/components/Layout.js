@@ -12,6 +12,7 @@ import RightSidenav from './RightSidenav';
 import Footer from './Footer';
 import '../styles/global.css';
 import favicon from '../images/favicons/favicon.ico';
+import webpage_screenshot from '../images/projects/full/marty-smith-dot-tech.png';
 /******* END: IMPORT LOCAL FILES *******/
 
 
@@ -36,6 +37,9 @@ export default function Layout({children}) {
             <Helmet>
                 <meta name='author' content={author} />
                 <meta name='description' content={long_description} />
+                <meta property='og:title' content={title} />
+                <meta property='og:url' content={url} />
+                <meta property='og:image' content={webpage_screenshot} />
                 <link rel="canonical" href={url} />
                 <link rel="icon" href={favicon} type="image/x-icon" />
                 <title>{title}</title>

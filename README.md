@@ -452,10 +452,12 @@ If you fork the code for my website there are some things that you should be awa
 #### v 2.2.5.3  |  18 August 2021  |  commit c0095152d240dca50cda20282f82c7546c9ba707
 * Removed the `useStaticQuery` GraphQL dongle from `index.js` and `contact.js` files where it wasn't needed.
 
-#### v 2.2.5.4  |  04 September 2021  |  commit --  |  Current Version
+#### v 2.2.5.4  |  04 September 2021  |  commit e07d4395fe404f197fb5d3a5cb85625a55e930e7
 * Changed my home city as listed in `index.js` to Raleigh-Durham.
 * Added `<meta>` tags to React Helmet for `author` and `description` content fields.
   * Data lives in `siteMetadata` of the `gatsby-config.js` file and is imported through GraphQL.
+
+#### v [VERSION]  |  [DATE]  |  commit --  |  Current Version
 
 [Back to Top](#top)
 
