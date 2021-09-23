@@ -60,7 +60,7 @@ export default function Home({data}) {
 				<section className={styles.grid_intro}>
 					<h4>Hi, my name is</h4>
 					<h1>Marty Smith</h1>
-					<p>I'm a software engineer who specializes in creating outstanding solutions for people and professionals alike.  Currently I reside in the Raleigh-Durham area of North Carolina.</p>
+					<p>I'm a software engineer in the Raleigh-Durham area of North Carolina who specializes in creating outstanding solutions for people and professionals alike.  Right now I'm on a team with <a href='https://www.crocodilelabs.io/' target='blank'>Crocodile Labs</a> building a new cryptocurrency exchange platform.</p>
 					<a href={`mailto:${email}`} className={styles.contact_button}>
 						<div>Talk to Me</div>
 					</a>

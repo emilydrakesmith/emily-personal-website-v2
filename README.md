@@ -457,7 +457,12 @@ If you fork the code for my website there are some things that you should be awa
 * Added `<meta>` tags to React Helmet for `author` and `description` content fields.
   * Data lives in `siteMetadata` of the `gatsby-config.js` file and is imported through GraphQL.
 
-#### v [VERSION]  |  [DATE]  |  commit --  |  Current Version
+#### v 2.2.5.5  |  09 September 2021  |  commit a4d71968f323bd5290fb1d605ddce42b79f379e7
+* Added `<meta />` elements to *React Helmet* for Open Graph data.
+
+#### v 2.2.5.5  |  21 September 2021  |  commit --  |  Current Version
+* Updated *Home Page* and *About Me* to reflect new employment with Crocodile Labs!
+* Added styling to `index.module.css` and `about.module.css` to color-theme links to Crocodile Labs.
 
 [Back to Top](#top)
 

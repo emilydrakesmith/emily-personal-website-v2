@@ -34,6 +34,10 @@
     color: #8c959c;
 }
 
+.about_content a {
+    color: #FF8B00;
+}
+
 .self_portrait_desktop {
     background: 
     /* top: transparent orange, faked with gradient */ 
