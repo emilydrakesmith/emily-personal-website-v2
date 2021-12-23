@@ -4,6 +4,7 @@ import {Link} from 'gatsby';
 import {graphql} from 'gatsby';
 /******* END: IMPORT REACT AND DONGLES *******/
 
+
 /******* START: IMPORT LOCAL FILES *******/
 import * as styles from '../styles/home.module.css';
 import about_icon from '../images/icons/about-icon.svg';
@@ -14,7 +15,6 @@ import contact_icon from '../images/icons/contact-icon.svg';
 
 
 export default function Home({data}) {
-
 	const {email} = data.site.siteMetadata;
 	
 	const linkArray = [
@@ -60,9 +60,9 @@ export default function Home({data}) {
 				<section className={styles.grid_intro}>
 					<h4>Hi, my name is</h4>
 					<h1>Marty Smith</h1>
-					<p>I'm a software engineer in the Raleigh-Durham area of North Carolina who specializes in creating outstanding solutions for people and professionals alike.  Right now I'm on a team with <a href='https://www.crocodilelabs.io/' target='blank'>Crocodile Labs</a> building a new cryptocurrency exchange platform.</p>
+					<p>I'm a software engineer in Newport News, Virginia who specializes in creating outstanding solutions for people and professionals alike.  Right now I'm on a team with <a href='https://www.crocswap.com/' target='_blank'>Crocodile Labs</a> building a new DeFi cryptocurrency exchange platform.</p>
 					<a href={`mailto:${email}`} className={styles.contact_button}>
-						<div>Talk to Me</div>
+						Talk to Me
 					</a>
 				</section>
 				<section className={styles.nav_links}>

@@ -14,7 +14,7 @@ exports.createPages = async ({graphql, actions}) => {
                 }
             }
         }
-    `)
+    `);
     
     // deconstruct nodes data from graphql query data
     const {nodes} = data.allMarkdownRemark;

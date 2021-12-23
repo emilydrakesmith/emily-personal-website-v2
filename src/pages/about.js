@@ -59,7 +59,7 @@ export default function About({data}) {
                     <hr />
                 </section>
                 <section className={styles.about_content}>
-                    <div className={styles.self_portrait_desktop}></div>
+                    <div className={styles.self_portrait_desktop} />
                     <div className={styles.picture_frame_mobile}>
                         <Img className={styles.self_portrait_mobile} fluid={data.imageSharp.fluid}/>
                     </div>

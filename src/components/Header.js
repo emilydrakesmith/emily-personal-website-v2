@@ -20,6 +20,10 @@ export default function Header() {
     
     const links = destinations.map((dest, idx) => <Link to={dest.path} id={dest.idString} className='navlink' key={idx}>{dest.text}</Link>);
 
+    const mobileHeaderMenu = <section id='mobile-header-menu'>
+        {links}
+    </section>;
+
     const [open, setOpen] = useState(false);
 
     const handleToggle = () => {
@@ -37,9 +41,7 @@ export default function Header() {
             
             <nav id="mobile-header-nav">
                 <img src={hamburger_icon} alt='hamburger menu icon' id='hamburger' onClick={() => handleToggle()}/>
-                <section id='mobile-header-menu' className={open ? 'null' : 'hide-div'}>
-                    {links}
-                </section>
+                {open && mobileHeaderMenu}
             </nav>
         </header>
     );
