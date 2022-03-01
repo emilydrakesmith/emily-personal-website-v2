@@ -14,7 +14,7 @@ export default function About({data}) {
 	const bar = <span className={styles.orange_separator}>|</span>;
     const bullet = <span className={styles.orange_separator}>•</span>;
 
-    const intro = <p>Hi there!  I'm Marty and I've been building things for the internet since the days of BBCode and Geocities in the early 00s.  It's been a long time since then and now I'm a software engineer with <a href='https://www.crocodilelabs.io/' target='blank'>Crocodile Labs</a>, a start-up building a new cryptocurrency exchange.<br/><br/>
+    const intro = <p>Hi there!  I'm Emily and I've been building things for the internet since the days of BBCode and Geocities in the early 00s.  It's been a long time since then and now I'm a software engineer with <a href='https://www.crocodilelabs.io/' target='blank'>Crocodile Labs</a>, a start-up building a new cryptocurrency exchange.<br/><br/>
     My work is something in which I take great pride.  While no detail is unimportant, I particularly care about designs being clean and intuitive, code that's efficient and modular, and extensive documentation.<br/><br/>
     Outside of work I love spending time with my wife.  We greatly enjoy playing board games, camping in our trailer, cooking, the New York Rangers, fishing, and wine tasting.<br/><br/>
     Please look around this site to get to know me better.  I'm currently quite happily employed but always interested in making new network contacts or discovering future opportunities.</p>;
@@ -55,7 +55,7 @@ export default function About({data}) {
     return (
             <div className={styles.about_main}>
                 <section className={styles.about_header}>
-                    <h1>About Marty</h1>
+                    <h1>About Emily</h1>
                     <hr />
                 </section>
                 <section className={styles.about_content}>
