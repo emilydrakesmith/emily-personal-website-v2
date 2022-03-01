@@ -28,7 +28,7 @@ export default function Contact({data}) {
                         <img src={envelope_icon} alt='icon for email'/>
                         <h4>E-mail</h4>
                     </a>
-                    <a href='https://www.linkedin.com/in/the-marty-smith/' target="_blank" rel="noreferrer">
+                    <a href='https://www.linkedin.com/in/emily-drake-smith/' target="_blank" rel="noreferrer">
                         <img src={linkedin_solid_icon} alt='icon for linkedin'/>
                         <h4>LinkedIn</h4>
                     </a>

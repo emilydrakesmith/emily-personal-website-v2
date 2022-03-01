@@ -25,7 +25,7 @@ export default function LeftSidenav() {
             altText: 'icon for external link to my CodePen profile'
         },
         {
-            url: 'https://www.linkedin.com/in/the-marty-smith',
+            url: 'https://www.linkedin.com/in/emily-drake-smith/',
             imgSrc: linkedin_icon,
             altText: 'icon for external link to my LinkedIn profile'
         },
