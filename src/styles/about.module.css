@@ -39,14 +39,14 @@
 }
 
 .self_portrait_desktop {
-    background: 
+    /* background:  */
     /* top: transparent orange, faked with gradient */ 
-    linear-gradient(
+    /* linear-gradient(
         rgba(255, 140, 0, 0.4), 
         rgba(255, 140, 0, 0.4)
-    ),
+    ), */
     /* bottom: image */
-    url(../images/pictures/self-portrait-narrow.jpeg);
+    /* url(../images/pictures/female-coderto-cat.png); */
     width: 291px;
     height: 314px;
     margin-left: 12px;
@@ -54,16 +54,14 @@
     float: right;
 }
 
-.self_portrait_desktop:hover {
+/* .self_portrait_desktop:hover {
     background: 
-    /* top: transparent orange, faked with gradient */ 
     linear-gradient(
         rgba(255, 140, 0, 0), 
         rgba(255, 140, 0, 0)
     ),
-    /* bottom: image */
-    url(../images/pictures/self-portrait-narrow.jpeg);
-}
+    url(../images/pictures/female-coderto-cat.png);
+} */
 
 .self_portrait_mobile {
     display: none;
@@ -116,8 +114,6 @@
         display: flex;
         max-width: 260px;
         margin-left: 12px;
-        border: 2px solid #BBB;
-        border-radius: 4px;
     }
 
     .skills_desktop {

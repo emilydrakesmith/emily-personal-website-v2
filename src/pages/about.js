@@ -1,5 +1,6 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from "react";
+import female_coderto_cat from '../images/pictures/female-coderto-cat.png';
 import {graphql} from "gatsby";
 import Img from 'gatsby-image';
 /******* END: IMPORT REACT AND DONGLES *******/
@@ -10,7 +11,7 @@ import * as styles from '../styles/about.module.css';
 /******* END: IMPORT LOCAL FILES *******/
 
 
-export default function About({data}) {
+export default function About() {
 	const bar = <span className={styles.orange_separator}>|</span>;
     const bullet = <span className={styles.orange_separator}>•</span>;
 
@@ -59,9 +60,11 @@ export default function About({data}) {
                     <hr />
                 </section>
                 <section className={styles.about_content}>
-                    <div className={styles.self_portrait_desktop} />
+                    <div className={styles.self_portrait_desktop}>
+                        <img src={female_coderto_cat} alt={'emily self portrait'} />
+                    </div>
                     <div className={styles.picture_frame_mobile}>
-                        <Img className={styles.self_portrait_mobile} fluid={data.imageSharp.fluid}/>
+                        <img src={female_coderto_cat} alt={'emily self portrait'} className={styles.self_portrait_mobile} />
                     </div>
                     {intro}
                 </section>
@@ -77,15 +80,15 @@ export default function About({data}) {
 	);
 }
 
-export const query = graphql`
-    query Portrait {
-        imageSharp(
-            fluid: {src: {eq: "/static/c0192249c8b42d3e5cc638c21d0a7e1b/385a6/self-portrait-narrow.jpg"}}
-        ) {
-            id
-            fluid {
-                ...GatsbyImageSharpFluid
-            }
-        }
-    }
-`
+// export const query = graphql`
+//     query Portrait {
+//         imageSharp(
+//             fluid: {src: {eq: "/static/c0192249c8b42d3e5cc638c21d0a7e1b/385a6/female-coderto-cat.png"}}
+//         ) {
+//             id
+//             fluid {
+//                 ...GatsbyImageSharpFluid
+//             }
+//         }
+//     }
+// `
