@@ -12,7 +12,7 @@ import RightSidenav from './RightSidenav';
 import Footer from './Footer';
 import '../styles/global.css';
 import favicon from '../images/favicons/favicon.ico';
-import webpage_screenshot from '../images/projects/full/marty-smith-dot-tech.png';
+import webpage_screenshot from '../images/projects/full/emily-smith-dot-tech.png';
 /******* END: IMPORT LOCAL FILES *******/
 
 

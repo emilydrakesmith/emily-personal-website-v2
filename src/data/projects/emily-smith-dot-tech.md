@@ -5,9 +5,9 @@ slug: my-website
 main: true
 group: projects
 sequence: 3
-fullImg: ../../images/projects/full/marty-smith-dot-tech.png
-thumbImg: ../../images/projects/thumb/marty-smith-dot-tech.png
-app: https://martysmith.tech
+fullImg: ../../images/projects/full/emily-smith-dot-tech.png
+thumbImg: ../../images/projects/thumb/emily-smith-dot-tech.png
+app: https://www.emilysmith.tech
 repo: https://github.com/mhsmith321/Marty-personal-website-2.0
 ---
 
