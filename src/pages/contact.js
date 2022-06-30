@@ -32,7 +32,7 @@ export default function Contact({data}) {
                         <img src={linkedin_solid_icon} alt='icon for linkedin'/>
                         <h4>LinkedIn</h4>
                     </a>
-                    <a href='https://twitter.com/doctrfed' target="_blank" rel="noreferrer">
+                    <a href='https://twitter.com/emilydrakesmith' target="_blank" rel="noreferrer">
                         <img src={twitter_solid_icon} alt='icon for twitter'/>
                         <h4>Twitter</h4>
                     </a>

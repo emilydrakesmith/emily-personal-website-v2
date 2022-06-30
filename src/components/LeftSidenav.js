@@ -30,7 +30,7 @@ export default function LeftSidenav() {
             altText: 'icon for external link to my LinkedIn profile'
         },
         {
-            url: 'https://twitter.com/doctrfed',
+            url: 'https://twitter.com/emilydrakesmith',
             imgSrc: twitter_icon,
             altText: 'icon for external link to my Twitter profile'
         },
