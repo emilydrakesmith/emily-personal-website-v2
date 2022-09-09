@@ -33,7 +33,7 @@ export default function Header() {
     return (
         <header>
             <Link to='/' className='navlink'>
-                <h1>M</h1>
+                <h1>E</h1>
             </Link>
             <nav id='header-nav'>
                 {links}
