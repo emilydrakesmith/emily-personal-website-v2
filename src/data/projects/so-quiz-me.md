@@ -7,8 +7,8 @@ group: projects
 sequence: 6
 fullImg: ../../images/projects/full/so-quiz-me.png
 thumbImg: ../../images/projects/thumb/so-quiz-me.png
-app: https://mhsmith321.github.io/Thinkful-Quiz-App
-repo: https://github.com/mhsmith321/Thinkful-Quiz-App
+app: https://emilydrakesmith.github.io/Thinkful-Quiz-App
+repo: https://github.com/emilydrakesmith/Thinkful-Quiz-App
 ---
 
 ### About

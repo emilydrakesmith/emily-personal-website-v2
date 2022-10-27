@@ -2,7 +2,7 @@
 
 # Introduction
 
-This is the remote repository for the version 2.0 of my personal website which you can view at [martysmith.tech](https://martysmith.tech/).  If you'd like to see how far my development skills have come since version 1, you can [view a legacy version here](https://mhsmith321.github.io/Marty-Smith-Personal-Homepage/).
+This is the remote repository for the version 2.0 of my personal website which you can view at [emilysmith.tech](https://www.emilysmith.tech//).  If you'd like to see how far my development skills have come since version 1, you can [view a legacy version here](https://emilydrakesmith.github.io/Marty-Smith-Personal-Homepage/).
 
 I have published this website under the [MIT License](#license).
 
@@ -64,7 +64,7 @@ If you fork the code for my website there are some things that you should be awa
   * Added *Special Thanks* with information about and links to resources I used developing this project.
   * Added *Planning & Development Notes* to start outlining my thoughts on how to construct this site.
   * The file will be built out more later.
-* Added `https://github.com/mhsmith321/Marty-personal-website-2.0.git` as a remote origin repository for this project.
+* Added `https://github.com/emilydrakesmith/Marty-personal-website-2.0.git` as a remote origin repository for this project.
 * Created new directories for `/src/components`, `/src/images`, and `/src/styles`.
 * Created `.js` files for index pages in all directories.  Created a `/src/pages/projects` directory for project sub-directories.
 
@@ -483,7 +483,7 @@ If you fork the code for my website there are some things that you should be awa
 #### I built this app using:
 
 #### This app is hosted at:
-* [Link to GitHub Repo](https://github.com/mhsmith321/Marty-personal-website-2.0)
+* [Link to GitHub Repo](https://github.com/emilydrakesmith/Marty-personal-website-2.0)
 
 ### Plugins & Dongles
 

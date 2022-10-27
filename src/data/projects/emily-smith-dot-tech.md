@@ -8,7 +8,7 @@ sequence: 3
 fullImg: ../../images/projects/full/emily-smith-dot-tech.png
 thumbImg: ../../images/projects/thumb/emily-smith-dot-tech.png
 app: https://www.emilysmith.tech
-repo: https://github.com/mhsmith321/Marty-personal-website-2.0
+repo: https://github.com/emilydrakesmith/Marty-personal-website-2.0
 ---
 
 ### About

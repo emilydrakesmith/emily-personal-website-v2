@@ -8,7 +8,7 @@ sequence: 4
 fullImg: ../../images/projects/full/human-verifier.png
 thumbImg: ../../images/projects/thumb/human-verifier.png
 app: http://mhs-captcha-app.surge.sh/
-repo: https://github.com/mhsmith321/GA-project-1-captcha
+repo: https://github.com/emilydrakesmith/GA-project-1-captcha
 ---
 
 ### About

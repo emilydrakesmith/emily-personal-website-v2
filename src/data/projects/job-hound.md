@@ -8,7 +8,7 @@ sequence: 2
 fullImg: ../../images/projects/full/job-hound.png
 thumbImg: ../../images/projects/thumb/job-hound.png
 app: https://jobhound-1-mhs.herokuapp.com
-repo: https://github.com/mhsmith321/GA-project-2-job-hound
+repo: https://github.com/emilydrakesmith/GA-project-2-job-hound
 ---
 
 ### About

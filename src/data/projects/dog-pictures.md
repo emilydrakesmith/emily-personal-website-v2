@@ -7,8 +7,8 @@ main: false
 sequence: 7
 fullImg: ../../images/projects/full/dog-pictures.png
 thumbImg: ../../images/projects/thumb/dog-pictures.png
-app: https://mhsmith321.github.io/Thinkful-Dog-Pictures-App
-repo: https://github.com/mhsmith321/Thinkful-Dog-Pictures-App
+app: https://emilydrakesmith.github.io/Thinkful-Dog-Pictures-App
+repo: https://github.com/emilydrakesmith/Thinkful-Dog-Pictures-App
 ---
 
 ### About

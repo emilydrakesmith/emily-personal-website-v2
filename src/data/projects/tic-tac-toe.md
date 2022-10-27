@@ -7,8 +7,8 @@ group: projects
 sequence: 5
 fullImg: ../../images/projects/full/tic-tac-toe.png
 thumbImg: ../../images/projects/thumb/tic-tac-toe.png
-app: https://mhsmith321.github.io/GA-tic-tac-toe
-repo: https://github.com/mhsmith321/GA-tic-tac-toe
+app: https://emilydrakesmith.github.io/GA-tic-tac-toe
+repo: https://github.com/emilydrakesmith/GA-tic-tac-toe
 ---
 
 ### About
