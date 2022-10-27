@@ -15,7 +15,7 @@ import pinterest_icon from '../images/icons/pinterest-icon.svg';
 export default function LeftSidenav() {
     const leftSidenavArray = [
         {
-            url: 'https://github.com/mhsmith321',
+            url: 'https://github.com/emilydrakesmith',
             imgSrc: github_icon,
             altText: 'icon for external link to my GitHub profile'
         },
