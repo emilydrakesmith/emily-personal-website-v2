@@ -1,8 +1,6 @@
 /******* START: IMPORT REACT AND DONGLES *******/
 import React from "react";
 import female_coderto_cat from '../images/pictures/female-coderto-cat.png';
-import {graphql} from "gatsby";
-import Img from 'gatsby-image';
 /******* END: IMPORT REACT AND DONGLES *******/
 
 
