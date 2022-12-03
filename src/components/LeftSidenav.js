@@ -9,6 +9,7 @@ import codepen_icon from '../images/icons/codepen-icon.svg';
 import linkedin_icon from '../images/icons/linkedin-icon.svg';
 import twitter_icon from '../images/icons/twitter-icon.svg';
 import pinterest_icon from '../images/icons/pinterest-icon.svg';
+import mastodon_icon from '../images/icons/mastodon.svg';
 /******* END: IMPORT LOCAL FILES *******/
 
 
@@ -33,6 +34,11 @@ export default function LeftSidenav() {
             url: 'https://twitter.com/emilydrakesmith',
             imgSrc: twitter_icon,
             altText: 'icon for external link to my Twitter profile'
+        },
+        {
+            url: 'https://mstdn.party/@emilyds',
+            imgSrc: mastodon_icon,
+            altText: 'icon for external link to my Mastodon profile'
         },
         {
             url: 'https://www.pinterest.com/martysmith58726',
