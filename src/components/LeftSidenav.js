@@ -9,7 +9,7 @@ import codepen_icon from '../images/icons/codepen-icon.svg';
 import linkedin_icon from '../images/icons/linkedin-icon.svg';
 import twitter_icon from '../images/icons/twitter-icon.svg';
 import pinterest_icon from '../images/icons/pinterest-icon.svg';
-import mastodon_icon from '../images/icons/mastodon.svg';
+import mastodon_icon from '../images/icons/mastodon-icon.svg';
 /******* END: IMPORT LOCAL FILES *******/
 
 
