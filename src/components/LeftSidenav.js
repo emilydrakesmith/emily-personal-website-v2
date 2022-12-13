@@ -48,7 +48,7 @@ export default function LeftSidenav() {
     ];
 
     const leftSidenavData = leftSidenavArray.map((dest, idx) =>
-        <a href={dest.url} target='blank' rel='me' key={`LSD_${idx}`}>
+        <a href={dest.url} target='_blank' rel='me' key={`LSD_${idx}`}>
             <img src={dest.imgSrc} alt={dest.altText} />
         </a>
     );
