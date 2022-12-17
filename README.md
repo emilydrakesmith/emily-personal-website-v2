@@ -2,7 +2,7 @@
 
 # Introduction
 
-This is the remote repository for the version 2.0 of my personal website which you can view at [emilysmith.tech](https://www.emilysmith.tech//).  If you'd like to see how far my development skills have come since version 1, you can [view a legacy version here](https://emilydrakesmith.github.io/Marty-Smith-Personal-Homepage/).
+This is the remote repository for the version 2.0 of my personal website which you can view at [emilysmith.tech](https://www.emilysmith.tech//).
 
 I have published this website under the [MIT License](#license).
 
