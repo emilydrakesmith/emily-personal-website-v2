@@ -9,9 +9,10 @@ import * as styles from '../styles/resources.module.css';
 import tutorials_icon from '../images/icons/tutorials-icon.svg';
 import web_dev_icon from '../images/icons/web-dev-icon.svg';
 import html_css_icon from '../images/icons/html-css-icon.svg';
-import javascript_icon from '../images/icons/javascript-icon.svg';
+// import javascript_icon from '../images/icons/javascript-icon.svg';
 import react_icon from '../images/icons/react-icon.svg';
 import gatsby_icon from '../images/icons/gatsby-icon.svg';
+import lgbtq_icon from '../images/icons/lgbtq-icon.svg';
 /******* END: IMPORT LOCAL FILES *******/
 
 export default function Resources() {
@@ -51,6 +52,12 @@ export default function Resources() {
             icon: gatsby_icon,
             altText: 'icon for link to Gatsby resources page',
             path: '/resources/gatsby-js'
+        },
+        {
+            title: 'LGBTQ+',
+            icon: lgbtq_icon,
+            altText: 'icon for link to LGBTQ+ resources page',
+            path: '/resources/lgbtq'
         }
     ];
 

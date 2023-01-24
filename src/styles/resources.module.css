@@ -50,6 +50,7 @@
 
 .resource_link img {
     max-width: 70px;
+    max-height: 70px;
     margin-bottom: 10px;
 }
 

@@ -33,6 +33,9 @@ export default function ResourceDetails({location, data}) {
         case '/resources/gatsby-js':
             pageTitle = 'Gatsby';
             break;
+        case '/resources/lgbtq':
+            pageTitle = 'LGBTQ+';
+            break;
         default:
             pageTitle = 'Resources';
     }
