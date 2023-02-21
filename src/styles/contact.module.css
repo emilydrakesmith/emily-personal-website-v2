@@ -17,11 +17,33 @@
     background-color: #004DFF;
 }
 
+.blue_bullet {
+    text-align: center;
+    color: #004DFF;
+}
+
 .contact_header {
     align-self: end;
     margin-bottom: 5px;
     color: #BBB;
     font-size: 30px;
+}
+
+.booking {
+    line-height: 1.3;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
+    color: #8c959c;
+}
+
+.speaking_info {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.speaking_topic {
+    margin: 8px 0;
+    text-align: center;
 }
 
 .direct_messaging {
@@ -30,7 +52,6 @@
     justify-content: space-around;
     align-items: center;
     padding: 20px 0 30px 0;
-
 }
 
 .direct_messaging > a {
@@ -148,6 +169,10 @@
     .contact_meta > div:first-child {
         margin-bottom: 10px;
     }
+
+    .booking {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -171,6 +196,14 @@
     .contact_data:first-child {
         margin-right: 0;
     }
+
+    .speaking_info {
+        font-size: 12px;
+    }
+    
+    .speaking_topic {
+        margin: auto 24px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -180,6 +213,10 @@
     
     .contact_header h1 {
         text-align: center;
+    }
+
+    .speaking_info {
+        letter-spacing: 1.2px;
     }
 
     .contact_data > input {

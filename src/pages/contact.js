@@ -14,6 +14,19 @@ import twitter_solid_icon from '../images/icons/twitter-solid-icon.svg';
 
 export default function Contact({data}) {
     const {email} = data.site.siteMetadata;
+
+    const bullet = <div className={styles.blue_bullet}>•</div>;
+
+    const speakingTopics = [
+        'Developing and marketing a personal brand',
+        'How to conduct a robust modern job search',
+        'Elevating queer and trans inclusion',
+        'The value of workplace diversity',
+        'Professional and social advancement of women',
+        'Supporting and growing for Junior talent',
+        'Creating effective SRGs in your organization',
+        'Other topics related to the advocacy of lesbians and trans women'
+    ];
     
     const formPreviewText = 'Before sending a note realize you risk it being missed amongst the 10-20 spam messages this form generates daily.  Email & LinkedIn are the best ways to contact me.';
 
@@ -36,6 +49,26 @@ export default function Contact({data}) {
                         <img src={twitter_solid_icon} alt='icon for twitter'/>
                         <h4>Twitter</h4>
                     </a>
+                </section>
+                <section className={styles.contact_header}>
+                    <h1>Booking</h1>
+                    <hr />
+                </section>
+                <section className={styles.booking}>
+                    <p className={styles.speaking_info}>I regularly speak to non-profits, corporations, and private groups. I'm available for engagements of any size from keynoting a convention to participating in a panel discussion. In general, I do not charge for my time for engagements so long as I can attend remotely and the nature of my appearence does not require extensive advance preparation. For larger events I do request reimbursement for costs (travel, lodging, etc). Topics on which I speak include:</p>
+                    {
+                        speakingTopics.map(topic => (
+                            <>
+                                <p
+                                    key={`speaking-topic-content-${topic}`}
+                                    className={styles.speaking_topic}
+                                >
+                                    {topic}
+                                </p>
+                                {bullet}
+                            </>
+                        ))
+                    }
                 </section>
                 <section className={styles.contact_header}>
                     <h1>Form</h1>
