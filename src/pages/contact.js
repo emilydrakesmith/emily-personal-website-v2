@@ -55,7 +55,7 @@ export default function Contact({data}) {
                     <hr />
                 </section>
                 <section className={styles.booking}>
-                    <p className={styles.speaking_info}>I regularly speak to non-profits, corporations, and private groups. I'm available for engagements of any size from keynoting a convention to participating in a panel discussion. In general, I do not charge for my time for engagements so long as I can attend remotely and the nature of my appearence does not require extensive advance preparation. For larger events I do request reimbursement for costs (travel, lodging, etc). Topics on which I speak include:</p>
+                    <p className={styles.speaking_info}>I regularly speak to non-profits, corporations, and private groups. Feel free to reach out if you'd like to add my voice to your next event! I'm available for engagements of any size from keynoting a convention to participating in a panel discussion. In general, I do not charge for my time for engagements so long as I can attend remotely and the nature of my appearence does not require extensive advance preparation. For larger events I do request reimbursement for costs (travel, lodging, etc). Topics on which I speak include:</p>
                     {
                         speakingTopics.map(topic => (
                             <>
