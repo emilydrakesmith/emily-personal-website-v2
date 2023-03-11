@@ -10,18 +10,19 @@ import linkedin_icon from '../images/icons/linkedin-icon.svg';
 import twitter_icon from '../images/icons/twitter-icon.svg';
 import pinterest_icon from '../images/icons/pinterest-icon.svg';
 import mastodon_icon from '../images/icons/mastodon-icon.svg';
+import instagram_icon from '../images/icons/instagram-icon.svg';
 /******* END: IMPORT LOCAL FILES *******/
 
 
 export default function LeftSidenav() {
     const leftSidenavArray = [
         {
-            url: 'https://github.com/emilydrakesmith',
+            url: 'https://github.com/emilydrakesmith/',
             imgSrc: github_icon,
             altText: 'icon for external link to my GitHub profile'
         },
         {
-            url: 'https://codepen.io/mhsmith321',
+            url: 'https://codepen.io/mhsmith321/',
             imgSrc: codepen_icon,
             altText: 'icon for external link to my CodePen profile'
         },
@@ -31,17 +32,22 @@ export default function LeftSidenav() {
             altText: 'icon for external link to my LinkedIn profile'
         },
         {
-            url: 'https://twitter.com/emilydrakesmith',
+            url: 'https://twitter.com/emilydrakesmith/',
             imgSrc: twitter_icon,
             altText: 'icon for external link to my Twitter profile'
         },
         {
-            url: 'https://mstdn.party/@emilyds',
+            url: 'https://mstdn.party/@emilyds/',
             imgSrc: mastodon_icon,
             altText: 'icon for external link to my Mastodon profile'
         },
         {
-            url: 'https://www.pinterest.com/martysmith58726',
+            url: 'https://www.instagram.com/emily.drake.smith/',
+            imgSrc: instagram_icon,
+            altText: 'icon for external link to my Instagram profile'
+        },
+        {
+            url: 'https://www.pinterest.com/martysmith58726/',
             imgSrc: pinterest_icon,
             altText: 'icon for external link to my Pinterest profile'
         }
