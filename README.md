@@ -31,7 +31,7 @@ If you fork the code for my website there are some things that you should be awa
 
 **First some non-technical stuff:**
 * This page is published under the [MIT License](#license) and all of its terms extend to use of my code and design.
-* If you fork my code I would like to be recognized prominenetly in the first section of your `README.md` file with a link to `martysmith.tech` or `www.martysmith.tech` depending on which I'm using.  This is under the principle of please don't be a jerk if reusing my work.
+* If you fork my code I would like to be recognized prominenetly in the first section of your `README.md` file with a link to `emilysmith.tech`.  This is under the principle of please don't be a jerk if reusing my work.
 
 **Config files:**
 * The `gatsby-ssr.js` and `gatsby-browser.js` files apply the `<Layout>` wrapper to every page on the website.
@@ -64,7 +64,7 @@ If you fork the code for my website there are some things that you should be awa
   * Added *Special Thanks* with information about and links to resources I used developing this project.
   * Added *Planning & Development Notes* to start outlining my thoughts on how to construct this site.
   * The file will be built out more later.
-* Added `https://github.com/emilydrakesmith/Marty-personal-website-2.0.git` as a remote origin repository for this project.
+* Added `https://github.com/emilydrakesmith/emily-personal-website-2.0.git` as a remote origin repository for this project.
 * Created new directories for `/src/components`, `/src/images`, and `/src/styles`.
 * Created `.js` files for index pages in all directories.  Created a `/src/pages/projects` directory for project sub-directories.
 
@@ -88,8 +88,8 @@ If you fork the code for my website there are some things that you should be awa
 * Create a `global.css` file.
 * Create a `<Layout>` component to code HTML containers that surround the `<main>` (header, footer, nav, etc) and incorporate into index pages.
 * Installed *React Helmet* to customize metadata in `<head>` of rendered webpage.
-  * Added title: `<title>Marty Smith | Software Engineer</title>`
-  * Specified a canonical link: `<link rel="canonical" href="https://martysmith.tech" />`
+  * Added title: `<title>Emily Smith | Software Engineer</title>`
+  * Specified a canonical link: `<link rel="canonical" href="https://emilysmith.tech" />`
 * Created a *Tech Framework* section of `README.md`.
 
 #### v 2.0.0.4  |  16 June 2021  |  commit d60a05d8e70d2ac203fcb823e2693eace93017c6
@@ -120,7 +120,7 @@ If you fork the code for my website there are some things that you should be awa
 
 #### v 2.0.2.1  |  18 June 2021  |  commit c3b5cefa16ad599e2f3621425677161729519380
 * Created CSS grid template for `/about` page.
-* Completed content for *About Marty* section on `/about` page.
+* Completed content for *About Emily* section on `/about` page.
 * Stubbed-up grid areas for *Skills* content on `/about` page.
 
 #### v 2.0.3.0  |  18 June 2021  |  commit 8862fb66804ad58751d784ffd855e10f7cd7dc87
@@ -324,7 +324,6 @@ If you fork the code for my website there are some things that you should be awa
 
 #### v 2.2.2.0  |  13 July 2021  |  commit 6c3ef5b27867457774cdfd6fcbc4a943201ce651
 * Registered the new plugin `gatsby-plugin-image` in `gatsby-config.js`; this replaces the plugin `gatsby-image` (which is now deprecated).  Installed via `npm i gatsby-plugin-image` in the terminal.
-* Ran the codemod via `npx gatsby-codemods gatsby-plugin-image /Users/martinsmith/code/personal-projects/Marty-personal-website/Marty-Smith-personal-website-2/src/templates` to update code.
 * Restructured how I call images in `project-details.js` to reflect the new file structure returned by GraphQL.
 
 #### v 2.2.2.0  |  13 July 2021  |  commit b3358bd96057ed8d47cc4735acb522a582520a4a
@@ -441,7 +440,7 @@ If you fork the code for my website there are some things that you should be awa
 
 #### v 2.2.5.2  |  17 August 2021 |  commit e9e23019d918db6751d72f94072f5a41ac8284fe
 * Add my personal e-mail address to site metadata in the `gatsby-config.js` file.
-* Remove all instances of hardcoding `marty.smith01@yahoo.com` and load it from site metadata instead:
+* Remove all instances of hardcoding `emily.drake.smith@gmail.com` and load it from site metadata instead:
   * pages: `index.js` and `contact.js`
   * component: `RightSidenav.js`
 
@@ -483,7 +482,7 @@ If you fork the code for my website there are some things that you should be awa
 #### I built this app using:
 
 #### This app is hosted at:
-* [Link to GitHub Repo](https://github.com/emilydrakesmith/Marty-personal-website-2.0)
+* [Link to GitHub Repo](https://github.com/emilydrakesmith/emily-personal-website-2.0)
 
 ### Plugins & Dongles
 
@@ -534,7 +533,7 @@ If you fork the code for my website there are some things that you should be awa
 # License
 ### MIT License
 
-Copyright (c) 2021 Martin "Marty" Smith
+Copyright (c) 2023 Emily Drake Smith
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute,  ublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -603,7 +602,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * I'm planning to use a dark theme that uses bold rather than light colors.  I've decided to use a pride color theme.  [I developed my color palette and saved it to Repl.it here.](https://replit.com/@mhsmith321/personal-website-color-scheme)
 
 * I'm currently planning five pages/pathways:
-  1. Splash page => `/` (index page at martysmith.tech)
+  1. Splash page => `/` (index page at emilysmith.tech)
        * This will be the main splash page users land on.
        * It will have little functionality aside from a brief introduction and nav to other pages.
   2. About => `/about`
