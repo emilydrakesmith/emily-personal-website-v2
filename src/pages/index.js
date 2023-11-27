@@ -60,7 +60,7 @@ export default function Home({data}) {
 				<section className={styles.grid_intro}>
 					<h4>Hi, my name is</h4>
 					<h1>Emily Drake Smith</h1>
-					<p>I'm a software engineer in Boston (she + her + hers) who specializes in creating outstanding solutions for people and professionals alike.  Right now I'm on a team with <a href='https://www.crocswap.com/' target='_blank'>Crocodile Labs</a> building a new DeFi cryptocurrency exchange platform.</p>
+					<p>I'm a software engineer in Boston (she + her + hers) who specializes in creating outstanding solutions for people and professionals alike.  Right now I'm on a team with <a href='https://www.crocswap.com/' target='_blank' rel='noreferrer'>Crocodile Labs</a> building the <a href='https://ambient.finance/' target='_blank' rel='noreferrer'>Ambient Finance</a> platform.</p>
 					<a href={`mailto:${email}`} className={styles.contact_button}>
 						Talk to Me
 					</a>
