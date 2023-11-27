@@ -34,7 +34,7 @@ export default function About() {
         )
     };
 
-    const intro = <p>Hi there!  I'm Emily and I've been building things for the internet since the days of BBCode and Geocities in the early 00s.  It's been a long time since then and now I'm a software engineer with {links.crocLabs}, a start-up building a new DeFi cryptocurrency exchange.<br/><br/>
+    const intro = <p>Hi there!  I'm Emily (she + her + hers) and I've been building things for the internet since the days of BBCode and Geocities in the early 00s.  It's been a long time since then and now I'm a software engineer with {links.crocLabs}, a start-up building a new DeFi cryptocurrency exchange.<br/><br/>
     My work is something in which I take great pride.  While no detail is unimportant, I particularly care about designs being clean and intuitive, code that's efficient and modular, and extensive documentation.<br/><br/>
     Outside of work I love spending time with my wife.  We greatly enjoy playing board games, camping in our trailer, cooking, the New York Rangers, fishing, and wine tasting.<br/><br/>
     Please look around this site to get to know me better.  I'm currently quite happily employed but always interested in making new network contacts or discovering future opportunities. I'm also available for speaking engagements of varying formats.<br/><br/>
