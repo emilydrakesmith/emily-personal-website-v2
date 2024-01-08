@@ -41,7 +41,7 @@ export default function About() {
     Outside of work I love spending time with my wife.  We greatly enjoy playing board games, camping in our trailer, cooking, the New York Rangers, fishing, and wine tasting.{lineBreak}
     Please look around this site to get to know me better.  I'm currently quite happily employed but always interested in making new network contacts or discovering future opportunities. I'm also available for speaking engagements of varying formats.{lineBreak}
     I'm a proud alumnus of {links.stockton}, {links.ga}, and the {links.mast}.  I'm always up for connecting with other alumni or current students from the places I've been; feel free to reach out if that's you!{lineBreak}
-    Science is real. Love is beatiful. Black lives matter. LGBTQ+ rights are human rights. No human is illegal. Trans men are men. Trans women are women. Protect trans kids.</p>;
+    Science is real. Love is beautiful. Black lives matter. LGBTQ+ rights are human rights. No human is illegal. Trans men are men. Trans women are women. Protect trans kids.</p>;
 
     const skillsDesktop = 
         <>
