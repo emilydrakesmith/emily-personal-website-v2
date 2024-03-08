@@ -60,7 +60,7 @@ export default function LeftSidenav() {
     ];
 
     const leftSidenavData = leftSidenavArray.map(dest =>
-        <a href={dest.url} target='_blank' rel='me' key={JSON.stringify(dest)}>
+        <a href={dest.url} target='_blank' rel='me noreferrer' key={JSON.stringify(dest)}>
             <img src={dest.imgSrc} alt={dest.altText} />
         </a>
     );

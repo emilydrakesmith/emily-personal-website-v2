@@ -13,7 +13,7 @@ export default function About() {
 	const bar = <span className={styles.orange_separator}>|</span>;
     const bullet = <span className={styles.orange_separator}>•</span>;
 
-    const makeLink = (url, text) => <a href={url} target='_blank' rel='external'>{text}</a>;
+    const makeLink = (url, text) => <a href={url} target='_blank' rel='external noreferrer'>{text}</a>;
 
     const links = {
         crocLabs: makeLink(
