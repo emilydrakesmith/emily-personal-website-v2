@@ -22,7 +22,7 @@ export default function LeftSidenav() {
             altText: 'icon for external link to my GitHub profile'
         },
         {
-            url: 'https://codepen.io/mhsmith321/',
+            url: 'https://codepen.io/emilydrakesmith',
             imgSrc: codepen_icon,
             altText: 'icon for external link to my CodePen profile'
         },
