@@ -11,7 +11,7 @@ import twitter_icon from '../images/icons/twitter-icon.svg';
 import pinterest_icon from '../images/icons/pinterest-icon.svg';
 import mastodon_icon from '../images/icons/mastodon-icon.svg';
 import instagram_icon from '../images/icons/instagram-icon.svg';
-import replit_icon from  '../images/icons/replit_icon.svg';
+import replit_icon from  '../images/icons/replit-icon.svg';
 /******* END: IMPORT LOCAL FILES *******/
 
 
