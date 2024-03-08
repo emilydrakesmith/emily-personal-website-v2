@@ -11,6 +11,7 @@ import twitter_icon from '../images/icons/twitter-icon.svg';
 import pinterest_icon from '../images/icons/pinterest-icon.svg';
 import mastodon_icon from '../images/icons/mastodon-icon.svg';
 import instagram_icon from '../images/icons/instagram-icon.svg';
+import replit_icon from  '../images/icons/replit_icon.svg';
 /******* END: IMPORT LOCAL FILES *******/
 
 
@@ -25,6 +26,11 @@ export default function LeftSidenav() {
             url: 'https://codepen.io/emilydrakesmith',
             imgSrc: codepen_icon,
             altText: 'icon for external link to my CodePen profile'
+        },
+        {
+            url: 'https://replit.com/@emilydrakesmith',
+            imgSrc: replit_icon,
+            altText: 'icon for external link to my Replit profile'
         },
         {
             url: 'https://www.linkedin.com/in/emily-drake-smith/',
