@@ -17,7 +17,7 @@ export default function About() {
 
     const links = {
         crocLabs: makeLink(
-            'https://www.crocswap.com/',
+            'https://ambient.finance/',
             'Crocodile Labs'
         ),
         stockton: makeLink(
