@@ -42,21 +42,21 @@ export default function LeftSidenav() {
             imgSrc: twitter_icon,
             altText: 'icon for external link to my Twitter profile'
         },
-        {
-            url: 'https://mstdn.party/@emilyds/',
-            imgSrc: mastodon_icon,
-            altText: 'icon for external link to my Mastodon profile'
-        },
-        {
-            url: 'https://www.instagram.com/emily.drake.smith/',
-            imgSrc: instagram_icon,
-            altText: 'icon for external link to my Instagram profile'
-        },
-        {
-            url: 'https://www.pinterest.com/martysmith58726/',
-            imgSrc: pinterest_icon,
-            altText: 'icon for external link to my Pinterest profile'
-        }
+        // {
+        //     url: 'https://mstdn.party/@emilyds/',
+        //     imgSrc: mastodon_icon,
+        //     altText: 'icon for external link to my Mastodon profile'
+        // },
+        // {
+        //     url: 'https://www.instagram.com/emily.drake.smith/',
+        //     imgSrc: instagram_icon,
+        //     altText: 'icon for external link to my Instagram profile'
+        // },
+        // {
+        //     url: 'https://www.pinterest.com/martysmith58726/',
+        //     imgSrc: pinterest_icon,
+        //     altText: 'icon for external link to my Pinterest profile'
+        // }
     ];
 
     const leftSidenavData = leftSidenavArray.map(dest =>
